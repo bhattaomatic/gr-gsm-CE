@@ -71,9 +71,9 @@ list(APPEND grgsm_sources
 add_library(gnuradio-grgsm SHARED ${grgsm_sources})
 target_link_libraries(gnuradio-grgsm ${Boost_LIBRARIES} ${GNURADIO_RUNTIME_LIBRARIES} ${VOLK_LIBRARIES} ${LIBOSMOCORE_LIBRARIES}
 # libraries required by plotting.h - have troubles to be installed by pybombs
-#    boost_iostreams
-#    boost_system
-#    boost_filesystem
+    boost_iostreams
+    boost_system
+    boost_filesystem
 )
 set_target_properties(gnuradio-grgsm PROPERTIES DEFINE_SYMBOL "gnuradio_grgsm_EXPORTS")
 

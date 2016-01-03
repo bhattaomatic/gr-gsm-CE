@@ -753,7 +753,7 @@ int receiver_impl::get_norm_chan_imp_resp(const gr_complex *input, gr_complex * 
     std::vector<gr_complex> correlation_buffer;
     std::vector<float> power_buffer;
     std::vector<float> window_energy_buffer;
-    std::vector<float> chan_imp_resp_abs;
+    std::vector<float> chan_imp_resp_normal_abs;
 
     int strongest_window_nr;
     int burst_start = 0;
