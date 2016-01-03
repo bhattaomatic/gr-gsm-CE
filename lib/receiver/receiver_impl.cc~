@@ -44,7 +44,6 @@
 //files included for debuging
 #include "plotting.hpp"
 //#include <pthread.h>
-#include <fstream>
 
 #define SYNC_SEARCH_RANGE 30
 
