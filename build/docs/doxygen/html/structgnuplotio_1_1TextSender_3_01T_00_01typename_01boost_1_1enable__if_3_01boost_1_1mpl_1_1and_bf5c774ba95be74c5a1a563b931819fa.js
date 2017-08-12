@@ -1,0 +1,4 @@
+var structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_bf5c774ba95be74c5a1a563b931819fa =
+[
+    [ "send", "structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_bf5c774ba95be74c5a1a563b931819fa.html#a76a476180ea04c950c1cfdb71c556525", null ]
+];

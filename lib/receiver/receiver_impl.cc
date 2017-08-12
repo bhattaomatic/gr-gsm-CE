@@ -42,9 +42,10 @@
 #include <grgsm/endian.h>
 
 //files included for debuging
-#include "plotting.hpp"
+//#include "plotting.hpp"
 //#include <pthread.h>
-#include <fstream>
+//#include <fstream>
+#include <ctime>
 
 #define SYNC_SEARCH_RANGE 30
 
@@ -92,6 +93,7 @@ receiver_impl::receiver_impl(int osr, const std::vector<int> &cell_allocation, c
     message_port_register_out(pmt::mp("C0"));
     message_port_register_out(pmt::mp("CX"));
     message_port_register_out(pmt::mp("measurements"));
+    message_port_register_out(pmt::mp("CIR"));
     configure_receiver();  //configure the receiver - tell it where to find which burst type
 }
 
@@ -117,6 +119,7 @@ receiver_impl::work(int noutput_items,
     if((current_time - d_last_time) > 0.1)
     {
         pmt::pmt_t msg = pmt::make_tuple(pmt::mp("current_time"),pmt::from_double(current_time));
+        //std::cout << msg << std::endl;
         message_port_pub(pmt::mp("measurements"), msg);
         d_last_time = current_time;
     }
@@ -637,14 +640,18 @@ int receiver_impl::get_sch_chan_imp_resp(const gr_complex *input, gr_complex * c
         }
         //     d_channel_imp_resp.push_back(correlation);
         chan_imp_resp[ii] = correlation;
-//        chan_imp_resp_sch_abs.push_back(std::abs(chan_imp_resp[ii]));
-//        std::cout << chan_imp_resp[ii];
-//        sch_abs << chan_imp_resp_sch_abs[ii];
-//	sch_abs <<"\n";
-//        sch_iq << chan_imp_resp[ii];
-//	sch_iq <<"\n";
+
     }
-//    plot(chan_imp_resp_sch_abs);
+    
+    //To send the Channel Impulse Response out as a PDU packet
+    time_t now = time(0);
+    std::string dt = ctime(&now);
+    pmt::pmt_t timestamp_dict = pmt::make_dict();
+    timestamp_dict = pmt::dict_add(timestamp_dict, pmt::string_to_symbol("Timestamp"), pmt::string_to_symbol(dt));
+    pmt::pmt_t channel = pmt::init_c32vector(((d_chan_imp_length)*d_OSR), chan_imp_resp);
+    pmt::pmt_t cir = pmt::cons(timestamp_dict, channel);
+    message_port_pub(pmt::mp("CIR"), cir);
+
 
     burst_start = strongest_window_nr + chan_imp_resp_center - 48 * d_OSR - 2 * d_OSR + 2 + SYNC_POS * d_OSR;
     return burst_start;
@@ -753,7 +760,7 @@ int receiver_impl::get_norm_chan_imp_resp(const gr_complex *input, gr_complex * 
     std::vector<gr_complex> correlation_buffer;
     std::vector<float> power_buffer;
     std::vector<float> window_energy_buffer;
-    std::vector<float> chan_imp_resp_abs;
+    //std::vector<float> chan_imp_resp_abs;
 
     int strongest_window_nr;
     int burst_start = 0;
@@ -805,8 +812,8 @@ int receiver_impl::get_norm_chan_imp_resp(const gr_complex *input, gr_complex * 
        strongest_window_nr = 0;
     }
 
-    std::ofstream sch_abs ("chan_imp_resp_normal_abs.txt", std::ios::app);
-    std::ofstream sch_iq ("chan_imp_resp_normal.txt", std::ios::app);    
+    //std::ofstream sch_abs ("chan_imp_resp_normal_abs.txt", std::ios::app);
+    //std::ofstream sch_iq ("chan_imp_resp_normal.txt", std::ios::app);    
 
     max_correlation = 0;
     for (int ii = 0; ii < (d_chan_imp_length)*d_OSR; ii++)
@@ -819,15 +826,26 @@ int receiver_impl::get_norm_chan_imp_resp(const gr_complex *input, gr_complex * 
         }
         //     d_channel_imp_resp.push_back(correlation);
         chan_imp_resp[ii] = correlation;
-        chan_imp_resp_abs.push_back(std::abs(chan_imp_resp[ii]));
-        sch_abs << chan_imp_resp_abs[ii];
-	sch_abs <<"\n";
-        sch_iq << chan_imp_resp[ii];
-	sch_iq <<"\n";
+        
+       // chan_imp_resp_abs.push_back(std::abs(chan_imp_resp[ii]));
+        //sch_abs << chan_imp_resp_abs[ii];
+	//sch_abs <<"\n";
+      //  sch_iq << chan_imp_resp[ii];
+	//sch_iq <<"\n";
     }
-    plot(chan_imp_resp_abs);
+    //plot(chan_imp_resp_abs);
     
     *corr_max = max_correlation;
+    
+    
+    //To send the Channel Impulse Response out as a PDU packet
+    time_t now = time(0);
+    std::string dt = ctime(&now);
+    pmt::pmt_t timestamp_dict = pmt::make_dict();
+    timestamp_dict = pmt::dict_add(timestamp_dict, pmt::string_to_symbol("Timestamp"), pmt::string_to_symbol(dt));
+    pmt::pmt_t channel = pmt::init_c32vector(((d_chan_imp_length)*d_OSR), chan_imp_resp);
+    pmt::pmt_t cir = pmt::cons(timestamp_dict, channel);
+    message_port_pub(pmt::mp("CIR"), cir);
 
     //DCOUT("strongest_window_nr_new: " << strongest_window_nr);
     burst_start = search_start_pos + strongest_window_nr - TRAIN_POS * d_OSR; //compute first sample posiiton which corresponds to the first sample of the impulse response

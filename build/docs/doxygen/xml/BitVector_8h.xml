@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="BitVector_8h" kind="file" language="C++">
+    <compoundname>BitVector.h</compoundname>
+    <includes refid="Vector_8h" local="yes">Vector.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="AmrCoder_8h" local="yes">AmrCoder.h</includedby>
+    <includedby refid="tch__f__decoder__impl_8h" local="yes">tch_f_decoder_impl.h</includedby>
+    <incdepgraph>
+      <node id="581">
+        <label>assert.h</label>
+      </node>
+      <node id="583">
+        <label>stdint.h</label>
+      </node>
+      <node id="578">
+        <label>Vector.h</label>
+        <link refid="Vector_8h"/>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+      </node>
+      <node id="577">
+        <label>BitVector.h</label>
+        <link refid="BitVector.h"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>string.h</label>
+      </node>
+      <node id="580">
+        <label>iostream</label>
+      </node>
+      <node id="582">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="584">
+        <label>BitVector.h</label>
+        <link refid="BitVector.h"/>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>AmrCoder.h</label>
+        <link refid="AmrCoder_8h"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>tch_f_decoder_impl.h</label>
+        <link refid="tch__f__decoder__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGenerator" prot="public">Generator</innerclass>
+    <innerclass refid="classParity" prot="public">Parity</innerclass>
+    <innerclass refid="classBitVector" prot="public">BitVector</innerclass>
+    <innerclass refid="classSoftVector" prot="public">SoftVector</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="BitVector_8h_1aeefef6cefcc80bb6bbaffba4fba17815" prot="public" static="no">
+        <name>BitVector2</name>
+        <initializer><ref refid="classBitVector" kindref="compound">BitVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="319" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="BitVector_8h_1ad37333e6d5055802740d5b67ef300d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const BitVector &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="322" column="1"/>
+        <referencedby refid="classSoftVector_1ac9365fed4411dd157e9bc2cccf697e57" compoundref="BitVector_8h" startline="421" endline="426">SoftVector::settfb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="BitVector_8h_1afa0b2d66dfa08675c2a18810bbdfdb39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const SoftVector &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classSoftVector" kindref="compound">SoftVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="431" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h"/>
+  </compounddef>
+</doxygen>

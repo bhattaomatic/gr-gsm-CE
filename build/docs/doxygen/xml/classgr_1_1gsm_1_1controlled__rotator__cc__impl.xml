@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1controlled__rotator__cc__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::controlled_rotator_cc_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1controlled__rotator__cc" prot="public" virt="non-virtual">gr::gsm::controlled_rotator_cc</basecompoundref>
+    <includes refid="controlled__rotator__cc__impl_8h" local="no">controlled_rotator_cc_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a52ed10cd34e392d7a9457f51ab205b56" prot="private" static="no" mutable="no">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::gsm::controlled_rotator_cc_impl::d_phase_inc</definition>
+        <argsstring></argsstring>
+        <name>d_phase_inc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="35" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a62664a9d49f284f930c5b95aef85e8d4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::gsm::controlled_rotator_cc_impl::d_samp_rate</definition>
+        <argsstring></argsstring>
+        <name>d_samp_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a878af4db57e33994f5de311eccfaa938" prot="private" static="no" mutable="no">
+        <type>blocks::rotator</type>
+        <definition>blocks::rotator gr::gsm::controlled_rotator_cc_impl::d_r</definition>
+        <argsstring></argsstring>
+        <name>d_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1afcb356519753f82d1d719f9fb3066eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::controlled_rotator_cc_impl::controlled_rotator_cc_impl</definition>
+        <argsstring>(double phase_inc, double samp_rate)</argsstring>
+        <name>controlled_rotator_cc_impl</name>
+        <param>
+          <type>double</type>
+          <declname>phase_inc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>samp_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a05e5486e5202761c0b7eb191b8575013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::controlled_rotator_cc_impl::~controlled_rotator_cc_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~controlled_rotator_cc_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a48047c377b90b624b2be05816437e577" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::gsm::controlled_rotator_cc_impl::set_phase_inc</definition>
+        <argsstring>(double phase_inc)</argsstring>
+        <name>set_phase_inc</name>
+        <reimplements refid="classgr_1_1gsm_1_1controlled__rotator__cc_1a38adf0bf28e2bcf7e7741aeace6f3b80">set_phase_inc</reimplements>
+        <param>
+          <type>double</type>
+          <declname>phase_inc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1abe3677744517996051691aa96900a5de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::gsm::controlled_rotator_cc_impl::set_samp_rate</definition>
+        <argsstring>(double samp_rate)</argsstring>
+        <name>set_samp_rate</name>
+        <reimplements refid="classgr_1_1gsm_1_1controlled__rotator__cc_1a51b2bd72e236d26503fa575a33a60b39">set_samp_rate</reimplements>
+        <param>
+          <type>double</type>
+          <declname>samp_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a58f6e623b4f15693d0d8e9bdefea793a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::gsm::controlled_rotator_cc_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="591">
+        <label>gr::gsm::controlled_rotator_cc_impl</label>
+        <link refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl"/>
+        <childnode refid="592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>sync_block</label>
+      </node>
+      <node id="592">
+        <label>gr::gsm::controlled_rotator_cc</label>
+        <link refid="classgr_1_1gsm_1_1controlled__rotator__cc"/>
+        <childnode refid="593" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="594">
+        <label>gr::gsm::controlled_rotator_cc_impl</label>
+        <link refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl"/>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>sync_block</label>
+      </node>
+      <node id="595">
+        <label>gr::gsm::controlled_rotator_cc</label>
+        <link refid="classgr_1_1gsm_1_1controlled__rotator__cc"/>
+        <childnode refid="596" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" line="33" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/controlled_rotator_cc_impl.h" bodystart="32" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1afcb356519753f82d1d719f9fb3066eed" prot="public" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>controlled_rotator_cc_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a52ed10cd34e392d7a9457f51ab205b56" prot="private" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>d_phase_inc</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a878af4db57e33994f5de311eccfaa938" prot="private" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>d_r</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a62664a9d49f284f930c5b95aef85e8d4" prot="private" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>d_samp_rate</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc_1a479d56f9513f05f074f62ca8ddbd58b3" prot="public" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a48047c377b90b624b2be05816437e577" prot="public" virt="virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>set_phase_inc</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1abe3677744517996051691aa96900a5de" prot="public" virt="virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>set_samp_rate</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc_1ab8f34c9d73014c314732104f9f9ffec0" prot="public" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a58f6e623b4f15693d0d8e9bdefea793a" prot="public" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1gsm_1_1controlled__rotator__cc__impl_1a05e5486e5202761c0b7eb191b8575013" prot="public" virt="non-virtual"><scope>gr::gsm::controlled_rotator_cc_impl</scope><name>~controlled_rotator_cc_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

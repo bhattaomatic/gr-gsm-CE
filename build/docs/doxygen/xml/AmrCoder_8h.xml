@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="AmrCoder_8h" kind="file" language="C++">
+    <compoundname>AmrCoder.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="BitVector_8h" local="yes">BitVector.h</includes>
+    <includes refid="Viterbi_8h" local="yes">Viterbi.h</includes>
+    <includedby refid="tch__f__decoder__impl_8h" local="yes">tch_f_decoder_impl.h</includedby>
+    <incdepgraph>
+      <node id="518">
+        <label>assert.h</label>
+      </node>
+      <node id="513">
+        <label>stdint.h</label>
+      </node>
+      <node id="515">
+        <label>Vector.h</label>
+        <link refid="Vector_8h"/>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>BitVector.h</label>
+        <link refid="BitVector_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>AmrCoder.h</label>
+        <link refid="AmrCoder.h"/>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>string.h</label>
+      </node>
+      <node id="517">
+        <label>iostream</label>
+      </node>
+      <node id="520">
+        <label>Viterbi.h</label>
+        <link refid="Viterbi_8h"/>
+      </node>
+      <node id="519">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="521">
+        <label>AmrCoder.h</label>
+        <link refid="AmrCoder.h"/>
+        <childnode refid="522" relation="include">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>tch_f_decoder_impl.h</label>
+        <link refid="tch__f__decoder__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classViterbiTCH__AFS12__2" prot="public">ViterbiTCH_AFS12_2</innerclass>
+    <innerclass refid="structViterbiTCH__AFS12__2_1_1candStruct" prot="public">ViterbiTCH_AFS12_2::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS10__2" prot="public">ViterbiTCH_AFS10_2</innerclass>
+    <innerclass refid="structViterbiTCH__AFS10__2_1_1candStruct" prot="public">ViterbiTCH_AFS10_2::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS7__95" prot="public">ViterbiTCH_AFS7_95</innerclass>
+    <innerclass refid="structViterbiTCH__AFS7__95_1_1candStruct" prot="public">ViterbiTCH_AFS7_95::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS7__4" prot="public">ViterbiTCH_AFS7_4</innerclass>
+    <innerclass refid="structViterbiTCH__AFS7__4_1_1candStruct" prot="public">ViterbiTCH_AFS7_4::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS6__7" prot="public">ViterbiTCH_AFS6_7</innerclass>
+    <innerclass refid="structViterbiTCH__AFS6__7_1_1candStruct" prot="public">ViterbiTCH_AFS6_7::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS5__9" prot="public">ViterbiTCH_AFS5_9</innerclass>
+    <innerclass refid="structViterbiTCH__AFS5__9_1_1candStruct" prot="public">ViterbiTCH_AFS5_9::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS5__15" prot="public">ViterbiTCH_AFS5_15</innerclass>
+    <innerclass refid="structViterbiTCH__AFS5__15_1_1candStruct" prot="public">ViterbiTCH_AFS5_15::candStruct</innerclass>
+    <innerclass refid="classViterbiTCH__AFS4__75" prot="public">ViterbiTCH_AFS4_75</innerclass>
+    <innerclass refid="structViterbiTCH__AFS4__75_1_1candStruct" prot="public">ViterbiTCH_AFS4_75::candStruct</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h"/>
+  </compounddef>
+</doxygen>

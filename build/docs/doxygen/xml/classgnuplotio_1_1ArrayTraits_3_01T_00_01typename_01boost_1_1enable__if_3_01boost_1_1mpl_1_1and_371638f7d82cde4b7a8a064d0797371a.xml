@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</compoundname>
+    <basecompoundref refid="classgnuplotio_1_1ArrayTraits" prot="public" virt="non-virtual">gnuplotio::ArrayTraits&lt; std::pair&lt; T::head_type, T::tail_type &gt; &gt;</basecompoundref>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1ab56761f05b74be318cc7becbc59348df" prot="public" static="no">
+        <type>T::head_type</type>
+        <definition>typedef T::head_type gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::HT</definition>
+        <argsstring></argsstring>
+        <name>HT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1008" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1a16316f598ab57b0b7ceea99dcd34632e" prot="public" static="no">
+        <type>T::tail_type</type>
+        <definition>typedef T::tail_type gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::TT</definition>
+        <argsstring></argsstring>
+        <name>TT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1009" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1aad44f59a1d618b863442a9fdaa83d142" prot="public" static="no">
+        <type><ref refid="classgnuplotio_1_1ArrayTraits" kindref="compound">ArrayTraits</ref>&lt; typename std::pair&lt; <ref refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1ab56761f05b74be318cc7becbc59348df" kindref="member">HT</ref>, <ref refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1a16316f598ab57b0b7ceea99dcd34632e" kindref="member">TT</ref> &gt; &gt;</type>
+        <definition>typedef ArrayTraits&lt;typename std::pair&lt;HT, TT&gt; &gt; gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1011" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1aec07e01edbb46f5f283d5b6af068c0f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgnuplotio_1_1ArrayTraits_1ae53464a5175c03deec403392b8dcb3c5" kindref="member">parent::range_type</ref></type>
+        <definition>static parent::range_type gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::get_range</definition>
+        <argsstring>(const T &amp;arg)</argsstring>
+        <name>get_range</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1013" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1013" bodyend="1018"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="329">
+        <label>gnuplotio::ArrayTraits&lt; std::pair&lt; T::head_type, T::tail_type &gt; &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits"/>
+      </node>
+      <node id="328">
+        <label>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a"/>
+        <childnode refid="329" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="331">
+        <label>gnuplotio::ArrayTraits&lt; std::pair&lt; T::head_type, T::tail_type &gt; &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits"/>
+      </node>
+      <node id="330">
+        <label>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a"/>
+        <childnode refid="331" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1006" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="994" bodyend="1019"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a354d64663551a34c36c5fa7823859668" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>allow_auto_unwrap</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a6fbd8c815e595f4efbcafd9b0eeb06f2" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>depth</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1aec07e01edbb46f5f283d5b6af068c0f2" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>get_range</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1aee31432f330f9f9e4f5af628641181f7" prot="public" virt="non-virtual" ambiguityscope="ArrayTraits&lt; std::pair&lt; T::head_type, T::tail_type &gt; &gt;::"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>get_range</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1ab56761f05b74be318cc7becbc59348df" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>HT</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1ac5d19b25086565613c305960bd9d4a78" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>is_container</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1aad44f59a1d618b863442a9fdaa83d142" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>parent</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1ae53464a5175c03deec403392b8dcb3c5" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>range_type</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_371638f7d82cde4b7a8a064d0797371a_1a16316f598ab57b0b7ceea99dcd34632e" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>TT</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a3bcae12a7bf42af90f4946acc66f27e0" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

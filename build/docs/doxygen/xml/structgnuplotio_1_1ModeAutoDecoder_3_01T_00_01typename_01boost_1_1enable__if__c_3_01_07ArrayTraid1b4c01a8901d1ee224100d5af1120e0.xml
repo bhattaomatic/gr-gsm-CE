@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1ModeAutoDecoder_3_01T_00_01typename_01boost_1_1enable__if__c_3_01_07ArrayTraid1b4c01a8901d1ee224100d5af1120e0" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::ModeAutoDecoder&lt; T, typename boost::enable_if_c&lt; (ArrayTraits&lt; T &gt;::depth==2)&amp;&amp;ArrayTraits&lt; T &gt;::allow_auto_unwrap &gt;::type</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structgnuplotio_1_1ModeAutoDecoder_3_01T_00_01typename_01boost_1_1enable__if__c_3_01_07ArrayTraid1b4c01a8901d1ee224100d5af1120e0_1a9c16f714b67e1c4b38e5c7ff956e8acc" prot="public" static="no">
+        <type><ref refid="structgnuplotio_1_1Mode1DUnwrap" kindref="compound">Mode1DUnwrap</ref></type>
+        <definition>typedef Mode1DUnwrap gnuplotio::type&lt; T &gt;::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1252" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1251" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1246" bodyend="1253"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1ModeAutoDecoder_3_01T_00_01typename_01boost_1_1enable__if__c_3_01_07ArrayTraid1b4c01a8901d1ee224100d5af1120e0_1a9c16f714b67e1c4b38e5c7ff956e8acc" prot="public" virt="non-virtual"><scope>gnuplotio::ModeAutoDecoder&lt; T, typename boost::enable_if_c&lt; (ArrayTraits&lt; T &gt;::depth==2)&amp;&amp;ArrayTraits&lt; T &gt;::allow_auto_unwrap &gt;::type</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1ArrayTraitsDefaults" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::ArrayTraitsDefaults</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>V</declname>
+        <defname>V</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgnuplotio_1_1ArrayTraitsDefaults_1ad7a9e8d19419fabe2ab9cc1b76c9965b" prot="public" static="no">
+        <type>V</type>
+        <definition>typedef V gnuplotio::ArrayTraitsDefaults&lt; V &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="835" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgnuplotio_1_1ArrayTraitsDefaults_1a57bab5bf3617f0ee66fdd4dcb751aa21" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ArrayTraitsDefaults&lt; V &gt;::is_container</definition>
+        <argsstring></argsstring>
+        <name>is_container</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="837" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgnuplotio_1_1ArrayTraitsDefaults_1ac8d430cba6ceefc6f52706455f12a0e8" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ArrayTraitsDefaults&lt; V &gt;::allow_auto_unwrap</definition>
+        <argsstring></argsstring>
+        <name>allow_auto_unwrap</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="838" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgnuplotio_1_1ArrayTraitsDefaults_1ac51367f5da9096249b162af1496e36ab" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t gnuplotio::ArrayTraitsDefaults&lt; V &gt;::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <initializer>= <ref refid="classgnuplotio_1_1ArrayTraits" kindref="compound">ArrayTraits</ref>&lt;V&gt;::depth + 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="839" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="839" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="833" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="833" bodyend="840"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1ArrayTraitsDefaults_1ac8d430cba6ceefc6f52706455f12a0e8" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraitsDefaults</scope><name>allow_auto_unwrap</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraitsDefaults_1ac51367f5da9096249b162af1496e36ab" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraitsDefaults</scope><name>depth</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraitsDefaults_1a57bab5bf3617f0ee66fdd4dcb751aa21" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraitsDefaults</scope><name>is_container</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraitsDefaults_1ad7a9e8d19419fabe2ab9cc1b76c9965b" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraitsDefaults</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

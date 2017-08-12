@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classburst__counter" kind="class" language="C++" prot="public">
+    <compoundname>burst_counter</compoundname>
+    <includes refid="receiver__config_8h" local="no">receiver_config.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classburst__counter_1a0640345836bd65fada3bfe2cb86b329b" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int burst_counter::d_OSR</definition>
+        <argsstring></argsstring>
+        <name>d_OSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="70" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classburst__counter_1add8f35f54959e195f80f0e41c8744e27" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::d_t1</definition>
+        <argsstring></argsstring>
+        <name>d_t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="71" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classburst__counter_1a4782106c97f5fe213f1eca60ec09a118" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::d_t2</definition>
+        <argsstring></argsstring>
+        <name>d_t2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="71" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classburst__counter_1a53dc54122c71c61f6852484afc5787bf" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::d_t3</definition>
+        <argsstring></argsstring>
+        <name>d_t3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="71" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classburst__counter_1a48c4b52e5ea61a1c8f38e1466658866e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::d_timeslot_nr</definition>
+        <argsstring></argsstring>
+        <name>d_timeslot_nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="71" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classburst__counter_1a6acf346de6371db1df027d0bb249c23b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double burst_counter::d_offset_fractional</definition>
+        <argsstring></argsstring>
+        <name>d_offset_fractional</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="72" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classburst__counter_1aace563bd467fb433d07ba0a64904b158" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double burst_counter::d_offset_integer</definition>
+        <argsstring></argsstring>
+        <name>d_offset_integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="73" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classburst__counter_1ac3e5ed8479292f63015769feb6ff9053" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>burst_counter::burst_counter</definition>
+        <argsstring>(int osr)</argsstring>
+        <name>burst_counter</name>
+        <param>
+          <type>int</type>
+          <declname>osr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="75" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a80cba6e789de665e7553d69c0b657f1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>burst_counter::burst_counter</definition>
+        <argsstring>(int osr, uint32_t t1, uint32_t t2, uint32_t t3, uint32_t timeslot_nr)</argsstring>
+        <name>burst_counter</name>
+        <param>
+          <type>int</type>
+          <declname>osr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>t3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeslot_nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="85" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="85" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a8f737552dcb53251fc9a41f0101b64ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classburst__counter" kindref="compound">burst_counter</ref> &amp;</type>
+        <definition>burst_counter&amp; burst_counter::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a5c532b8678eb47e39030ed3d429ad9ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void burst_counter::set</definition>
+        <argsstring>(uint32_t t1, uint32_t t2, uint32_t t3, uint32_t timeslot_nr)</argsstring>
+        <name>set</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>t3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeslot_nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a4a8fc0a95399a604f50d8d097c8662f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::get_t1</definition>
+        <argsstring>()</argsstring>
+        <name>get_t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="100" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a322157da0b35714fb175d74d3ce129c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::get_t2</definition>
+        <argsstring>()</argsstring>
+        <name>get_t2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="104" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a5abae91420d8a4e3d728c5390aa0524e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::get_t3</definition>
+        <argsstring>()</argsstring>
+        <name>get_t3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="108" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a087a35650f354efbd339b7ef0a6eea97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::get_timeslot_nr</definition>
+        <argsstring>()</argsstring>
+        <name>get_timeslot_nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="112" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a95497eea1a62d9e8557e7be427af00b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::get_frame_nr</definition>
+        <argsstring>()</argsstring>
+        <name>get_frame_nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="116" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1aeb3b191c08d0c6354d8fcf396d9ceb4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t burst_counter::get_frame_nr_mod</definition>
+        <argsstring>()</argsstring>
+        <name>get_frame_nr_mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="120" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classburst__counter_1a154dac745e47846f2da6337a4efc6e09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned burst_counter::get_offset</definition>
+        <argsstring>()</argsstring>
+        <name>get_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="124" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="68" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="67" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classburst__counter_1ac3e5ed8479292f63015769feb6ff9053" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>burst_counter</name></member>
+      <member refid="classburst__counter_1a80cba6e789de665e7553d69c0b657f1b" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>burst_counter</name></member>
+      <member refid="classburst__counter_1a6acf346de6371db1df027d0bb249c23b" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_offset_fractional</name></member>
+      <member refid="classburst__counter_1aace563bd467fb433d07ba0a64904b158" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_offset_integer</name></member>
+      <member refid="classburst__counter_1a0640345836bd65fada3bfe2cb86b329b" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_OSR</name></member>
+      <member refid="classburst__counter_1add8f35f54959e195f80f0e41c8744e27" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_t1</name></member>
+      <member refid="classburst__counter_1a4782106c97f5fe213f1eca60ec09a118" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_t2</name></member>
+      <member refid="classburst__counter_1a53dc54122c71c61f6852484afc5787bf" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_t3</name></member>
+      <member refid="classburst__counter_1a48c4b52e5ea61a1c8f38e1466658866e" prot="private" virt="non-virtual"><scope>burst_counter</scope><name>d_timeslot_nr</name></member>
+      <member refid="classburst__counter_1a95497eea1a62d9e8557e7be427af00b3" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_frame_nr</name></member>
+      <member refid="classburst__counter_1aeb3b191c08d0c6354d8fcf396d9ceb4d" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_frame_nr_mod</name></member>
+      <member refid="classburst__counter_1a154dac745e47846f2da6337a4efc6e09" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_offset</name></member>
+      <member refid="classburst__counter_1a4a8fc0a95399a604f50d8d097c8662f0" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_t1</name></member>
+      <member refid="classburst__counter_1a322157da0b35714fb175d74d3ce129c3" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_t2</name></member>
+      <member refid="classburst__counter_1a5abae91420d8a4e3d728c5390aa0524e" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_t3</name></member>
+      <member refid="classburst__counter_1a087a35650f354efbd339b7ef0a6eea97" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>get_timeslot_nr</name></member>
+      <member refid="classburst__counter_1a8f737552dcb53251fc9a41f0101b64ee" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>operator++</name></member>
+      <member refid="classburst__counter_1a5c532b8678eb47e39030ed3d429ad9ce" prot="public" virt="non-virtual"><scope>burst_counter</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

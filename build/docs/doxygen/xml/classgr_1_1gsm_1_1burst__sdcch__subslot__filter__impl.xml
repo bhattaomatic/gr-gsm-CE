@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::burst_sdcch_subslot_filter_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter" prot="public" virt="non-virtual">gr::gsm::burst_sdcch_subslot_filter</basecompoundref>
+    <includes refid="burst__sdcch__subslot__filter__impl_8h" local="no">burst_sdcch_subslot_filter_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a4948b717d9cd806d5524a6c073366372" prot="private" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t gr::gsm::burst_sdcch_subslot_filter_impl::d_subslots_sdcch4[102]</definition>
+        <argsstring>[102]</argsstring>
+        <name>d_subslots_sdcch4</name>
+        <initializer>= {
+          -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0, 0, 0, 0, 1, 1, 1, 1,-1,-1, 2, 2, 2, 2, 3, 3, 3, 3,-1,-1, 0, 0, 0, 0, 1, 1, 1, 1,-1,
+          -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0, 0, 0, 0, 1, 1, 1, 1,-1,-1, 2, 2, 2, 2, 3, 3, 3, 3,-1,-1, 2, 2, 2, 2, 3, 3, 3, 3,-1
+      }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1ae749543258fee17ef8b955f2c046b244" prot="private" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t gr::gsm::burst_sdcch_subslot_filter_impl::d_subslots_sdcch8[102]</definition>
+        <argsstring>[102]</argsstring>
+        <name>d_subslots_sdcch8</name>
+        <initializer>= {
+          0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3,-1,-1,-1,
+          0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7,-1,-1,-1
+      }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a1a79b825eec589d65c9bece485278079" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1gsm_1abafb2a96a0d848d8e13547685d43c36c" kindref="member">subslot_filter_mode</ref></type>
+        <definition>subslot_filter_mode gr::gsm::burst_sdcch_subslot_filter_impl::d_mode</definition>
+        <argsstring></argsstring>
+        <name>d_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="44" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a362cb10e798541334afa632df7c4c8ea" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::burst_sdcch_subslot_filter_impl::d_subslot</definition>
+        <argsstring></argsstring>
+        <name>d_subslot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="45" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a29007d0fa6d2c97831c46b5d26fcf42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::burst_sdcch_subslot_filter_impl::burst_sdcch_subslot_filter_impl</definition>
+        <argsstring>(subslot_filter_mode mode, unsigned int subslot)</argsstring>
+        <name>burst_sdcch_subslot_filter_impl</name>
+        <param>
+          <type><ref refid="namespacegr_1_1gsm_1abafb2a96a0d848d8e13547685d43c36c" kindref="member">subslot_filter_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>subslot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a137751ddff15d0ba0bb683d3e959a31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::burst_sdcch_subslot_filter_impl::~burst_sdcch_subslot_filter_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~burst_sdcch_subslot_filter_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1aa7bb51d971856bafde8c4942f9bbcdb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::burst_sdcch_subslot_filter_impl::process_burst</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>process_burst</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="471">
+        <label>gr::gsm::burst_sdcch_subslot_filter</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter"/>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>block</label>
+      </node>
+      <node id="470">
+        <label>gr::gsm::burst_sdcch_subslot_filter_impl</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl"/>
+        <childnode refid="471" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="474">
+        <label>gr::gsm::burst_sdcch_subslot_filter</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter"/>
+        <childnode refid="475" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>block</label>
+      </node>
+      <node id="473">
+        <label>gr::gsm::burst_sdcch_subslot_filter_impl</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl"/>
+        <childnode refid="474" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" line="32" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_filter_impl.h" bodystart="31" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a29007d0fa6d2c97831c46b5d26fcf42b" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>burst_sdcch_subslot_filter_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a1a79b825eec589d65c9bece485278079" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>d_mode</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a362cb10e798541334afa632df7c4c8ea" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>d_subslot</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a4948b717d9cd806d5524a6c073366372" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>d_subslots_sdcch4</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1ae749543258fee17ef8b955f2c046b244" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>d_subslots_sdcch8</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter_1a22c315f486329788fa2f601f0d18e524" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1aa7bb51d971856bafde8c4942f9bbcdb2" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>process_burst</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter_1af44fea08f8cb5adb1130126c194aca17" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__filter__impl_1a137751ddff15d0ba0bb683d3e959a31b" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_filter_impl</scope><name>~burst_sdcch_subslot_filter_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

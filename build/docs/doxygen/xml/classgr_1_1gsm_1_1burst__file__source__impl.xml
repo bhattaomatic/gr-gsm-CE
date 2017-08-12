@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1burst__file__source__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::burst_file_source_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1burst__file__source" prot="public" virt="non-virtual">gr::gsm::burst_file_source</basecompoundref>
+    <includes refid="burst__file__source__impl_8h" local="no">burst_file_source_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__file__source__impl_1abc801639de0099f28532f411405d9304" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; gr::thread::thread &gt;</type>
+        <definition>boost::shared_ptr&lt;gr::thread::thread&gt; gr::gsm::burst_file_source_impl::d_thread</definition>
+        <argsstring></argsstring>
+        <name>d_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="35" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__file__source__impl_1ae2ecfbfa3a098983f604b8c79132df94" prot="private" static="no" mutable="no">
+        <type>std::ifstream</type>
+        <definition>std::ifstream gr::gsm::burst_file_source_impl::d_input_file</definition>
+        <argsstring></argsstring>
+        <name>d_input_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__file__source__impl_1a911e75a0cce8746847de702b009d94ae" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::gsm::burst_file_source_impl::d_finished</definition>
+        <argsstring></argsstring>
+        <name>d_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__file__source__impl_1a68c5445050c5e4aaf66b4b0ad12b46ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::burst_file_source_impl::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="38" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__file__source__impl_1acafbff15e4470adb2aaaa7aaab364b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::burst_file_source_impl::burst_file_source_impl</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>burst_file_source_impl</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__file__source__impl_1ac020813632f4127c7059aae2ddee0721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::burst_file_source_impl::~burst_file_source_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~burst_file_source_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__file__source__impl_1a2866ff4af1bf07707f302f56dc05d7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::burst_file_source_impl::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__file__source__impl_1abf2f9e94f341bce99cd76691e49d40e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::burst_file_source_impl::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__file__source__impl_1afd5a34d473e6f98e99a38cd998a1cbf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::burst_file_source_impl::finished</definition>
+        <argsstring>()</argsstring>
+        <name>finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="448">
+        <label>gr::gsm::burst_file_source_impl</label>
+        <link refid="classgr_1_1gsm_1_1burst__file__source__impl"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>gr::gsm::burst_file_source</label>
+        <link refid="classgr_1_1gsm_1_1burst__file__source"/>
+        <childnode refid="450" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="451">
+        <label>gr::gsm::burst_file_source_impl</label>
+        <link refid="classgr_1_1gsm_1_1burst__file__source__impl"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>gr::gsm::burst_file_source</label>
+        <link refid="classgr_1_1gsm_1_1burst__file__source"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" line="33" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/burst_file_source_impl.h" bodystart="32" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1acafbff15e4470adb2aaaa7aaab364b91" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>burst_file_source_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1a911e75a0cce8746847de702b009d94ae" prot="private" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>d_finished</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1ae2ecfbfa3a098983f604b8c79132df94" prot="private" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>d_input_file</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1abc801639de0099f28532f411405d9304" prot="private" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>d_thread</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1afd5a34d473e6f98e99a38cd998a1cbf7" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>finished</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source_1ae3061a1ae10ff34fa1864016942e794a" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1a68c5445050c5e4aaf66b4b0ad12b46ee" prot="private" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>run</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source_1afdf03901cc8f49674f4bbaddff70b124" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1a2866ff4af1bf07707f302f56dc05d7a7" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>start</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1abf2f9e94f341bce99cd76691e49d40e2" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>stop</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__file__source__impl_1ac020813632f4127c7059aae2ddee0721" prot="public" virt="non-virtual"><scope>gr::gsm::burst_file_source_impl</scope><name>~burst_file_source_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

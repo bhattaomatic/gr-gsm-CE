@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1immediate__assignment" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::immediate_assignment</compoundname>
+    <includes refid="extract__immediate__assignment__impl_8h" local="no">extract_immediate_assignment_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1a0e5f0fddf8f7fe85e6fed0d8d4ddadce" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::gsm::immediate_assignment::frame_nr</definition>
+        <argsstring></argsstring>
+        <name>frame_nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1ada97a0c9bbc7af07d10ffdfdd363f59a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::gsm::immediate_assignment::channel_type</definition>
+        <argsstring></argsstring>
+        <name>channel_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1a8752d73bb0d8db2a8b4568c731ca6d72" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::immediate_assignment::timeslot</definition>
+        <argsstring></argsstring>
+        <name>timeslot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="38" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1ae2db573ecbbe131d2e3c0bf17b954468" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::immediate_assignment::subchannel</definition>
+        <argsstring></argsstring>
+        <name>subchannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="39" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1ae9ea8e8e91df79bf04620467e4d07800" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::immediate_assignment::hopping</definition>
+        <argsstring></argsstring>
+        <name>hopping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1ae41b44c441577c423468a31f6f5793a8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::immediate_assignment::maio</definition>
+        <argsstring></argsstring>
+        <name>maio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="41" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1afea0a640f7476eb0e88d29e0917ea4a6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::immediate_assignment::hsn</definition>
+        <argsstring></argsstring>
+        <name>hsn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="42" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1a5800035ba49c49894dce8e076ffd38ce" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::gsm::immediate_assignment::arfcn</definition>
+        <argsstring></argsstring>
+        <name>arfcn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="43" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1a50515422cb846eff0cc359bd6991a487" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::immediate_assignment::timing_advance</definition>
+        <argsstring></argsstring>
+        <name>timing_advance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="44" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1immediate__assignment_1ad9cf00f6925cc80bc46fe78c3affa39a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::gsm::immediate_assignment::mobile_allocation</definition>
+        <argsstring></argsstring>
+        <name>mobile_allocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="45" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1immediate__assignment_1a5cecf3766947a2de3e859cc2e2f6b468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::immediate_assignment::immediate_assignment</definition>
+        <argsstring>()</argsstring>
+        <name>immediate_assignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="47" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="47" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1immediate__assignment_1aabfce0912d8af0466a438a6c9b317ba7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::immediate_assignment::~immediate_assignment</definition>
+        <argsstring>()</argsstring>
+        <name>~immediate_assignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="49" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="684">
+        <label>gr::gsm::immediate_assignment</label>
+        <link refid="classgr_1_1gsm_1_1immediate__assignment"/>
+        <childnode refid="685" relation="usage">
+          <edgelabel>channel_type</edgelabel>
+          <edgelabel>mobile_allocation</edgelabel>
+        </childnode>
+      </node>
+      <node id="686">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="685">
+        <label>std::string</label>
+        <childnode refid="686" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" line="34" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/extract_immediate_assignment_impl.h" bodystart="33" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1a5800035ba49c49894dce8e076ffd38ce" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>arfcn</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1ada97a0c9bbc7af07d10ffdfdd363f59a" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>channel_type</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1a0e5f0fddf8f7fe85e6fed0d8d4ddadce" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>frame_nr</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1ae9ea8e8e91df79bf04620467e4d07800" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>hopping</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1afea0a640f7476eb0e88d29e0917ea4a6" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>hsn</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1a5cecf3766947a2de3e859cc2e2f6b468" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>immediate_assignment</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1ae41b44c441577c423468a31f6f5793a8" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>maio</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1ad9cf00f6925cc80bc46fe78c3affa39a" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>mobile_allocation</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1ae2db573ecbbe131d2e3c0bf17b954468" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>subchannel</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1a8752d73bb0d8db2a8b4568c731ca6d72" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>timeslot</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1a50515422cb846eff0cc359bd6991a487" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>timing_advance</name></member>
+      <member refid="classgr_1_1gsm_1_1immediate__assignment_1aabfce0912d8af0466a438a6c9b317ba7" prot="public" virt="non-virtual"><scope>gr::gsm::immediate_assignment</scope><name>~immediate_assignment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

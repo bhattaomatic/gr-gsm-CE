@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::burst_sdcch_subslot_splitter_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter" prot="public" virt="non-virtual">gr::gsm::burst_sdcch_subslot_splitter</basecompoundref>
+    <includes refid="burst__sdcch__subslot__splitter__impl_8h" local="no">burst_sdcch_subslot_splitter_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a8aecd73c676ed9de1a8b72fab6aefd44" prot="private" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t gr::gsm::burst_sdcch_subslot_splitter_impl::d_subslots_sdcch4[102]</definition>
+        <argsstring>[102]</argsstring>
+        <name>d_subslots_sdcch4</name>
+        <initializer>= {
+          -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0, 0, 0, 0, 1, 1, 1, 1,-1,-1, 2, 2, 2, 2, 3, 3, 3, 3,-1,-1, 0, 0, 0, 0, 1, 1, 1, 1,-1,
+          -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0, 0, 0, 0, 1, 1, 1, 1,-1,-1, 2, 2, 2, 2, 3, 3, 3, 3,-1,-1, 2, 2, 2, 2, 3, 3, 3, 3,-1
+      }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a86706286c95023b5a6cb06a65de593e8" prot="private" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t gr::gsm::burst_sdcch_subslot_splitter_impl::d_subslots_sdcch8[102]</definition>
+        <argsstring>[102]</argsstring>
+        <name>d_subslots_sdcch8</name>
+        <initializer>= {
+          0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3,-1,-1,-1,
+          0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7,-1,-1,-1
+      }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1afa0f0bff925a2e4a8c5360dd00f4d67b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1gsm_1acde818082431fe25a70b279129045b5e" kindref="member">splitter_mode</ref></type>
+        <definition>splitter_mode gr::gsm::burst_sdcch_subslot_splitter_impl::d_mode</definition>
+        <argsstring></argsstring>
+        <name>d_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="44" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a4a41bce283895a98cf11a532beae4ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::burst_sdcch_subslot_splitter_impl::burst_sdcch_subslot_splitter_impl</definition>
+        <argsstring>(splitter_mode mode)</argsstring>
+        <name>burst_sdcch_subslot_splitter_impl</name>
+        <param>
+          <type><ref refid="namespacegr_1_1gsm_1acde818082431fe25a70b279129045b5e" kindref="member">splitter_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a01d9c661ba86d649f168c22604987a1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::burst_sdcch_subslot_splitter_impl::~burst_sdcch_subslot_splitter_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~burst_sdcch_subslot_splitter_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a54528fdf14664626098b8880cd6667b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::burst_sdcch_subslot_splitter_impl::process_burst</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>process_burst</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="481">
+        <label>gr::gsm::burst_sdcch_subslot_splitter_impl</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl"/>
+        <childnode refid="482" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="483">
+        <label>block</label>
+      </node>
+      <node id="482">
+        <label>gr::gsm::burst_sdcch_subslot_splitter</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="484">
+        <label>gr::gsm::burst_sdcch_subslot_splitter_impl</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl"/>
+        <childnode refid="485" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>block</label>
+      </node>
+      <node id="485">
+        <label>gr::gsm::burst_sdcch_subslot_splitter</label>
+        <link refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter"/>
+        <childnode refid="486" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" line="32" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_sdcch_subslot_splitter_impl.h" bodystart="31" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a4a41bce283895a98cf11a532beae4ab6" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>burst_sdcch_subslot_splitter_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1afa0f0bff925a2e4a8c5360dd00f4d67b" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>d_mode</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a8aecd73c676ed9de1a8b72fab6aefd44" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>d_subslots_sdcch4</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a86706286c95023b5a6cb06a65de593e8" prot="private" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>d_subslots_sdcch8</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter_1a5d673529cb48f66beaca4e8bbfedf8e0" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a54528fdf14664626098b8880cd6667b0" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>process_burst</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter_1a4b5dc73b05d498be8aa885d4a7808723" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sdcch__subslot__splitter__impl_1a01d9c661ba86d649f168c22604987a1c" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sdcch_subslot_splitter_impl</scope><name>~burst_sdcch_subslot_splitter_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

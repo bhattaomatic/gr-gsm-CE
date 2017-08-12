@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1burst__sink" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::gsm::burst_sink</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="burst__sink_8h" local="no">burst_sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1gsm_1_1burst__sink_1a89192c645e5421661511c644dda7692b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1gsm_1_1burst__sink" kindref="compound">burst_sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;burst_sink&gt; gr::gsm::burst_sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sink_1a1cdef61659a3f6a7aa55df7c8aaa308e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1gsm_1_1burst__sink_1a89192c645e5421661511c644dda7692b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::gsm::burst_sink::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of grgsm::burst_sink. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, grgsm::burst_sink&apos;s constructor is in a private implementation class. grgsm::burst_sink::make is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sink_1a26ccca286936d30381e14e7d8419c844" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>virtual std::vector&lt;int&gt; gr::gsm::burst_sink::get_framenumbers</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_framenumbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sink_1a5e517400716cbbe2fc4d1dbffe47f2d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>virtual std::vector&lt;int&gt; gr::gsm::burst_sink::get_timeslots</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_timeslots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__sink_1a6f937b08f18c24685d68c2c10cceb6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt;std::string&gt; gr::gsm::burst_sink::get_burst_data</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_burst_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>block</label>
+      </node>
+      <node id="20">
+        <label>gr::gsm::burst_sink</label>
+        <link refid="classgr_1_1gsm_1_1burst__sink"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>block</label>
+      </node>
+      <node id="22">
+        <label>gr::gsm::burst_sink</label>
+        <link refid="classgr_1_1gsm_1_1burst__sink"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" line="38" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/qa_utils/burst_sink.h" bodystart="37" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1burst__sink_1a6f937b08f18c24685d68c2c10cceb6ca" prot="public" virt="pure-virtual"><scope>gr::gsm::burst_sink</scope><name>get_burst_data</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sink_1a26ccca286936d30381e14e7d8419c844" prot="public" virt="pure-virtual"><scope>gr::gsm::burst_sink</scope><name>get_framenumbers</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sink_1a5e517400716cbbe2fc4d1dbffe47f2d2" prot="public" virt="pure-virtual"><scope>gr::gsm::burst_sink</scope><name>get_timeslots</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sink_1a1cdef61659a3f6a7aa55df7c8aaa308e" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sink</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__sink_1a89192c645e5421661511c644dda7692b" prot="public" virt="non-virtual"><scope>gr::gsm::burst_sink</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

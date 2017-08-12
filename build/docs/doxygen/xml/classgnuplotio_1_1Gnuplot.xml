@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1Gnuplot" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::Gnuplot</compoundname>
+    <basecompoundref refid="structgnuplotio_1_1FileHandleWrapper" prot="private" virt="non-virtual">gnuplotio::FileHandleWrapper</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">boost::iostreams::stream&lt; boost::iostreams::file_descriptor_sink &gt;</basecompoundref>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgnuplotio_1_1Gnuplot_1a2d194dbd4d2f3475ff6f9b8384e62a9f" prot="public" static="no" mutable="no">
+        <type>std::string const std::string &amp;</type>
+        <definition>std::string const std::string&amp; gnuplotio::Gnuplot::arr_or_rec</definition>
+        <argsstring></argsstring>
+        <name>arr_or_rec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1747" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgnuplotio_1_1Gnuplot_1a92a4f6322e486de17db4507a5fc77348" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gnuplotio::Gnuplot::tmp_files</definition>
+        <argsstring></argsstring>
+        <name>tmp_files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1844" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1844" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1ab71bb407b7d2154c9b8ca3754ffb1721" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gnuplotio::Gnuplot::get_default_cmd</definition>
+        <argsstring>()</argsstring>
+        <name>get_default_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1559" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1559" bodyend="1568"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a84c5911c1a5d3eb93a6f3bd0b86ef338" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgnuplotio_1_1FileHandleWrapper" kindref="compound">FileHandleWrapper</ref></type>
+        <definition>static FileHandleWrapper gnuplotio::Gnuplot::open_cmdline</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>open_cmdline</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1570" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1570" bodyend="1585"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1ab2fb14389ab63ad5d9b2e57169bbbf1d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::Gnuplot::Gnuplot</definition>
+        <argsstring>(const std::string &amp;_cmd=&quot;&quot;)</argsstring>
+        <name>Gnuplot</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_cmd</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1588" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1588" bodyend="1603"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a4a4f48a548e6ce6d485ca0a868410078" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::Gnuplot::Gnuplot</definition>
+        <argsstring>(FILE *_fh)</argsstring>
+        <name>Gnuplot</name>
+        <param>
+          <type>FILE *</type>
+          <declname>_fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1605" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1605" bodyend="1620"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1ad10824df011e645542b5f97a903f4c31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::Gnuplot::~Gnuplot</definition>
+        <argsstring>()</argsstring>
+        <name>~Gnuplot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1628" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1628" bodyend="1643"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a0d62f80988c3db4413a668e366406393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gnuplotio::Gnuplot::clearTmpfiles</definition>
+        <argsstring>()</argsstring>
+        <name>clearTmpfiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1645" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1645" bodyend="1648"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1ae3f4c07960aa5601cc72158be67f945c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename OrganizationMode</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classgnuplotio_1_1Gnuplot" kindref="compound">Gnuplot</ref> &amp;</type>
+        <definition>Gnuplot&amp; gnuplotio::Gnuplot::send</definition>
+        <argsstring>(const T &amp;arg, OrganizationMode)</argsstring>
+        <name>send</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>OrganizationMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1676" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1676" bodyend="1681"/>
+        <references refid="namespacegnuplotio_1a1e452d861932700749421ce103ef8d48" compoundref="gnuplot-iostream_8h" startline="1509" endline="1511">gnuplotio::top_level_array_sender</references>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a46c9e01d2030768cd811d2e8dbd10dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename OrganizationMode</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classgnuplotio_1_1Gnuplot" kindref="compound">Gnuplot</ref> &amp;</type>
+        <definition>Gnuplot&amp; gnuplotio::Gnuplot::sendBinary</definition>
+        <argsstring>(const T &amp;arg, OrganizationMode)</argsstring>
+        <name>sendBinary</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>OrganizationMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1684" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1684" bodyend="1688"/>
+        <references refid="namespacegnuplotio_1a1e452d861932700749421ce103ef8d48" compoundref="gnuplot-iostream_8h" startline="1509" endline="1511">gnuplotio::top_level_array_sender</references>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a43fe103649ec168b453c43aecdacce81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename OrganizationMode</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string gnuplotio::Gnuplot::binfmt</definition>
+        <argsstring>(const T &amp;arg, const std::string &amp;arr_or_rec, OrganizationMode)</argsstring>
+        <name>binfmt</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>arr_or_rec</declname>
+        </param>
+        <param>
+          <type>OrganizationMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1691" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1691" bodyend="1707"/>
+        <references refid="namespacegnuplotio_1a1e452d861932700749421ce103ef8d48" compoundref="gnuplot-iostream_8h" startline="1509" endline="1511">gnuplotio::top_level_array_sender</references>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a9b9980e3b3d7cbb233a989e27468fa55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename OrganizationMode</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string gnuplotio::Gnuplot::file</definition>
+        <argsstring>(const T &amp;arg, std::string filename, OrganizationMode)</argsstring>
+        <name>file</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>OrganizationMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1711" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1711" bodyend="1721"/>
+        <references refid="namespacegnuplotio_1a1e452d861932700749421ce103ef8d48" compoundref="gnuplot-iostream_8h" startline="1509" endline="1511">gnuplotio::top_level_array_sender</references>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1ad90501e6dbab5379abcd76fd0e2e4ef1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename OrganizationMode</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string gnuplotio::Gnuplot::binaryFile</definition>
+        <argsstring>(const T &amp;arg, std::string filename, const std::string &amp;arr_or_rec, OrganizationMode)</argsstring>
+        <name>binaryFile</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>arr_or_rec</declname>
+        </param>
+        <param>
+          <type>OrganizationMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1725" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1725" bodyend="1735"/>
+        <references refid="namespacegnuplotio_1a1e452d861932700749421ce103ef8d48" compoundref="gnuplot-iostream_8h" startline="1509" endline="1511">gnuplotio::top_level_array_sender</references>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1ab2edc3c8f57483c6d9db86d685f3eee7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classgnuplotio_1_1Gnuplot" kindref="compound">Gnuplot</ref></type>
+        <definition>Gnuplot gnuplotio::Gnuplot::GNUPLOT_DEPRECATE</definition>
+        <argsstring>(&quot;use send1d or send2d&quot;)&amp;send(const T &amp;arg)</argsstring>
+        <name>GNUPLOT_DEPRECATE</name>
+        <param>
+          <type>&quot;use send1d or send2d&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1743" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1743" bodyend="1744"/>
+        <references refid="gnuplot-iostream_8h_1aceaee9cbe0b7786c1ee8aa2e8b79ed1a" compoundref="gnuplot-iostream_8h" startline="117">GNUPLOT_DEPRECATE</references>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1aeb3ba94ed04ecd46b55f89591ba23e7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string gnuplotio::Gnuplot::GNUPLOT_DEPRECATE</definition>
+        <argsstring>(&quot;use binfmt1d or binfmt2d&quot;) binfmt(const T &amp;arg</argsstring>
+        <name>GNUPLOT_DEPRECATE</name>
+        <param>
+          <type>&quot;use binfmt1d or binfmt2d&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1746" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a8c3ce0fa11d7fecc56b29eaaa01f89d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::Gnuplot::Gnuplot</definition>
+        <argsstring>(const Gnuplot &amp;)</argsstring>
+        <name>Gnuplot</name>
+        <param>
+          <type>const <ref refid="classgnuplotio_1_1Gnuplot" kindref="compound">Gnuplot</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1624" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a30c2b5fce8b13661324144045f968831" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classgnuplotio_1_1Gnuplot" kindref="compound">Gnuplot</ref> &amp;</type>
+        <definition>const Gnuplot&amp; gnuplotio::Gnuplot::operator=</definition>
+        <argsstring>(const Gnuplot &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgnuplotio_1_1Gnuplot" kindref="compound">Gnuplot</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1625" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a0fe1681b2ae4a372b683de488e340faa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gnuplotio::Gnuplot::do_flush</definition>
+        <argsstring>()</argsstring>
+        <name>do_flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1651" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1651" bodyend="1654"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1Gnuplot_1a4f09df1bc60e8f26bb2c8500ad34da8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gnuplotio::Gnuplot::make_tmpfile</definition>
+        <argsstring>()</argsstring>
+        <name>make_tmpfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1656" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1656" bodyend="1666"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="672">
+        <label>boost::iostreams::stream&lt; boost::iostreams::file_descriptor_sink &gt;</label>
+      </node>
+      <node id="671">
+        <label>gnuplotio::FileHandleWrapper</label>
+        <link refid="structgnuplotio_1_1FileHandleWrapper"/>
+      </node>
+      <node id="670">
+        <label>gnuplotio::Gnuplot</label>
+        <link refid="classgnuplotio_1_1Gnuplot"/>
+        <childnode refid="671" relation="private-inheritance">
+        </childnode>
+        <childnode refid="672" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="675">
+        <label>boost::iostreams::stream&lt; boost::iostreams::file_descriptor_sink &gt;</label>
+      </node>
+      <node id="677">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="674">
+        <label>gnuplotio::FileHandleWrapper</label>
+        <link refid="structgnuplotio_1_1FileHandleWrapper"/>
+      </node>
+      <node id="673">
+        <label>gnuplotio::Gnuplot</label>
+        <link refid="classgnuplotio_1_1Gnuplot"/>
+        <childnode refid="674" relation="private-inheritance">
+        </childnode>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+        <childnode refid="676" relation="usage">
+          <edgelabel>arr_or_rec</edgelabel>
+        </childnode>
+        <childnode refid="678" relation="usage">
+          <edgelabel>tmp_files</edgelabel>
+        </childnode>
+      </node>
+      <node id="678">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="676">
+        <label>std::string</label>
+        <childnode refid="677" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1557" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1551" bodyend="1849"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1Gnuplot_1a2d194dbd4d2f3475ff6f9b8384e62a9f" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>arr_or_rec</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1ad90501e6dbab5379abcd76fd0e2e4ef1" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>binaryFile</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a43fe103649ec168b453c43aecdacce81" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>binfmt</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a0d62f80988c3db4413a668e366406393" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>clearTmpfiles</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a0fe1681b2ae4a372b683de488e340faa" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>do_flush</name></member>
+      <member refid="structgnuplotio_1_1FileHandleWrapper_1acafac45efd9c78ce621af4f3228c6f67" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>fh_close</name></member>
+      <member refid="structgnuplotio_1_1FileHandleWrapper_1a3202ccd15d624f26dd2cf699d3456de6" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>fh_fileno</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a9b9980e3b3d7cbb233a989e27468fa55" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>file</name></member>
+      <member refid="structgnuplotio_1_1FileHandleWrapper_1a26b2378e193a9c41be5aed97e11f9411" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>FileHandleWrapper</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1ab71bb407b7d2154c9b8ca3754ffb1721" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>get_default_cmd</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1ab2fb14389ab63ad5d9b2e57169bbbf1d" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>Gnuplot</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a4a4f48a548e6ce6d485ca0a868410078" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>Gnuplot</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a8c3ce0fa11d7fecc56b29eaaa01f89d2" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>Gnuplot</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1ab2edc3c8f57483c6d9db86d685f3eee7" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>GNUPLOT_DEPRECATE</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1aeb3ba94ed04ecd46b55f89591ba23e7c" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>GNUPLOT_DEPRECATE</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a4f09df1bc60e8f26bb2c8500ad34da8e" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>make_tmpfile</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a84c5911c1a5d3eb93a6f3bd0b86ef338" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>open_cmdline</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a30c2b5fce8b13661324144045f968831" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>operator=</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1ae3f4c07960aa5601cc72158be67f945c" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>send</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a46c9e01d2030768cd811d2e8dbd10dfa" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>sendBinary</name></member>
+      <member refid="structgnuplotio_1_1FileHandleWrapper_1a11b63ed64cf53167e26c5273778d90ea" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>should_use_pclose</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1a92a4f6322e486de17db4507a5fc77348" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>tmp_files</name></member>
+      <member refid="structgnuplotio_1_1FileHandleWrapper_1adcb58bfcd9dbdba000a7e7395bee2ef9" prot="private" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>wrapped_fh</name></member>
+      <member refid="classgnuplotio_1_1Gnuplot_1ad10824df011e645542b5f97a903f4c31" prot="public" virt="non-virtual"><scope>gnuplotio::Gnuplot</scope><name>~Gnuplot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

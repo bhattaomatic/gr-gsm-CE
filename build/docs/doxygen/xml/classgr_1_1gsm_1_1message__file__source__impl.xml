@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1message__file__source__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::message_file_source_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1message__file__source" prot="public" virt="non-virtual">gr::gsm::message_file_source</basecompoundref>
+    <includes refid="message__file__source__impl_8h" local="no">message_file_source_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1message__file__source__impl_1a093d69f545989162a0abb5a5f6ad7da6" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; gr::thread::thread &gt;</type>
+        <definition>boost::shared_ptr&lt;gr::thread::thread&gt; gr::gsm::message_file_source_impl::d_thread</definition>
+        <argsstring></argsstring>
+        <name>d_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="35" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1message__file__source__impl_1ac20543ae11646033b67998baff50465f" prot="private" static="no" mutable="no">
+        <type>std::ifstream</type>
+        <definition>std::ifstream gr::gsm::message_file_source_impl::d_input_file</definition>
+        <argsstring></argsstring>
+        <name>d_input_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1message__file__source__impl_1afe8ceee3c405d1c8426e9f979327c65e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::gsm::message_file_source_impl::d_finished</definition>
+        <argsstring></argsstring>
+        <name>d_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1message__file__source__impl_1a59e9f1d00115a805050e6ece3957de59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::message_file_source_impl::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="38" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1message__file__source__impl_1af03f601bf44db6dca1d548c4f9f169fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::message_file_source_impl::message_file_source_impl</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>message_file_source_impl</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1message__file__source__impl_1a68411dfe2d275c4c4b2161aaad561d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::message_file_source_impl::~message_file_source_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~message_file_source_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1message__file__source__impl_1abbec4293de2ab6955951878be067ff78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::message_file_source_impl::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1message__file__source__impl_1afea6ab15fce3510022caf26d82f1ba98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::message_file_source_impl::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1message__file__source__impl_1acff9b6882fc87bddf5eb7737b875890a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::message_file_source_impl::finished</definition>
+        <argsstring>()</argsstring>
+        <name>finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="715">
+        <label>block</label>
+      </node>
+      <node id="714">
+        <label>gr::gsm::message_file_source</label>
+        <link refid="classgr_1_1gsm_1_1message__file__source"/>
+        <childnode refid="715" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>gr::gsm::message_file_source_impl</label>
+        <link refid="classgr_1_1gsm_1_1message__file__source__impl"/>
+        <childnode refid="714" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="718">
+        <label>block</label>
+      </node>
+      <node id="717">
+        <label>gr::gsm::message_file_source</label>
+        <link refid="classgr_1_1gsm_1_1message__file__source"/>
+        <childnode refid="718" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>gr::gsm::message_file_source_impl</label>
+        <link refid="classgr_1_1gsm_1_1message__file__source__impl"/>
+        <childnode refid="717" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" line="33" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/misc_utils/message_file_source_impl.h" bodystart="32" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1afe8ceee3c405d1c8426e9f979327c65e" prot="private" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>d_finished</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1ac20543ae11646033b67998baff50465f" prot="private" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>d_input_file</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1a093d69f545989162a0abb5a5f6ad7da6" prot="private" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>d_thread</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1acff9b6882fc87bddf5eb7737b875890a" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>finished</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source_1aa37707e251bf79f363f06cdce60d9cd8" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1af03f601bf44db6dca1d548c4f9f169fe" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>message_file_source_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1a59e9f1d00115a805050e6ece3957de59" prot="private" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>run</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source_1a35c1d6fca9c40af7c71b6340d66ea10e" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1abbec4293de2ab6955951878be067ff78" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>start</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1afea6ab15fce3510022caf26d82f1ba98" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>stop</name></member>
+      <member refid="classgr_1_1gsm_1_1message__file__source__impl_1a68411dfe2d275c4c4b2161aaad561d12" prot="public" virt="non-virtual"><scope>gr::gsm::message_file_source_impl</scope><name>~message_file_source_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

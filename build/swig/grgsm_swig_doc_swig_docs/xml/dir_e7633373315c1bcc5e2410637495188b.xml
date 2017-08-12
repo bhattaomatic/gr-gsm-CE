@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_e7633373315c1bcc5e2410637495188b" kind="dir">
+    <compoundname>/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping</compoundname>
+    <innerfile refid="tch__f__chans__demapper_8h">tch_f_chans_demapper.h</innerfile>
+    <innerfile refid="universal__ctrl__chans__demapper_8h">universal_ctrl_chans_demapper.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/"/>
+  </compounddef>
+</doxygen>

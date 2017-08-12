@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cch_8h" kind="file" language="C++">
+    <compoundname>cch.h</compoundname>
+    <includedby refid="control__channels__decoder__impl_8h" local="yes">control_channels_decoder_impl.h</includedby>
+    <invincdepgraph>
+      <node id="691">
+        <label>cch.h</label>
+        <link refid="cch.h"/>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>control_channels_decoder_impl.h</label>
+        <link refid="control__channels__decoder__impl_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cch_8h_1a0a453aabbfa4d2725b52e248a39e7b89" prot="public" static="no">
+        <name>DATA_BLOCK_SIZE</name>
+        <initializer>184</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="40" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1aebdabfa6d9d88561540e7aad8c027878" prot="public" static="no">
+        <name>PARITY_SIZE</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="41" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1a9e99f7f5e114a324a2d8ff56ac1bea49" prot="public" static="no">
+        <name>FLUSH_BITS_SIZE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="42" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1af0499e3768f0b3a1b4834301a8e453c1" prot="public" static="no">
+        <name>PARITY_OUTPUT_SIZE</name>
+        <initializer>(<ref refid="tch__f__decoder__impl_8h_1a0a453aabbfa4d2725b52e248a39e7b89" kindref="member">DATA_BLOCK_SIZE</ref> + <ref refid="tch__f__decoder__impl_8h_1aebdabfa6d9d88561540e7aad8c027878" kindref="member">PARITY_SIZE</ref> + <ref refid="tch__f__decoder__impl_8h_1a9e99f7f5e114a324a2d8ff56ac1bea49" kindref="member">FLUSH_BITS_SIZE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="43" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1a4665c1f5a35b9250f6b47713c66a32df" prot="public" static="no">
+        <name>CONV_INPUT_SIZE</name>
+        <initializer><ref refid="tch__f__decoder__impl_8h_1af0499e3768f0b3a1b4834301a8e453c1" kindref="member">PARITY_OUTPUT_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="45" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1a743b62e9080044b4d52ec3623bcd2dc7" prot="public" static="no">
+        <name>CONV_SIZE</name>
+        <initializer>(2 * <ref refid="tch__f__decoder__impl_8h_1a4665c1f5a35b9250f6b47713c66a32df" kindref="member">CONV_INPUT_SIZE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="46" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1ae00ca90c023b39e91afeba124e99898a" prot="public" static="no">
+        <name>BLOCKS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="48" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1a2487d7bedbba88f1ede9f79e81023bda" prot="public" static="no">
+        <name>iBLOCK_SIZE</name>
+        <initializer>(<ref refid="tch__f__decoder__impl_8h_1a743b62e9080044b4d52ec3623bcd2dc7" kindref="member">CONV_SIZE</ref> / <ref refid="tch__f__decoder__impl_8h_1ae00ca90c023b39e91afeba124e99898a" kindref="member">BLOCKS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="49" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cch_8h_1afee20bc807e46e0c531d22acc81f6868" prot="public" static="no">
+        <name>eBLOCK_SIZE</name>
+        <initializer>(<ref refid="tch__f__decoder__impl_8h_1a2487d7bedbba88f1ede9f79e81023bda" kindref="member">iBLOCK_SIZE</ref> + 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="50" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cch_8h_1ada2a0e16ba278efe18600de2050fadfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int conv_decode</definition>
+        <argsstring>(unsigned char *output, unsigned char *data)</argsstring>
+        <name>conv_decode</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="cch_8h_1a2badad412b25e99966358321a27ca366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int parity_check</definition>
+        <argsstring>(unsigned char *d)</argsstring>
+        <name>parity_check</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/cch.h"/>
+  </compounddef>
+</doxygen>

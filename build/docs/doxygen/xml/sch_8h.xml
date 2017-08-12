@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="sch_8h" kind="file" language="C++">
+    <compoundname>sch.h</compoundname>
+    <includes refid="api_8h" local="no">grgsm/api.h</includes>
+    <incdepgraph>
+      <node id="936">
+        <label>grgsm/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="935">
+        <label>sch.h</label>
+        <link refid="sch.h"/>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sch_8h_1ad55fa049cafe8bb95831df17b9a11e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1ae91403950b7b24e39de1e96260a9c2d9" kindref="member">GSM_API</ref> int</type>
+        <definition>GSM_API int decode_sch</definition>
+        <argsstring>(const unsigned char *buf, int *t1_o, int *t2_o, int *t3_o, int *ncc, int *bcc)</argsstring>
+        <name>decode_sch</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>t1_o</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>t2_o</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>t3_o</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ncc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bcc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/sch.h" line="12" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/sch.h"/>
+  </compounddef>
+</doxygen>

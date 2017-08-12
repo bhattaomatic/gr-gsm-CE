@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1Mode1DUnwrap" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::Mode1DUnwrap</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1Mode1DUnwrap_1a2350096ad4d8b668f6df56c32cab69b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gnuplotio::Mode1DUnwrap::class_name</definition>
+        <argsstring>()</argsstring>
+        <name>class_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1209" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1209" bodyend="1209"/>
+        <references refid="structgnuplotio_1_1Mode1DUnwrap_1a2350096ad4d8b668f6df56c32cab69b6" compoundref="gnuplot-iostream_8h" startline="1209" endline="1209">class_name</references>
+        <referencedby refid="structgnuplotio_1_1Mode1DUnwrap_1a2350096ad4d8b668f6df56c32cab69b6" compoundref="gnuplot-iostream_8h" startline="1209" endline="1209">class_name</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1209" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1209" bodyend="1209"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1Mode1DUnwrap_1a2350096ad4d8b668f6df56c32cab69b6" prot="public" virt="non-virtual"><scope>gnuplotio::Mode1DUnwrap</scope><name>class_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

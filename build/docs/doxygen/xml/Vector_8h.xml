@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Vector_8h" kind="file" language="C++">
+    <compoundname>Vector.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="BitVector_8h" local="yes">BitVector.h</includedby>
+    <incdepgraph>
+      <node id="1007">
+        <label>assert.h</label>
+      </node>
+      <node id="1004">
+        <label>Vector.h</label>
+        <link refid="Vector.h"/>
+        <childnode refid="1005" relation="include">
+        </childnode>
+        <childnode refid="1006" relation="include">
+        </childnode>
+        <childnode refid="1007" relation="include">
+        </childnode>
+        <childnode refid="1008" relation="include">
+        </childnode>
+      </node>
+      <node id="1005">
+        <label>string.h</label>
+      </node>
+      <node id="1006">
+        <label>iostream</label>
+      </node>
+      <node id="1008">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1009">
+        <label>Vector.h</label>
+        <link refid="Vector.h"/>
+        <childnode refid="1010" relation="include">
+        </childnode>
+      </node>
+      <node id="1010">
+        <label>BitVector.h</label>
+        <link refid="BitVector_8h"/>
+        <childnode refid="1011" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+      </node>
+      <node id="1011">
+        <label>AmrCoder.h</label>
+        <link refid="AmrCoder_8h"/>
+        <childnode refid="1012" relation="include">
+        </childnode>
+      </node>
+      <node id="1012">
+        <label>tch_f_decoder_impl.h</label>
+        <link refid="tch__f__decoder__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classVectorBase" prot="public">VectorBase</innerclass>
+    <innerclass refid="classVector" prot="public">Vector</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="Vector_8h_1a3358ce12ecd36a7d6e8ddda6c17e0c2b" prot="public" static="no">
+        <name>VECTORDEBUG</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" line="40" column="10" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classBitVector_1a48841e9d606c7c0fe2ec73a9366e2364" compoundref="BitVector_8h" startline="130" endline="137">BitVector::BitVector</referencedby>
+        <referencedby refid="classVectorBase_1aeae2d4640f8b2f6e560e443095c931b6" compoundref="Vector_8h" startline="181" endline="186">VectorBase&lt; char &gt;::resize</referencedby>
+        <referencedby refid="classVectorBase_1aff05cfb74562e6644e7d96e528cb0171" compoundref="Vector_8h" startline="146" endline="154">VectorBase&lt; char &gt;::shiftMem</referencedby>
+        <referencedby refid="classVectorBase_1af7bdb68e08f619d29846929ea1885ea7" compoundref="Vector_8h" startline="209" endline="212">VectorBase&lt; char &gt;::VectorBase</referencedby>
+        <referencedby refid="classVectorBase_1ae71e18c840eb2e3f70c2778021684926" compoundref="Vector_8h" startline="217" endline="221">VectorBase&lt; char &gt;::~VectorBase</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="Vector_8h_1a91cf322277705fecd326446579c9605d" prot="public" static="no">
+        <name>BITVECTOR_REFCNTS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" line="43" column="9" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="Vector_8h_1a42cd405733e509d55a9d15471067b69a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gVectorDebug</definition>
+        <argsstring></argsstring>
+        <name>gVectorDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" line="34" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Vector_8h_1afbee8685eba8033e340917640a7909d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector&lt; T &gt; &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic print operator for <ref refid="classVector" kindref="compound">Vector</ref> objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" line="389" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h" bodystart="389" bodyend="393"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Vector.h"/>
+  </compounddef>
+</doxygen>

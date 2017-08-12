@@ -55,7 +55,7 @@
 #define FCCH_MAX_MISSES         1
 #define FCCH_MAX_FREQ_OFFSET    100
 
-#define CHAN_IMP_RESP_LENGTH  10
+#define CHAN_IMP_RESP_LENGTH  12
 
 #define MAX_SCH_ERRORS    10  //maximum number of subsequent sch errors after which gsm receiver goes to find_next_fcch state
 

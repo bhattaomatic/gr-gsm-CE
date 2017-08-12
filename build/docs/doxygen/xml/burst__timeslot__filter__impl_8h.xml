@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="burst__timeslot__filter__impl_8h" kind="file" language="C++">
+    <compoundname>burst_timeslot_filter_impl.h</compoundname>
+    <includes refid="burst__timeslot__filter_8h" local="no">grgsm/flow_control/burst_timeslot_filter.h</includes>
+    <incdepgraph>
+      <node id="657">
+        <label>grgsm/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="656">
+        <label>grgsm/flow_control/burst_timeslot_filter.h</label>
+        <link refid="burst__timeslot__filter_8h"/>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>burst_timeslot_filter_impl.h</label>
+        <link refid="burst_timeslot_filter_impl.h"/>
+        <childnode refid="656" relation="include">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>gnuradio/block.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1gsm_1_1burst__timeslot__filter__impl" prot="public">gr::gsm::burst_timeslot_filter_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1gsm">gr::gsm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/flow_control/burst_timeslot_filter_impl.h"/>
+  </compounddef>
+</doxygen>

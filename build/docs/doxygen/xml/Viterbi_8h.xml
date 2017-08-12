@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Viterbi_8h" kind="file" language="C++">
+    <compoundname>Viterbi.h</compoundname>
+    <includedby refid="AmrCoder_8h" local="yes">AmrCoder.h</includedby>
+    <includedby refid="ViterbiR204_8h" local="yes">ViterbiR204.h</includedby>
+    <invincdepgraph>
+      <node id="1017">
+        <label>ViterbiR204.h</label>
+        <link refid="ViterbiR204_8h"/>
+        <childnode refid="1016" relation="include">
+        </childnode>
+      </node>
+      <node id="1015">
+        <label>AmrCoder.h</label>
+        <link refid="AmrCoder_8h"/>
+        <childnode refid="1016" relation="include">
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>tch_f_decoder_impl.h</label>
+        <link refid="tch__f__decoder__impl_8h"/>
+      </node>
+      <node id="1014">
+        <label>Viterbi.h</label>
+        <link refid="Viterbi.h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classViterbiBase" prot="public">ViterbiBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/Viterbi.h"/>
+  </compounddef>
+</doxygen>

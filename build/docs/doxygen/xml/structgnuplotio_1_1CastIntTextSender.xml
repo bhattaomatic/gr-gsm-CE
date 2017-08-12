@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1CastIntTextSender" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::CastIntTextSender</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1CastIntTextSender_1a42733f83f843a375437e7e5f716ea65e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::CastIntTextSender&lt; T &gt;::send</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;v)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="495" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="495" bodyend="497"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="494" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="494" bodyend="498"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1CastIntTextSender_1a42733f83f843a375437e7e5f716ea65e" prot="public" virt="non-virtual"><scope>gnuplotio::CastIntTextSender</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

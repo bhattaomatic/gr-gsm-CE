@@ -1,0 +1,4 @@
+var classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_d5bfbd58f322d0a74d370034dff1881d =
+[
+    [ "get_range", "classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_d5bfbd58f322d0a74d370034dff1881d.html#ad0485dd16a9d54a4eb75bf3e75b1facd", null ]
+];

@@ -1,0 +1,1113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1receiver__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::receiver_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1receiver" prot="public" virt="non-virtual">gr::gsm::receiver</basecompoundref>
+    <includes refid="receiver__impl_8h" local="no">receiver_impl.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Configuration of the receiver</header>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a0f40fac3273a66793c5b9f6edeed55f8" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::gsm::receiver_impl::d_OSR</definition>
+        <argsstring></argsstring>
+        <name>d_OSR</name>
+        <briefdescription>
+<para>oversampling ratio </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="41" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a364450adb8c15fbdc8735c5f90e5b027" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::gsm::receiver_impl::d_chan_imp_length</definition>
+        <argsstring></argsstring>
+        <name>d_chan_imp_length</name>
+        <briefdescription>
+<para>channel impulse length </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="42" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1adfd505d77e34468536a2eec2bd88ea46" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::gsm::receiver_impl::d_signal_dbm</definition>
+        <argsstring></argsstring>
+        <name>d_signal_dbm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="43" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a8ab8588b4a8fd8aa950633feababf096" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::gsm::receiver_impl::d_tseq_nums</definition>
+        <argsstring></argsstring>
+        <name>d_tseq_nums</name>
+        <briefdescription>
+<para>stores training sequence numbers for channels different than C0 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="44" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1ae17cc3da4c9dfb811d4d009887d91d23" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::gsm::receiver_impl::d_cell_allocation</definition>
+        <argsstring></argsstring>
+        <name>d_cell_allocation</name>
+        <briefdescription>
+<para>stores cell allocation - absolute rf channel numbers (ARFCNs) assigned to the given cell. The variable should at least contain C0 channel number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="45" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Variables used to store result of the find_fcch_burst fuction</header>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a79013ec8b28729a29f1f06ba0a128956" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::gsm::receiver_impl::d_fcch_start_pos</definition>
+        <argsstring></argsstring>
+        <name>d_fcch_start_pos</name>
+        <briefdescription>
+<para>position of the first sample of the fcch burst </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="64" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1af57951f115769f4d9bf0a016bbd45b9d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::gsm::receiver_impl::d_freq_offset_setting</definition>
+        <argsstring></argsstring>
+        <name>d_freq_offset_setting</name>
+        <briefdescription>
+<para>frequency offset set in frequency shifter located upstream </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="65" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Identifiers of the BTS extracted from the SCH burst</header>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a40899f317978e7a1afb9627079b797bc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::gsm::receiver_impl::d_ncc</definition>
+        <argsstring></argsstring>
+        <name>d_ncc</name>
+        <briefdescription>
+<para>network color code </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="71" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1ab8b9cd3e20760477f0e51175b94d627e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::gsm::receiver_impl::d_bcc</definition>
+        <argsstring></argsstring>
+        <name>d_bcc</name>
+        <briefdescription>
+<para>base station color code </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="72" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Internal state of the gsm receiver</header>
+      <memberdef kind="enum" id="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0" prot="private" static="no">
+        <name>states</name>
+        <enumvalue id="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0ae560081e353d8a9e87ce1579c8d5125c" prot="private">
+          <name>fcch_search</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0ad10362d0846b92059415eabcea0ea11c" prot="private">
+          <name>sch_search</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0a9626d03b5bac3c51780946eadd458eff" prot="private">
+          <name>synchronized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="77" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1ab439523bfaa8f80e05f6a8a149356ba8" prot="private" static="no" mutable="no">
+        <type>enum gr::gsm::receiver_impl::states</type>
+        <definition>enum gr::gsm::receiver_impl::states  gr::gsm::receiver_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="80" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Variables which make internal state in the &quot;synchronized&quot; state</header>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1acff3f2d7c8db3355d612bbe14625628d" prot="private" static="no" mutable="no">
+        <type><ref refid="classburst__counter" kindref="compound">burst_counter</ref></type>
+        <definition>burst_counter gr::gsm::receiver_impl::d_burst_nr</definition>
+        <argsstring></argsstring>
+        <name>d_burst_nr</name>
+        <briefdescription>
+<para>frame number and timeslot number </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="85" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a8f3c9922646e6bca918aac1fe60a00c2" prot="private" static="no" mutable="no">
+        <type><ref refid="classchannel__configuration" kindref="compound">channel_configuration</ref></type>
+        <definition>channel_configuration gr::gsm::receiver_impl::d_channel_conf</definition>
+        <argsstring></argsstring>
+        <name>d_channel_conf</name>
+        <briefdescription>
+<para>mapping of <ref refid="classburst__counter" kindref="compound">burst_counter</ref> to burst_type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="86" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a243a9e446fcfc6e92426e9fe840d776c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::receiver_impl::d_c0_burst_start</definition>
+        <argsstring></argsstring>
+        <name>d_c0_burst_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a5b2eb03e0c7df9e88d3ec52228f10c14" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::gsm::receiver_impl::d_c0_signal_dbm</definition>
+        <argsstring></argsstring>
+        <name>d_c0_signal_dbm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="38" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a0cda123a85e9695ad205a3a47149aa51" prot="private" static="no" mutable="no">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::gsm::receiver_impl::d_sch_training_seq[N_SYNC_BITS]</definition>
+        <argsstring>[N_SYNC_BITS]</argsstring>
+        <name>d_sch_training_seq</name>
+        <briefdescription>
+<para>encoded training sequence of a SCH burst </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="48" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1ad9cb0736071f21367fcff843d95e8371" prot="private" static="no" mutable="no">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::gsm::receiver_impl::d_norm_training_seq[TRAIN_SEQ_NUM][N_TRAIN_BITS]</definition>
+        <argsstring>[TRAIN_SEQ_NUM][N_TRAIN_BITS]</argsstring>
+        <name>d_norm_training_seq</name>
+        <briefdescription>
+<para>encoded training sequences of a normal and dummy burst </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="49" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1af0a871892a102b6c297c31b3f8247698" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::gsm::receiver_impl::d_last_time</definition>
+        <argsstring></argsstring>
+        <name>d_last_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="51" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a23042b46473dafe5510848d5bbb6f89f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::gsm::receiver_impl::d_counter</definition>
+        <argsstring></argsstring>
+        <name>d_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Counts samples consumed by the receiver</para><para>It is used in beetween find_fcch_burst and reach_sch_burst calls. My intention was to synchronize this counter with some internal sample counter of the USRP. Simple access to such USRP&apos;s counter isn&apos;t possible so this variable isn&apos;t used in the &quot;synchronized&quot; state of the receiver yet. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="60" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1a448553888cdeb80395de5081518d7ece" prot="private" static="no" mutable="no">
+        <type>std::list&lt; double &gt;</type>
+        <definition>std::list&lt;double&gt; gr::gsm::receiver_impl::d_freq_offset_vals</definition>
+        <argsstring></argsstring>
+        <name>d_freq_offset_vals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="67" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1receiver__impl_1aa8ef9667532033b2755ed230d2d1148f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::gsm::receiver_impl::d_failed_sch</definition>
+        <argsstring></argsstring>
+        <name>d_failed_sch</name>
+        <briefdescription>
+<para>number of subsequent erroneous SCH bursts </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="89" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1ac51ccf8af57fec55b493f4c8049ca8a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::receiver_impl::find_fcch_burst</definition>
+        <argsstring>(const gr_complex *input, const int nitems, double &amp;computed_freq_offset)</argsstring>
+        <name>find_fcch_burst</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>computed_freq_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function whis is used to search a FCCH burst and to compute frequency offset before &quot;synchronized&quot; state of the receiver</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input signal </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples in the input vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a25ddd71916fde5058f8366286fa59973" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gr::gsm::receiver_impl::compute_freq_offset</definition>
+        <argsstring>(const gr_complex *input, unsigned first_sample, unsigned last_sample)</argsstring>
+        <name>compute_freq_offset</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>first_sample</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>last_sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes frequency offset from FCCH burst samples</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">first_sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the first sample of the FCCH busrt </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">last_sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the last sample of the FCCH busrt </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">computed_freq_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains frequency offset estimate if FCCH burst was located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if frequency offset was faound </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a9553814bca85f2ede4ebfd7aba98d061" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::gsm::receiver_impl::compute_phase_diff</definition>
+        <argsstring>(gr_complex val1, gr_complex val2)</argsstring>
+        <name>compute_phase_diff</name>
+        <param>
+          <type>gr_complex</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>gr_complex</type>
+          <declname>val2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes angle between two complex numbers</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second complex number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a3115c779bccb74ca896f086c89fcfb92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::gsm::receiver_impl::reach_sch_burst</definition>
+        <argsstring>(const int nitems)</argsstring>
+        <name>reach_sch_burst</name>
+        <param>
+          <type>const int</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function whis is used to get near to SCH burst</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples in the gsm_receiver&apos;s buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if SCH burst is near, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1aba47db86ee2ec989538f9fdffda9a73b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::gsm::receiver_impl::get_sch_chan_imp_resp</definition>
+        <argsstring>(const gr_complex *input, gr_complex *chan_imp_resp)</argsstring>
+        <name>get_sch_chan_imp_resp</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>chan_imp_resp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extracts channel impulse response from a SCH burst and computes first sample number of this burst</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chan_imp_resp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex vector where channel impulse response will be stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of first sample of the burst </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a1a8e02fc5fab2389561b586b70438832" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::receiver_impl::detect_burst</definition>
+        <argsstring>(const gr_complex *input, gr_complex *chan_imp_resp, int burst_start, unsigned char *output_binary)</argsstring>
+        <name>detect_burst</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>chan_imp_resp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>burst_start</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>output_binary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MLSE detection of a burst bits</para><para>Detects bits of burst using viterbi algorithm. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chan_imp_resp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with the channel impulse response </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>burst_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the first sample of the burst </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_binary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with output bits </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a8259e5c13228f92d23dd6bd871926e14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::receiver_impl::gmsk_mapper</definition>
+        <argsstring>(const unsigned char *input, int nitems, gr_complex *gmsk_output, gr_complex start_point)</argsstring>
+        <name>gmsk_mapper</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>gmsk_output</declname>
+        </param>
+        <param>
+          <type>gr_complex</type>
+          <declname>start_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encodes differentially input bits and maps them into MSK states</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input bits </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples in the &quot;input&quot; vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gmsk_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bits mapped into MSK states </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a60411937f24b68754295ef0f3413ac99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>gr_complex</type>
+        <definition>gr_complex gr::gsm::receiver_impl::correlate_sequence</definition>
+        <argsstring>(const gr_complex *sequence, int length, const gr_complex *input)</argsstring>
+        <name>correlate_sequence</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Correlates MSK mapped sequence with input signal</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MKS mapped sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_signal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>correlation value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1ad5595d2e10bbe41b9070b37113404c91" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::receiver_impl::autocorrelation</definition>
+        <argsstring>(const gr_complex *input, gr_complex *out, int nitems)</argsstring>
+        <name>autocorrelation</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes autocorrelation of input vector for positive arguments</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the input vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a80d95da89cd4c7386eaa68d3b5e46f5e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::receiver_impl::mafi</definition>
+        <argsstring>(const gr_complex *input, int nitems, gr_complex *filter, int filter_length, gr_complex *output)</argsstring>
+        <name>mafi</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filter_length</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Filters input signal through channel impulse response</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples to pass through filter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filter taps - channel impulse response </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nember of filter taps </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with filtered samples </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a3b99b0f666da84ef4fa9624eeb57f89e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::gsm::receiver_impl::get_norm_chan_imp_resp</definition>
+        <argsstring>(const gr_complex *input, gr_complex *chan_imp_resp, float *corr_max, int bcc)</argsstring>
+        <name>get_norm_chan_imp_resp</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>chan_imp_resp</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>corr_max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bcc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extracts channel impulse response from a normal burst and computes first sample number of this burst</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector with input samples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chan_imp_resp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex vector where channel impulse response will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>search_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>possible absolute offset of a channel impulse response start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base station color code - number of a training sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>first sample number of normal burst </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a97c153429260bc243fb85dd05630652c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::receiver_impl::send_burst</definition>
+        <argsstring>(burst_counter burst_nr, const unsigned char *burst_binary, uint8_t burst_type, unsigned int input_nr)</argsstring>
+        <name>send_burst</name>
+        <param>
+          <type><ref refid="classburst__counter" kindref="compound">burst_counter</ref></type>
+          <declname>burst_nr</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>burst_binary</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>burst_type</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>input_nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sends burst through a C0 (for burst from C0 channel) or Cx (for other bursts) message port</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>burst_nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- frame number of the burst </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>burst_binary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- content of the burst  - type of the burst </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a903082c754fc5dd72719c3a6bc77e75c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::receiver_impl::configure_receiver</definition>
+        <argsstring>()</argsstring>
+        <name>configure_receiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configures burst types in different channels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="201" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a7fcdb6d9ffaca6574d07bb3acd371294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::receiver_impl::receiver_impl</definition>
+        <argsstring>(int osr, const std::vector&lt; int &gt; &amp;cell_allocation, const std::vector&lt; int &gt; &amp;tseq_nums)</argsstring>
+        <name>receiver_impl</name>
+        <param>
+          <type>int</type>
+          <declname>osr</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>cell_allocation</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>tseq_nums</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1abf865fb1ffbd150644115dff87d2f53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::receiver_impl::~receiver_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~receiver_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a53582446227b181ccb9751afbe0bcd06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::gsm::receiver_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1ae5927a42e311866f3023477a3d598b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::gsm::receiver_impl::set_cell_allocation</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;cell_allocation)</argsstring>
+        <name>set_cell_allocation</name>
+        <reimplements refid="classgr_1_1gsm_1_1receiver_1a15edc6e78a38c70a987180e47a117596">set_cell_allocation</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>cell_allocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a7b58c7e48144c0aff1c3a00c02be1a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::gsm::receiver_impl::set_tseq_nums</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;tseq_nums)</argsstring>
+        <name>set_tseq_nums</name>
+        <reimplements refid="classgr_1_1gsm_1_1receiver_1a3adb56ea8300cd38607c549e017d9837">set_tseq_nums</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>tseq_nums</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1receiver__impl_1a1a9c4c8fe79de5d4b738d03006906bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::gsm::receiver_impl::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplements refid="classgr_1_1gsm_1_1receiver_1a2f23812485e7d4043f1308aa4206e495">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="212" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="772">
+        <label>gr::gsm::receiver</label>
+        <link refid="classgr_1_1gsm_1_1receiver"/>
+        <childnode refid="773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>sync_block</label>
+      </node>
+      <node id="771">
+        <label>gr::gsm::receiver_impl</label>
+        <link refid="classgr_1_1gsm_1_1receiver__impl"/>
+        <childnode refid="772" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="775">
+        <label>gr::gsm::receiver</label>
+        <link refid="classgr_1_1gsm_1_1receiver"/>
+        <childnode refid="776" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>sync_block</label>
+      </node>
+      <node id="774">
+        <label>gr::gsm::receiver_impl</label>
+        <link refid="classgr_1_1gsm_1_1receiver__impl"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" line="35" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_impl.h" bodystart="34" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ad5595d2e10bbe41b9070b37113404c91" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>autocorrelation</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a25ddd71916fde5058f8366286fa59973" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>compute_freq_offset</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a9553814bca85f2ede4ebfd7aba98d061" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>compute_phase_diff</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a903082c754fc5dd72719c3a6bc77e75c" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>configure_receiver</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a60411937f24b68754295ef0f3413ac99" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>correlate_sequence</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ab8b9cd3e20760477f0e51175b94d627e" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_bcc</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1acff3f2d7c8db3355d612bbe14625628d" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_burst_nr</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a243a9e446fcfc6e92426e9fe840d776c" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_c0_burst_start</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a5b2eb03e0c7df9e88d3ec52228f10c14" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_c0_signal_dbm</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ae17cc3da4c9dfb811d4d009887d91d23" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_cell_allocation</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a364450adb8c15fbdc8735c5f90e5b027" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_chan_imp_length</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a8f3c9922646e6bca918aac1fe60a00c2" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_channel_conf</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a23042b46473dafe5510848d5bbb6f89f" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_counter</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1aa8ef9667532033b2755ed230d2d1148f" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_failed_sch</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a79013ec8b28729a29f1f06ba0a128956" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_fcch_start_pos</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1af57951f115769f4d9bf0a016bbd45b9d" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_freq_offset_setting</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a448553888cdeb80395de5081518d7ece" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_freq_offset_vals</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1af0a871892a102b6c297c31b3f8247698" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_last_time</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a40899f317978e7a1afb9627079b797bc" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_ncc</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ad9cb0736071f21367fcff843d95e8371" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_norm_training_seq</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a0f40fac3273a66793c5b9f6edeed55f8" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_OSR</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a0cda123a85e9695ad205a3a47149aa51" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_sch_training_seq</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1adfd505d77e34468536a2eec2bd88ea46" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_signal_dbm</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ab439523bfaa8f80e05f6a8a149356ba8" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a8ab8588b4a8fd8aa950633feababf096" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>d_tseq_nums</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a1a8e02fc5fab2389561b586b70438832" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>detect_burst</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0ae560081e353d8a9e87ce1579c8d5125c" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>fcch_search</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ac51ccf8af57fec55b493f4c8049ca8a5" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>find_fcch_burst</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a3b99b0f666da84ef4fa9624eeb57f89e" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>get_norm_chan_imp_resp</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1aba47db86ee2ec989538f9fdffda9a73b" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>get_sch_chan_imp_resp</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a8259e5c13228f92d23dd6bd871926e14" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>gmsk_mapper</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a80d95da89cd4c7386eaa68d3b5e46f5e" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>mafi</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver_1ae4ae70392f7cf20ccec24bec9d5701a9" prot="public" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a3115c779bccb74ca896f086c89fcfb92" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>reach_sch_burst</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a7fcdb6d9ffaca6574d07bb3acd371294" prot="public" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>receiver_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a1a9c4c8fe79de5d4b738d03006906bcb" prot="public" virt="virtual"><scope>gr::gsm::receiver_impl</scope><name>reset</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0ad10362d0846b92059415eabcea0ea11c" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>sch_search</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a97c153429260bc243fb85dd05630652c" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>send_burst</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1ae5927a42e311866f3023477a3d598b64" prot="public" virt="virtual"><scope>gr::gsm::receiver_impl</scope><name>set_cell_allocation</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a7b58c7e48144c0aff1c3a00c02be1a7b" prot="public" virt="virtual"><scope>gr::gsm::receiver_impl</scope><name>set_tseq_nums</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver_1a0ab97474622c012f10fb2b6918992103" prot="public" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>states</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a919dd8b72bf6f5fd345c507d29efc6a0a9626d03b5bac3c51780946eadd458eff" prot="private" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>synchronized</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1a53582446227b181ccb9751afbe0bcd06" prot="public" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1gsm_1_1receiver__impl_1abf865fb1ffbd150644115dff87d2f53c" prot="public" virt="non-virtual"><scope>gr::gsm::receiver_impl</scope><name>~receiver_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

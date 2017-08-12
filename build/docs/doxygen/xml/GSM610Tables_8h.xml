@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="GSM610Tables_8h" kind="file" language="C++">
+    <compoundname>GSM610Tables.h</compoundname>
+    <includedby refid="tch__f__decoder__impl_8h" local="yes">tch_f_decoder_impl.h</includedby>
+    <invincdepgraph>
+      <node id="849">
+        <label>tch_f_decoder_impl.h</label>
+        <link refid="tch__f__decoder__impl_8h"/>
+      </node>
+      <node id="848">
+        <label>GSM610Tables.h</label>
+        <link refid="GSM610Tables.h"/>
+        <childnode refid="849" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGSM">GSM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/GSM610Tables.h"/>
+  </compounddef>
+</doxygen>

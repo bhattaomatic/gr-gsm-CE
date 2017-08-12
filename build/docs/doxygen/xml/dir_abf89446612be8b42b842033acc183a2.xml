@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_abf89446612be8b42b842033acc183a2" kind="dir">
+    <compoundname>decoding</compoundname>
+    <innerfile refid="control__channels__decoder_8h">control_channels_decoder.h</innerfile>
+    <innerfile refid="tch__f__decoder_8h">tch_f_decoder.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/decoding/"/>
+  </compounddef>
+</doxygen>

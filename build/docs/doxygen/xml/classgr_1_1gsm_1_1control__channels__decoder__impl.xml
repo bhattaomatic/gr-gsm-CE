@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1control__channels__decoder__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::control_channels_decoder_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1control__channels__decoder" prot="public" virt="non-virtual">gr::gsm::control_channels_decoder</basecompoundref>
+    <includes refid="control__channels__decoder__impl_8h" local="no">control_channels_decoder_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1ac60f11b50472643fa7f70f592c05c98c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::control_channels_decoder_impl::d_collected_bursts_num</definition>
+        <argsstring></argsstring>
+        <name>d_collected_bursts_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1ac25434ce61e429e2323b70d7de2fd460" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::gsm::control_channels_decoder_impl::d_bursts[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>d_bursts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1af88e6ae53363ebbd877dadb74bb119fd" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::gsm::control_channels_decoder_impl::interleave_trans[CONV_SIZE]</definition>
+        <argsstring>[CONV_SIZE]</argsstring>
+        <name>interleave_trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="38" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1a94f4cc3c51d5fae3a1b699849e0410a4" prot="private" static="no" mutable="no">
+        <type><ref refid="structFC__CTX" kindref="compound">FC_CTX</ref></type>
+        <definition>FC_CTX gr::gsm::control_channels_decoder_impl::fc_ctx</definition>
+        <argsstring></argsstring>
+        <name>fc_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="39" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1a8046bb36cc0413410b2f04af734f1576" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::control_channels_decoder_impl::decode</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="40" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1a482f38ab5cec0db72a7a7df124ec9d39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::control_channels_decoder_impl::control_channels_decoder_impl</definition>
+        <argsstring>()</argsstring>
+        <name>control_channels_decoder_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1control__channels__decoder__impl_1a7ea6b76fd30c2eb511edd62fd3fbae4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::control_channels_decoder_impl::~control_channels_decoder_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~control_channels_decoder_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="569">
+        <label>gr::gsm::control_channels_decoder_impl</label>
+        <link refid="classgr_1_1gsm_1_1control__channels__decoder__impl"/>
+        <childnode refid="570" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>block</label>
+      </node>
+      <node id="570">
+        <label>gr::gsm::control_channels_decoder</label>
+        <link refid="classgr_1_1gsm_1_1control__channels__decoder"/>
+        <childnode refid="571" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="572">
+        <label>gr::gsm::control_channels_decoder_impl</label>
+        <link refid="classgr_1_1gsm_1_1control__channels__decoder__impl"/>
+        <childnode refid="573" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="574">
+        <label>block</label>
+      </node>
+      <node id="573">
+        <label>gr::gsm::control_channels_decoder</label>
+        <link refid="classgr_1_1gsm_1_1control__channels__decoder"/>
+        <childnode refid="574" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" line="34" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/control_channels_decoder_impl.h" bodystart="33" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1a482f38ab5cec0db72a7a7df124ec9d39" prot="public" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>control_channels_decoder_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1ac25434ce61e429e2323b70d7de2fd460" prot="private" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>d_bursts</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1ac60f11b50472643fa7f70f592c05c98c" prot="private" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>d_collected_bursts_num</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1a8046bb36cc0413410b2f04af734f1576" prot="private" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>decode</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1a94f4cc3c51d5fae3a1b699849e0410a4" prot="private" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>fc_ctx</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1af88e6ae53363ebbd877dadb74bb119fd" prot="private" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>interleave_trans</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder_1a1256fba3dd6632b96abeadf9f8631261" prot="public" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder_1a6f7e684a0485014a918a9eda148929b3" prot="public" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1control__channels__decoder__impl_1a7ea6b76fd30c2eb511edd62fd3fbae4d" prot="public" virt="non-virtual"><scope>gr::gsm::control_channels_decoder_impl</scope><name>~control_channels_decoder_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

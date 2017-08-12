@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_243479dbff2d7ca3e678653e0e554ed5" kind="dir">
+    <compoundname>decoding</compoundname>
+    <innerfile refid="AmrCoder_8h">AmrCoder.h</innerfile>
+    <innerfile refid="BitVector_8h">BitVector.h</innerfile>
+    <innerfile refid="cch_8h">cch.h</innerfile>
+    <innerfile refid="control__channels__decoder__impl_8h">control_channels_decoder_impl.h</innerfile>
+    <innerfile refid="fire__crc_8h">fire_crc.h</innerfile>
+    <innerfile refid="GSM503Tables_8h">GSM503Tables.h</innerfile>
+    <innerfile refid="GSM610Tables_8h">GSM610Tables.h</innerfile>
+    <innerfile refid="GSM660Tables_8h">GSM660Tables.h</innerfile>
+    <innerfile refid="interleave_8h">interleave.h</innerfile>
+    <innerfile refid="tch__f__decoder__impl_8h">tch_f_decoder_impl.h</innerfile>
+    <innerfile refid="Vector_8h">Vector.h</innerfile>
+    <innerfile refid="Viterbi_8h">Viterbi.h</innerfile>
+    <innerfile refid="ViterbiR204_8h">ViterbiR204.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/"/>
+  </compounddef>
+</doxygen>

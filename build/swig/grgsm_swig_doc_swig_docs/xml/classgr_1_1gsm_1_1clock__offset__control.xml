@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1clock__offset__control" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::gsm::clock_offset_control</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="clock__offset__control_8h" local="no">clock_offset_control.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1gsm_1_1clock__offset__control_1a01c166be14fd5212753c07ec810f924c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1gsm_1_1clock__offset__control" kindref="compound">clock_offset_control</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;clock_offset_control&gt; gr::gsm::clock_offset_control::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/receiver/clock_offset_control.h" line="42" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/receiver/clock_offset_control.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1clock__offset__control_1a3b28313387f588f69aa89dc65af48840" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1gsm_1_1clock__offset__control_1a01c166be14fd5212753c07ec810f924c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::gsm::clock_offset_control::make</definition>
+        <argsstring>(float fc)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1gsm_1_1clock__offset__control" kindref="compound">gsm::clock_offset_control</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1gsm_1_1clock__offset__control" kindref="compound">gsm::clock_offset_control</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1gsm_1_1clock__offset__control_1a3b28313387f588f69aa89dc65af48840" kindref="member">gsm::clock_offset_control::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/receiver/clock_offset_control.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1clock__offset__control_1ac4513490b11cb029feaeb241001f84bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::gsm::clock_offset_control::set_fc</definition>
+        <argsstring>(float fc)=0</argsstring>
+        <name>set_fc</name>
+        <param>
+          <type>float</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/receiver/clock_offset_control.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>block</label>
+      </node>
+      <node id="40">
+        <label>gr::gsm::clock_offset_control</label>
+        <link refid="classgr_1_1gsm_1_1clock__offset__control"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>block</label>
+      </node>
+      <node id="42">
+        <label>gr::gsm::clock_offset_control</label>
+        <link refid="classgr_1_1gsm_1_1clock__offset__control"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/receiver/clock_offset_control.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/receiver/clock_offset_control.h" bodystart="39" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1clock__offset__control_1a3b28313387f588f69aa89dc65af48840" prot="public" virt="non-virtual"><scope>gr::gsm::clock_offset_control</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1clock__offset__control_1ac4513490b11cb029feaeb241001f84bf" prot="public" virt="pure-virtual"><scope>gr::gsm::clock_offset_control</scope><name>set_fc</name></member>
+      <member refid="classgr_1_1gsm_1_1clock__offset__control_1a01c166be14fd5212753c07ec810f924c" prot="public" virt="non-virtual"><scope>gr::gsm::clock_offset_control</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

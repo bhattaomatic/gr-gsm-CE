@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1tch__f__decoder__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::tch_f_decoder_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1tch__f__decoder" prot="public" virt="non-virtual">gr::gsm::tch_f_decoder</basecompoundref>
+    <includes refid="tch__f__decoder__impl_8h" local="no">tch_f_decoder_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa85752d283802d0e189d65168628280e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::tch_f_decoder_impl::d_collected_bursts_num</definition>
+        <argsstring></argsstring>
+        <name>d_collected_bursts_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="52" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a130808bf920a93e8a83abf653e24044d" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::gsm::tch_f_decoder_impl::interleave_trans[CONV_SIZE]</definition>
+        <argsstring>[CONV_SIZE]</argsstring>
+        <name>interleave_trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="53" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a0e7a7851abf1ee75eb5a6a5c1ab9bef2" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::gsm::tch_f_decoder_impl::d_bursts[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>d_bursts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="54" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1adb4cfcb27cf738e422160f78b21444b8" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* gr::gsm::tch_f_decoder_impl::d_speech_file</definition>
+        <argsstring></argsstring>
+        <name>d_speech_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="55" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa3a5e95cd6aa1be5d2523141cfda7d61" prot="private" static="no" mutable="no">
+        <type>enum <ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7" kindref="member">tch_mode</ref></type>
+        <definition>enum tch_mode gr::gsm::tch_f_decoder_impl::d_tch_mode</definition>
+        <argsstring></argsstring>
+        <name>d_tch_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="55" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a73800db5918dc67444308eb2a203f5f1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::gsm::tch_f_decoder_impl::d_boundary_check</definition>
+        <argsstring></argsstring>
+        <name>d_boundary_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="57" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1ae6a38a1a976014b575f5e84289216001" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::gsm::tch_f_decoder_impl::d_boundary_decode</definition>
+        <argsstring></argsstring>
+        <name>d_boundary_decode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="58" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1adaf99cd8b5dbd8957213e7beec46f32f" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mU</definition>
+        <argsstring></argsstring>
+        <name>mU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="60" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a02f7647402ac12495dac21027856a265" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mP</definition>
+        <argsstring></argsstring>
+        <name>mP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="61" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a24bd7996306c9b67ea20341b1f45651d" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mD</definition>
+        <argsstring></argsstring>
+        <name>mD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="62" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a0319b1c60f917845a943a9d6162bbb4f" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mDP</definition>
+        <argsstring></argsstring>
+        <name>mDP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="63" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a6f5b6c7247f4a2c47995f3fe4aa7c84f" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mTCHU</definition>
+        <argsstring></argsstring>
+        <name>mTCHU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="64" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a57353849dc4dd33fe65d9c77e233ae70" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mTCHD</definition>
+        <argsstring></argsstring>
+        <name>mTCHD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="65" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1adb69b93fbd4f203bd723fb166efa5a7d" prot="private" static="no" mutable="no">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector gr::gsm::tch_f_decoder_impl::mClass1A_d</definition>
+        <argsstring></argsstring>
+        <name>mClass1A_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="66" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a05d1a64f0969b4ef9c9b0844901df98f" prot="private" static="no" mutable="no">
+        <type><ref refid="classSoftVector" kindref="compound">SoftVector</ref></type>
+        <definition>SoftVector gr::gsm::tch_f_decoder_impl::mC</definition>
+        <argsstring></argsstring>
+        <name>mC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="67" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a63bf4de96ca4983662b846e93d27c1de" prot="private" static="no" mutable="no">
+        <type><ref refid="classSoftVector" kindref="compound">SoftVector</ref></type>
+        <definition>SoftVector gr::gsm::tch_f_decoder_impl::mClass1_c</definition>
+        <argsstring></argsstring>
+        <name>mClass1_c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="68" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a5357873952db546ea75e0f9dc99809a6" prot="private" static="no" mutable="no">
+        <type><ref refid="classSoftVector" kindref="compound">SoftVector</ref></type>
+        <definition>SoftVector gr::gsm::tch_f_decoder_impl::mClass2_c</definition>
+        <argsstring></argsstring>
+        <name>mClass2_c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="69" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a91d8f05b6f2eb09b8f069b82923d3b00" prot="private" static="no" mutable="no">
+        <type><ref refid="classSoftVector" kindref="compound">SoftVector</ref></type>
+        <definition>SoftVector gr::gsm::tch_f_decoder_impl::mTCHUC</definition>
+        <argsstring></argsstring>
+        <name>mTCHUC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="70" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a7bbf371c27798e199ca8e5699fd9662c" prot="private" static="no" mutable="no">
+        <type><ref refid="classParity" kindref="compound">Parity</ref></type>
+        <definition>Parity gr::gsm::tch_f_decoder_impl::mBlockCoder</definition>
+        <argsstring></argsstring>
+        <name>mBlockCoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="72" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1ab51ba36c7563f11214f97d086ea59e2b" prot="private" static="no" mutable="no">
+        <type><ref refid="classParity" kindref="compound">Parity</ref></type>
+        <definition>Parity gr::gsm::tch_f_decoder_impl::mTCHParity</definition>
+        <argsstring></argsstring>
+        <name>mTCHParity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="73" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a121590a44e80e827c9a273856cdb6a7c" prot="private" static="no" mutable="no">
+        <type><ref refid="classViterbiR2O4" kindref="compound">ViterbiR2O4</ref></type>
+        <definition>ViterbiR2O4 gr::gsm::tch_f_decoder_impl::mVR204Coder</definition>
+        <argsstring></argsstring>
+        <name>mVR204Coder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="75" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1ab1e80e2c212b8514c6b77d799947987b" prot="private" static="no" mutable="no">
+        <type><ref refid="classViterbiBase" kindref="compound">ViterbiBase</ref> *</type>
+        <definition>ViterbiBase* gr::gsm::tch_f_decoder_impl::mViterbi</definition>
+        <argsstring></argsstring>
+        <name>mViterbi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="76" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a0dc723455382887fa29b192867f3e603" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::gsm::tch_f_decoder_impl::iBLOCK[2 *BLOCKS *iBLOCK_SIZE]</definition>
+        <argsstring>[2 *BLOCKS *iBLOCK_SIZE]</argsstring>
+        <name>iBLOCK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="78" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1aedd25623b6c0d073aed37924641efdf6" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::gsm::tch_f_decoder_impl::mAMRFrameHeader</definition>
+        <argsstring></argsstring>
+        <name>mAMRFrameHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="79" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a4eccc167cea64529d94bab7f8babd52f" prot="private" static="no" mutable="no">
+        <type>const unsigned *</type>
+        <definition>const unsigned* gr::gsm::tch_f_decoder_impl::mAMRBitOrder</definition>
+        <argsstring></argsstring>
+        <name>mAMRBitOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="81" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a46c7c0c0ae9db8b829d82832a9cf4fce" prot="private" static="no" mutable="no">
+        <type>const unsigned *</type>
+        <definition>const unsigned* gr::gsm::tch_f_decoder_impl::mPuncture</definition>
+        <argsstring></argsstring>
+        <name>mPuncture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="82" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a8e9e9fc6c61fd08e7120bfa5cc20a6d6" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::gsm::tch_f_decoder_impl::mClass1ALth</definition>
+        <argsstring></argsstring>
+        <name>mClass1ALth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="83" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa12f5a7f12149bba580edefdb363c15d" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::gsm::tch_f_decoder_impl::mClass1BLth</definition>
+        <argsstring></argsstring>
+        <name>mClass1BLth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="84" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a550e406424b335211fc99ae1b619ce65" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::gsm::tch_f_decoder_impl::mPunctureLth</definition>
+        <argsstring></argsstring>
+        <name>mPunctureLth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="85" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a20e0750aabf7530c0d459e24bb6ed9c9" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::tch_f_decoder_impl::mAMRFrameLth</definition>
+        <argsstring></argsstring>
+        <name>mAMRFrameLth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="86" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a6885ddfeac838cc169962f105dab0518" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::gsm::tch_f_decoder_impl::mKd</definition>
+        <argsstring></argsstring>
+        <name>mKd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="87" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a4c79b6b96ad20735a1f7763a780d8083" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::tch_f_decoder_impl::decode</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a81acacaa0bc0528f5b2aef432f0dd1a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::tch_f_decoder_impl::setCodingMode</definition>
+        <argsstring>(tch_mode mode)</argsstring>
+        <name>setCodingMode</name>
+        <param>
+          <type><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7" kindref="member">tch_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1a759f91a4046fc0000a6018f8677d45e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::tch_f_decoder_impl::tch_f_decoder_impl</definition>
+        <argsstring>(tch_mode mode, const std::string &amp;file, bool boundary_check=true)</argsstring>
+        <name>tch_f_decoder_impl</name>
+        <param>
+          <type><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7" kindref="member">tch_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>boundary_check</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa4400d12a2a4c457beeb5ae00d7e0353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::tch_f_decoder_impl::~tch_f_decoder_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~tch_f_decoder_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="93" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="799">
+        <label>gr::gsm::tch_f_decoder_impl</label>
+        <link refid="classgr_1_1gsm_1_1tch__f__decoder__impl"/>
+        <childnode refid="800" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="801">
+        <label>block</label>
+      </node>
+      <node id="800">
+        <label>gr::gsm::tch_f_decoder</label>
+        <link refid="classgr_1_1gsm_1_1tch__f__decoder"/>
+        <childnode refid="801" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="802">
+        <label>gr::gsm::tch_f_decoder_impl</label>
+        <link refid="classgr_1_1gsm_1_1tch__f__decoder__impl"/>
+        <childnode refid="803" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>block</label>
+      </node>
+      <node id="803">
+        <label>gr::gsm::tch_f_decoder</label>
+        <link refid="classgr_1_1gsm_1_1tch__f__decoder"/>
+        <childnode refid="804" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" line="50" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/tch_f_decoder_impl.h" bodystart="49" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a73800db5918dc67444308eb2a203f5f1" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>d_boundary_check</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1ae6a38a1a976014b575f5e84289216001" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>d_boundary_decode</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a0e7a7851abf1ee75eb5a6a5c1ab9bef2" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>d_bursts</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa85752d283802d0e189d65168628280e" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>d_collected_bursts_num</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1adb4cfcb27cf738e422160f78b21444b8" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>d_speech_file</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa3a5e95cd6aa1be5d2523141cfda7d61" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>d_tch_mode</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a4c79b6b96ad20735a1f7763a780d8083" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>decode</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a0dc723455382887fa29b192867f3e603" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>iBLOCK</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a130808bf920a93e8a83abf653e24044d" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>interleave_trans</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder_1a031dce97d9da8ec2183d2f3de9348d8c" prot="public" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a4eccc167cea64529d94bab7f8babd52f" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mAMRBitOrder</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1aedd25623b6c0d073aed37924641efdf6" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mAMRFrameHeader</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a20e0750aabf7530c0d459e24bb6ed9c9" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mAMRFrameLth</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a7bbf371c27798e199ca8e5699fd9662c" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mBlockCoder</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a05d1a64f0969b4ef9c9b0844901df98f" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mC</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a63bf4de96ca4983662b846e93d27c1de" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mClass1_c</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1adb69b93fbd4f203bd723fb166efa5a7d" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mClass1A_d</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a8e9e9fc6c61fd08e7120bfa5cc20a6d6" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mClass1ALth</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa12f5a7f12149bba580edefdb363c15d" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mClass1BLth</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a5357873952db546ea75e0f9dc99809a6" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mClass2_c</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a24bd7996306c9b67ea20341b1f45651d" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mD</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a0319b1c60f917845a943a9d6162bbb4f" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mDP</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a6885ddfeac838cc169962f105dab0518" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mKd</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a02f7647402ac12495dac21027856a265" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mP</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a46c7c0c0ae9db8b829d82832a9cf4fce" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mPuncture</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a550e406424b335211fc99ae1b619ce65" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mPunctureLth</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a57353849dc4dd33fe65d9c77e233ae70" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mTCHD</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1ab51ba36c7563f11214f97d086ea59e2b" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mTCHParity</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a6f5b6c7247f4a2c47995f3fe4aa7c84f" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mTCHU</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a91d8f05b6f2eb09b8f069b82923d3b00" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mTCHUC</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1adaf99cd8b5dbd8957213e7beec46f32f" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mU</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1ab1e80e2c212b8514c6b77d799947987b" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mViterbi</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a121590a44e80e827c9a273856cdb6a7c" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>mVR204Coder</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a81acacaa0bc0528f5b2aef432f0dd1a7" prot="private" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>setCodingMode</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder_1ac4405464f90c5cce86973fe0aabab5fb" prot="public" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1a759f91a4046fc0000a6018f8677d45e1" prot="public" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>tch_f_decoder_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__decoder__impl_1aa4400d12a2a4c457beeb5ae00d7e0353" prot="public" virt="non-virtual"><scope>gr::gsm::tch_f_decoder_impl</scope><name>~tch_f_decoder_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

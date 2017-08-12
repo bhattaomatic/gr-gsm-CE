@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1ArrayTraits_3_01T_01_6_01_4" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::ArrayTraits&lt; T &amp; &gt;</compoundname>
+    <basecompoundref refid="classgnuplotio_1_1ArrayTraits" prot="public" virt="non-virtual">gnuplotio::ArrayTraits&lt; T &gt;</basecompoundref>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="325">
+        <label>gnuplotio::ArrayTraits&lt; T &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits"/>
+      </node>
+      <node id="324">
+        <label>gnuplotio::ArrayTraits&lt; T &amp; &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits_3_01T_01_6_01_4"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="327">
+        <label>gnuplotio::ArrayTraits&lt; T &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits"/>
+      </node>
+      <node id="326">
+        <label>gnuplotio::ArrayTraits&lt; T &amp; &gt;</label>
+        <link refid="classgnuplotio_1_1ArrayTraits_3_01T_01_6_01_4"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="846" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="846" bodyend="846"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a354d64663551a34c36c5fa7823859668" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T &amp; &gt;</scope><name>allow_auto_unwrap</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a6fbd8c815e595f4efbcafd9b0eeb06f2" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T &amp; &gt;</scope><name>depth</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1aee31432f330f9f9e4f5af628641181f7" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T &amp; &gt;</scope><name>get_range</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1ac5d19b25086565613c305960bd9d4a78" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T &amp; &gt;</scope><name>is_container</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1ae53464a5175c03deec403392b8dcb3c5" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T &amp; &gt;</scope><name>range_type</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a3bcae12a7bf42af90f4946acc66f27e0" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits&lt; T &amp; &gt;</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

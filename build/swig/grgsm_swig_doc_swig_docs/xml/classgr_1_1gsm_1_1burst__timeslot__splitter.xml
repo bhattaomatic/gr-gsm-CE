@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1burst__timeslot__splitter" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::burst_timeslot_splitter</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="burst__timeslot__splitter_8h" local="no">burst_timeslot_splitter.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1gsm_1_1burst__timeslot__splitter_1ad4e49abc9ce9d15bcc8b5c60c73172de" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1gsm_1_1burst__timeslot__splitter" kindref="compound">burst_timeslot_splitter</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;burst_timeslot_splitter&gt; gr::gsm::burst_timeslot_splitter::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/flow_control/burst_timeslot_splitter.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/flow_control/burst_timeslot_splitter.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1burst__timeslot__splitter_1a0f756d449da4cad34e3b12eeed693d5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1gsm_1_1burst__timeslot__splitter_1ad4e49abc9ce9d15bcc8b5c60c73172de" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::gsm::burst_timeslot_splitter::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of grgsm::burst_timeslot_splitter. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, grgsm::burst_timeslot_splitter&apos;s constructor is in a private implementation class. grgsm::burst_timeslot_splitter::make is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/flow_control/burst_timeslot_splitter.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>block</label>
+      </node>
+      <node id="32">
+        <label>gr::gsm::burst_timeslot_splitter</label>
+        <link refid="classgr_1_1gsm_1_1burst__timeslot__splitter"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>block</label>
+      </node>
+      <node id="34">
+        <label>gr::gsm::burst_timeslot_splitter</label>
+        <link refid="classgr_1_1gsm_1_1burst__timeslot__splitter"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/flow_control/burst_timeslot_splitter.h" line="38" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/flow_control/burst_timeslot_splitter.h" bodystart="37" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1burst__timeslot__splitter_1a0f756d449da4cad34e3b12eeed693d5d" prot="public" virt="non-virtual"><scope>gr::gsm::burst_timeslot_splitter</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1burst__timeslot__splitter_1ad4e49abc9ce9d15bcc8b5c60c73172de" prot="public" virt="non-virtual"><scope>gr::gsm::burst_timeslot_splitter</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

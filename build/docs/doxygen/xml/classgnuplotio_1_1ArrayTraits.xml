@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1ArrayTraits" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::ArrayTraits</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Enable</declname>
+        <defname>Enable</defname>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgnuplotio_1_1ArrayTraits_1a3bcae12a7bf42af90f4946acc66f27e0" prot="public" static="no">
+        <type><ref refid="structgnuplotio_1_1Error__WasNotContainer" kindref="compound">Error_WasNotContainer</ref></type>
+        <definition>typedef Error_WasNotContainer gnuplotio::ArrayTraits&lt; T, Enable &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="810" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgnuplotio_1_1ArrayTraits_1ae53464a5175c03deec403392b8dcb3c5" prot="public" static="no">
+        <type><ref refid="structgnuplotio_1_1Error__WasNotContainer" kindref="compound">Error_WasNotContainer</ref></type>
+        <definition>typedef Error_WasNotContainer gnuplotio::ArrayTraits&lt; T, Enable &gt;::range_type</definition>
+        <argsstring></argsstring>
+        <name>range_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="812" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgnuplotio_1_1ArrayTraits_1ac5d19b25086565613c305960bd9d4a78" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ArrayTraits&lt; T, Enable &gt;::is_container</definition>
+        <argsstring></argsstring>
+        <name>is_container</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="814" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgnuplotio_1_1ArrayTraits_1a354d64663551a34c36c5fa7823859668" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ArrayTraits&lt; T, Enable &gt;::allow_auto_unwrap</definition>
+        <argsstring></argsstring>
+        <name>allow_auto_unwrap</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="819" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgnuplotio_1_1ArrayTraits_1a6fbd8c815e595f4efbcafd9b0eeb06f2" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t gnuplotio::ArrayTraits&lt; T, Enable &gt;::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="821" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgnuplotio_1_1ArrayTraits_1aee31432f330f9f9e4f5af628641181f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgnuplotio_1_1ArrayTraits_1ae53464a5175c03deec403392b8dcb3c5" kindref="member">range_type</ref></type>
+        <definition>static range_type gnuplotio::ArrayTraits&lt; T, Enable &gt;::get_range</definition>
+        <argsstring>(const T &amp;)</argsstring>
+        <name>get_range</name>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="824" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="824" bodyend="827"/>
+        <referencedby refid="classgnuplotio_1_1IteratorRange_1a03ee1f4e4e321d6c9676b632dcfc5969" compoundref="gnuplot-iostream_8h" startline="883" endline="890">gnuplotio::IteratorRange&lt; TI, TV &gt;::deref_subiter</referencedby>
+        <referencedby refid="namespacegnuplotio_1a64984827dd8debb9098ad1afdde8e409" compoundref="gnuplot-iostream_8h" startline="1150" endline="1160">gnuplotio::get_columns_range</referencedby>
+        <referencedby refid="classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_d5bfbd58f322d0a74d370034dff1881d_1ad0485dd16a9d54a4eb75bf3e75b1facd" compoundref="gnuplot-iostream_8h" startline="1037" endline="1039">gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;::get_range</referencedby>
+        <referencedby refid="namespacegnuplotio_1aef147f3d42f3f2c89cc4c895b8494150" compoundref="gnuplot-iostream_8h" startline="1453" endline="1457">gnuplotio::handle_colunwrap_tag</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="807" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="807" bodyend="828"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a354d64663551a34c36c5fa7823859668" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits</scope><name>allow_auto_unwrap</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a6fbd8c815e595f4efbcafd9b0eeb06f2" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits</scope><name>depth</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1aee31432f330f9f9e4f5af628641181f7" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits</scope><name>get_range</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1ac5d19b25086565613c305960bd9d4a78" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits</scope><name>is_container</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1ae53464a5175c03deec403392b8dcb3c5" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits</scope><name>range_type</name></member>
+      <member refid="classgnuplotio_1_1ArrayTraits_1a3bcae12a7bf42af90f4946acc66f27e0" prot="public" virt="non-virtual"><scope>gnuplotio::ArrayTraits</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

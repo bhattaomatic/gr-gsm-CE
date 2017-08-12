@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_b24eea30c8e9387e5da8cd764e1572fb" kind="dir">
+    <compoundname>receiver</compoundname>
+    <innerfile refid="clock__offset__control__impl_8h">clock_offset_control_impl.h</innerfile>
+    <innerfile refid="cx__channel__hopper__impl_8h">cx_channel_hopper_impl.h</innerfile>
+    <innerfile refid="gsm__constants_8h">gsm_constants.h</innerfile>
+    <innerfile refid="receiver__config_8h">receiver_config.h</innerfile>
+    <innerfile refid="receiver__impl_8h">receiver_impl.h</innerfile>
+    <innerfile refid="sch_8h">sch.h</innerfile>
+    <innerfile refid="viterbi__detector_8h">viterbi_detector.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/"/>
+  </compounddef>
+</doxygen>

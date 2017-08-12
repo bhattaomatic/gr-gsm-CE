@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_dc7df6e4fa53ff2cd6326426e0796d8a" kind="dir">
+    <compoundname>misc_utils</compoundname>
+    <innerfile refid="burst__file__sink_8h">burst_file_sink.h</innerfile>
+    <innerfile refid="burst__file__source_8h">burst_file_source.h</innerfile>
+    <innerfile refid="bursts__printer_8h">bursts_printer.h</innerfile>
+    <innerfile refid="controlled__const__source__f_8h">controlled_const_source_f.h</innerfile>
+    <innerfile refid="controlled__rotator__cc_8h">controlled_rotator_cc.h</innerfile>
+    <innerfile refid="extract__immediate__assignment_8h">extract_immediate_assignment.h</innerfile>
+    <innerfile refid="extract__system__info_8h">extract_system_info.h</innerfile>
+    <innerfile refid="message__file__sink_8h">message_file_sink.h</innerfile>
+    <innerfile refid="message__file__source_8h">message_file_source.h</innerfile>
+    <innerfile refid="message__printer_8h">message_printer.h</innerfile>
+    <innerfile refid="tmsi__dumper_8h">tmsi_dumper.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/misc_utils/"/>
+  </compounddef>
+</doxygen>

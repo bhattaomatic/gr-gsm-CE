@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_2189915b57c6ad423e9b627c31b1f4c3" kind="dir">
+    <compoundname>flow_control</compoundname>
+    <innerfile refid="burst__fnr__filter_8h">burst_fnr_filter.h</innerfile>
+    <innerfile refid="burst__sdcch__subslot__filter_8h">burst_sdcch_subslot_filter.h</innerfile>
+    <innerfile refid="burst__sdcch__subslot__splitter_8h">burst_sdcch_subslot_splitter.h</innerfile>
+    <innerfile refid="burst__timeslot__filter_8h">burst_timeslot_filter.h</innerfile>
+    <innerfile refid="burst__timeslot__splitter_8h">burst_timeslot_splitter.h</innerfile>
+    <innerfile refid="dummy__burst__filter_8h">dummy_burst_filter.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/flow_control/"/>
+  </compounddef>
+</doxygen>

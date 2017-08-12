@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1TextSender" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::TextSender</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Enable</declname>
+        <defname>Enable</defname>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1TextSender_1a03b58292dc75a4137d30ad7fffd762c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::TextSender&lt; T, Enable &gt;::send</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;v)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="434" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="434" bodyend="436"/>
+        <referencedby refid="structgnuplotio_1_1TextSender_3_01std_1_1pair_3_01T_00_01U_01_4_01_4_1ae1f3a6ffd8a60bb73d787578327154d1" compoundref="gnuplot-iostream_8h" startline="520" endline="524">gnuplotio::TextSender&lt; std::pair&lt; T, U &gt; &gt;::send</referencedby>
+        <referencedby refid="structgnuplotio_1_1TextSender_3_01std_1_1complex_3_01T_01_4_01_4_1ad524aa3e121d0ebd66346d77f1fd5a1c" compoundref="gnuplot-iostream_8h" startline="549" endline="553">gnuplotio::TextSender&lt; std::complex&lt; T &gt; &gt;::send</referencedby>
+        <referencedby refid="structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_613e8c35e9263a9c4b5e2b75ff99b434_1a57bf894398f70f08cd4bac18ee5cbf68" compoundref="gnuplot-iostream_8h" startline="585" endline="589">gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::send</referencedby>
+        <referencedby refid="structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_bf5c774ba95be74c5a1a563b931819fa_1a76a476180ea04c950c1cfdb71c556525" compoundref="gnuplot-iostream_8h" startline="601" endline="603">gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;::send</referencedby>
+        <referencedby refid="namespacegnuplotio_1a55ff2f9abaa4b3e1c64a8f730f791b33" compoundref="gnuplot-iostream_8h" startline="1292" endline="1294">gnuplotio::send_scalar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="433" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="433" bodyend="437"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1TextSender_1a03b58292dc75a4137d30ad7fffd762c6" prot="public" virt="non-virtual"><scope>gnuplotio::TextSender</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

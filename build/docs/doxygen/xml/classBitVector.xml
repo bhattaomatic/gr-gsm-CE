@@ -1,0 +1,989 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classBitVector" kind="class" language="C++" prot="public">
+    <compoundname>BitVector</compoundname>
+    <basecompoundref refid="classVectorBase" prot="public" virt="non-virtual">VectorBase&lt; char &gt;</basecompoundref>
+    <includes refid="BitVector_8h" local="no">BitVector.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Casts of Vector constructors.</header>
+      <memberdef kind="function" id="classBitVector_1abae53290f4b7ea3332b9b011ea782bba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BitVector::BitVector</definition>
+        <argsstring>(VectorDataType wData, char *wStart, char *wEnd)</argsstring>
+        <name>BitVector</name>
+        <param>
+          <type><ref refid="classVectorBase_1a38ff214bd5f24507736a6f5d391ceb09" kindref="member">VectorDataType</ref></type>
+          <declname>wData</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>wStart</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>wEnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="127" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a48841e9d606c7c0fe2ec73a9366e2364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BitVector::BitVector</definition>
+        <argsstring>(const BitVector &amp;other)</argsstring>
+        <name>BitVector</name>
+        <param>
+          <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="130" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="130" bodyend="137"/>
+        <references refid="classVectorBase_1adba2e683e7b9ad36fefdb802d755282e" compoundref="Vector_8h" startline="313" endline="313">VectorBase&lt; T &gt;::getData</references>
+        <references refid="Vector_8h_1a3358ce12ecd36a7d6e8ddda6c17e0c2b" compoundref="Vector_8h" startline="40">VECTORDEBUG</references>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a37c97858be3726b46b6f7b358b17dfe8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BitVector::BitVector</definition>
+        <argsstring>(size_t len)</argsstring>
+        <name>BitVector</name>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="142" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a6a8e4243e01a015a77ef2ee04a9b6466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BitVector::BitVector</definition>
+        <argsstring>()</argsstring>
+        <name>BitVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="143" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1ad6d04b48310b0e9f78e9f46147a22c26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BitVector::BitVector</definition>
+        <argsstring>(const BitVector &amp;other1, const BitVector &amp;other2)</argsstring>
+        <name>BitVector</name>
+        <param>
+          <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>other1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>other2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a <ref refid="classBitVector" kindref="compound">BitVector</ref> by concatenation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="146" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1abf564f24f5c2857ba8c73cfacbff706c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BitVector::BitVector</definition>
+        <argsstring>(const char *valString)</argsstring>
+        <name>BitVector</name>
+        <param>
+          <type>const char *</type>
+          <declname>valString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct from a string of &quot;0&quot; and &quot;1&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="154" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Casts and overrides of Vector operators.</header>
+      <memberdef kind="function" id="classBitVector_1adffaf011b8f2c560954020ab40e43fd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector BitVector::segment</definition>
+        <argsstring>(size_t start, size_t span)</argsstring>
+        <name>segment</name>
+        <param>
+          <type>size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="160" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="160" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a814c9dcdf9bed756d1017c243b8626b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>const BitVector BitVector::cloneSegment</definition>
+        <argsstring>(size_t start, size_t span) const </argsstring>
+        <name>cloneSegment</name>
+        <param>
+          <type>size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="174" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="174" bodyend="182"/>
+        <references refid="classVectorBase_1acbbe83f00dfc704ae4e799c626074c15" compoundref="Vector_8h" startline="193" endline="196">VectorBase&lt; T &gt;::clone</references>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a630f2cbd89230c21c1a084d72281bda3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector BitVector::alias</definition>
+        <argsstring>() const </argsstring>
+        <name>alias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="184" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="184" bodyend="186"/>
+        <references refid="classGenerator_1a2a3045f4457fa40af19c027a9bd41dbc" compoundref="BitVector_8h" startline="65" endline="65">Generator::size</references>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a890f8507934ab3570c93fb97bd3f5c83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector BitVector::head</definition>
+        <argsstring>(size_t span)</argsstring>
+        <name>head</name>
+        <param>
+          <type>size_t</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="188" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a5b979b8a4769e5913c7e519b00952201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector BitVector::tail</definition>
+        <argsstring>(size_t start)</argsstring>
+        <name>tail</name>
+        <param>
+          <type>size_t</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="189" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="189" bodyend="189"/>
+        <references refid="classGenerator_1a2a3045f4457fa40af19c027a9bd41dbc" compoundref="BitVector_8h" startline="65" endline="65">Generator::size</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>FEC operations.</header>
+      <memberdef kind="function" id="classBitVector_1a65135b5ed8d136d98b27c091fd80c608" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t BitVector::syndrome</definition>
+        <argsstring>(Generator &amp;gen) const </argsstring>
+        <name>syndrome</name>
+        <param>
+          <type><ref refid="classGenerator" kindref="compound">Generator</ref> &amp;</type>
+          <declname>gen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the syndrome of the vector with the given <ref refid="classGenerator" kindref="compound">Generator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1ad4b1a430c053d90445eb7ab7f45fe54c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t BitVector::parity</definition>
+        <argsstring>(Generator &amp;gen) const </argsstring>
+        <name>parity</name>
+        <param>
+          <type><ref refid="classGenerator" kindref="compound">Generator</ref> &amp;</type>
+          <declname>gen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the parity word for the vector with the given <ref refid="classGenerator" kindref="compound">Generator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="205" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Byte-wise operations.</header>
+      <memberdef kind="function" id="classBitVector_1a1722b8a444b18041c7203d358ed9a310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::reverse8</definition>
+        <argsstring>()</argsstring>
+        <name>reverse8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverse an 8-bit vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a09b24ccac33d4dfa075f75b79eaf5198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::LSB8MSB</definition>
+        <argsstring>()</argsstring>
+        <name>LSB8MSB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverse groups of 8 within the vector (byte reversal). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="217" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Serialization and deserialization.</header>
+      <memberdef kind="function" id="classBitVector_1a543439d7598a2d8c02bde0fb5b6679e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t BitVector::peekField</definition>
+        <argsstring>(size_t readIndex, unsigned length) const </argsstring>
+        <name>peekField</name>
+        <param>
+          <type>size_t</type>
+          <declname>readIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a9ab2a6df504eb02c0aea14223c759424" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t BitVector::peekFieldReversed</definition>
+        <argsstring>(size_t readIndex, unsigned length) const </argsstring>
+        <name>peekFieldReversed</name>
+        <param>
+          <type>size_t</type>
+          <declname>readIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1acacba0f95f39d3b712e4b101501e85e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t BitVector::readField</definition>
+        <argsstring>(size_t &amp;readIndex, unsigned length) const </argsstring>
+        <name>readField</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>readIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1aa8613716b731932d4d38b930ca3400d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t BitVector::readFieldReversed</definition>
+        <argsstring>(size_t &amp;readIndex, unsigned length) const </argsstring>
+        <name>readFieldReversed</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>readIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a031aa9fe07c082d4529fcf394f210a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::fillField</definition>
+        <argsstring>(size_t writeIndex, uint64_t value, unsigned length)</argsstring>
+        <name>fillField</name>
+        <param>
+          <type>size_t</type>
+          <declname>writeIndex</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a79afaa55bb098cb4b07fc1aec2d5a519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::fillFieldReversed</definition>
+        <argsstring>(size_t writeIndex, uint64_t value, unsigned length)</argsstring>
+        <name>fillFieldReversed</name>
+        <param>
+          <type>size_t</type>
+          <declname>writeIndex</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1ae69d7b4fce82d4da361f422ad90a5db4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::writeField</definition>
+        <argsstring>(size_t &amp;writeIndex, uint64_t value, unsigned length)</argsstring>
+        <name>writeField</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>writeIndex</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1abcef1487660f3c087dbd9a55a38772af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::writeFieldReversed</definition>
+        <argsstring>(size_t &amp;writeIndex, uint64_t value, unsigned length)</argsstring>
+        <name>writeFieldReversed</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>writeIndex</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a1e2832bd00232634dc4d1b18f2c48efe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::write0</definition>
+        <argsstring>(size_t &amp;writeIndex)</argsstring>
+        <name>write0</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>writeIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="230" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1af30bac52dc2b74b2740401b5b0da5f01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::write1</definition>
+        <argsstring>(size_t &amp;writeIndex)</argsstring>
+        <name>write1</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>writeIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="231" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classBitVector_1a8949d60c85627ee692d697875f5774d9" prot="public" static="no">
+        <type>char *</type>
+        <definition>typedef char* BitVector::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="314" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classBitVector_1a8b40962649c72fe71676995181274b35" prot="public" static="no">
+        <type>const char *</type>
+        <definition>typedef const char* BitVector::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="315" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBitVector_1af5b7947fe65cc76722c5fd251c318199" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="198" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1ac53cf375dcc928204e9d0a7a21acc157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::invert</definition>
+        <argsstring>()</argsstring>
+        <name>invert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invert 0&lt;-&gt;1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a6de3c2a02646cf80306639b9c1781365" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned BitVector::sum</definition>
+        <argsstring>() const </argsstring>
+        <name>sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sum of bits. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a9cd66fb07a7e9d13495fce016890093d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::map</definition>
+        <argsstring>(const unsigned *map, size_t mapSize, BitVector &amp;dest) const </argsstring>
+        <name>map</name>
+        <param>
+          <type>const unsigned *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>mapSize</declname>
+        </param>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reorder bits, dest[i] = this[map[i]]. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1ae89338be148c75b21c153fde0238a860" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::unmap</definition>
+        <argsstring>(const unsigned *map, size_t mapSize, BitVector &amp;dest) const </argsstring>
+        <name>unmap</name>
+        <param>
+          <type>const unsigned *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>mapSize</declname>
+        </param>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reorder bits, dest[map[i]] = this[i]. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a2f4df1e68b7e02fece7cf40dac378631" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::pack</definition>
+        <argsstring>(unsigned char *) const </argsstring>
+        <name>pack</name>
+        <param>
+          <type>unsigned char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pack into a char array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a70dedd6ff98749bc314c034d54fbd8c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::pack2</definition>
+        <argsstring>(unsigned char *) const </argsstring>
+        <name>pack2</name>
+        <param>
+          <type>unsigned char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a32acf3d2e67ff24c1efe8b5c67b4a367" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string BitVector::packToString</definition>
+        <argsstring>() const </argsstring>
+        <name>packToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1ad56babdd15e0b73c21b98a6f504b013a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::unpack</definition>
+        <argsstring>(const unsigned char *)</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>const unsigned char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unpack from a char array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a74d904bef629a4f3484ab7afddd8ae0e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::hex</definition>
+        <argsstring>(std::ostream &amp;) const </argsstring>
+        <name>hex</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a hexdump string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a575688a7f86620ef267b108b62723719" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string BitVector::hexstr</definition>
+        <argsstring>() const </argsstring>
+        <name>hexstr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a11c6e0cc70c507c9fc075bbb4d424f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BitVector::unhex</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>unhex</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unpack from a hexdump string. <simplesect kind="return"><para>true on success, false on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a2c8af29c7ac958e0fe666ee1b71fefa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::dup</definition>
+        <argsstring>(BitVector other)</argsstring>
+        <name>dup</name>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="268" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="268" bodyend="268"/>
+        <references refid="classVectorBase_1aa9f050339b20a7bb9250650397565502" compoundref="Vector_8h" startline="133">VectorBase&lt; T &gt;::mStart</references>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1aea53853f89a8becbd22681a6418282e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::dup</definition>
+        <argsstring>(BitVector &amp;other)</argsstring>
+        <name>dup</name>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="269" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="269" bodyend="269"/>
+        <references refid="classVectorBase_1aa9f050339b20a7bb9250650397565502" compoundref="Vector_8h" startline="133">VectorBase&lt; T &gt;::mStart</references>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1afd2cf0f997f61154b63fb4df7b2f4da1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BitVector::operator==</definition>
+        <argsstring>(const BitVector &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a1b8cc3fc01ea3c77d01550b89d435cfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::copyPunctured</definition>
+        <argsstring>(BitVector &amp;dst, const unsigned *puncture, const size_t plth)</argsstring>
+        <name>copyPunctured</name>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const unsigned *</type>
+          <declname>puncture</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>plth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy to dst, not including those indexed in puncture. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a2187b1663a1ec626a4e5d61c66a78c36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BitVector::bit</definition>
+        <argsstring>(size_t index) const </argsstring>
+        <name>bit</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index a single bit. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="286" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="286" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a625c4e943e749604588c89f81eea92a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; BitVector::operator[]</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="294" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="294" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1a9f06237d08873daa6b32c734554f550c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char &amp;</type>
+        <definition>const char&amp; BitVector::operator[]</definition>
+        <argsstring>(size_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="300" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="300" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classBitVector_1aa447d928f3c87f17e81a1fdb62e3a768" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitVector::settfb</definition>
+        <argsstring>(size_t index, int value)</argsstring>
+        <name>settfb</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="307" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="307" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="426">
+        <label>BitVector</label>
+        <link refid="classBitVector"/>
+        <childnode refid="427" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>VectorBase&lt; char &gt;</label>
+        <link refid="classVectorBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="428">
+        <label>BitVector</label>
+        <link refid="classBitVector"/>
+        <childnode refid="429" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>VectorBase&lt; char &gt;</label>
+        <link refid="classVectorBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="121" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="120" bodyend="316"/>
+    <listofallmembers>
+      <member refid="classBitVector_1a630f2cbd89230c21c1a084d72281bda3" prot="public" virt="non-virtual"><scope>BitVector</scope><name>alias</name></member>
+      <member refid="classVectorBase_1aa8bf686129f0bb6e4eb20f8c0b54c6b4" prot="public" virt="non-virtual"><scope>BitVector</scope><name>begin</name></member>
+      <member refid="classVectorBase_1ae5703f5dc5374229423cda1bc726a464" prot="public" virt="non-virtual"><scope>BitVector</scope><name>begin</name></member>
+      <member refid="classBitVector_1a2187b1663a1ec626a4e5d61c66a78c36" prot="public" virt="non-virtual"><scope>BitVector</scope><name>bit</name></member>
+      <member refid="classBitVector_1abae53290f4b7ea3332b9b011ea782bba" prot="public" virt="non-virtual"><scope>BitVector</scope><name>BitVector</name></member>
+      <member refid="classBitVector_1a48841e9d606c7c0fe2ec73a9366e2364" prot="public" virt="non-virtual"><scope>BitVector</scope><name>BitVector</name></member>
+      <member refid="classBitVector_1a37c97858be3726b46b6f7b358b17dfe8" prot="public" virt="non-virtual"><scope>BitVector</scope><name>BitVector</name></member>
+      <member refid="classBitVector_1a6a8e4243e01a015a77ef2ee04a9b6466" prot="public" virt="non-virtual"><scope>BitVector</scope><name>BitVector</name></member>
+      <member refid="classBitVector_1ad6d04b48310b0e9f78e9f46147a22c26" prot="public" virt="non-virtual"><scope>BitVector</scope><name>BitVector</name></member>
+      <member refid="classBitVector_1abf564f24f5c2857ba8c73cfacbff706c" prot="public" virt="non-virtual"><scope>BitVector</scope><name>BitVector</name></member>
+      <member refid="classVectorBase_1a0b5eb3427d4e28d960bfa140fd1f98d5" prot="public" virt="non-virtual"><scope>BitVector</scope><name>bytes</name></member>
+      <member refid="classVectorBase_1aa1795443685ec33af86e2e2ce9f95949" prot="public" virt="non-virtual"><scope>BitVector</scope><name>clear</name></member>
+      <member refid="classVectorBase_1acbbe83f00dfc704ae4e799c626074c15" prot="public" virt="non-virtual"><scope>BitVector</scope><name>clone</name></member>
+      <member refid="classBitVector_1a814c9dcdf9bed756d1017c243b8626b7" prot="public" virt="non-virtual"><scope>BitVector</scope><name>cloneSegment</name></member>
+      <member refid="classBitVector_1a8b40962649c72fe71676995181274b35" prot="public" virt="non-virtual"><scope>BitVector</scope><name>const_iterator</name></member>
+      <member refid="classBitVector_1a1b8cc3fc01ea3c77d01550b89d435cfa" prot="public" virt="non-virtual"><scope>BitVector</scope><name>copyPunctured</name></member>
+      <member refid="classVectorBase_1a7ce39594091d3182f77af9bb679751a9" prot="public" virt="non-virtual"><scope>BitVector</scope><name>copyTo</name></member>
+      <member refid="classVectorBase_1a8d7a9b4618d70cb5cae724c26251203c" prot="public" virt="non-virtual"><scope>BitVector</scope><name>copyToSegment</name></member>
+      <member refid="classVectorBase_1aa9b7f34c65a190fe9312f70e94a2a3f6" prot="public" virt="non-virtual"><scope>BitVector</scope><name>copyToSegment</name></member>
+      <member refid="classBitVector_1a2c8af29c7ac958e0fe666ee1b71fefa8" prot="public" virt="non-virtual"><scope>BitVector</scope><name>dup</name></member>
+      <member refid="classBitVector_1aea53853f89a8becbd22681a6418282e2" prot="public" virt="non-virtual"><scope>BitVector</scope><name>dup</name></member>
+      <member refid="classVectorBase_1ae1cbe6fa0539e61770234a47da97bceb" prot="public" virt="non-virtual"><scope>BitVector</scope><name>end</name></member>
+      <member refid="classVectorBase_1ad20f22dd4eae512df91c1d5147070d35" prot="public" virt="non-virtual"><scope>BitVector</scope><name>end</name></member>
+      <member refid="classVectorBase_1ad295fc6bec782f63e87ca211a136f224" prot="public" virt="non-virtual"><scope>BitVector</scope><name>fill</name></member>
+      <member refid="classVectorBase_1a37b10c473d41a160da22b32d9426105b" prot="public" virt="non-virtual"><scope>BitVector</scope><name>fill</name></member>
+      <member refid="classBitVector_1a031aa9fe07c082d4529fcf394f210a9f" prot="public" virt="non-virtual"><scope>BitVector</scope><name>fillField</name></member>
+      <member refid="classBitVector_1a79afaa55bb098cb4b07fc1aec2d5a519" prot="public" virt="non-virtual"><scope>BitVector</scope><name>fillFieldReversed</name></member>
+      <member refid="classVectorBase_1adba2e683e7b9ad36fefdb802d755282e" prot="public" virt="non-virtual"><scope>BitVector</scope><name>getData</name></member>
+      <member refid="classBitVector_1a890f8507934ab3570c93fb97bd3f5c83" prot="public" virt="non-virtual"><scope>BitVector</scope><name>head</name></member>
+      <member refid="classBitVector_1a74d904bef629a4f3484ab7afddd8ae0e" prot="public" virt="non-virtual"><scope>BitVector</scope><name>hex</name></member>
+      <member refid="classBitVector_1a575688a7f86620ef267b108b62723719" prot="public" virt="non-virtual"><scope>BitVector</scope><name>hexstr</name></member>
+      <member refid="classVectorBase_1afda04355a4b03952ecaf35a84f0848f7" prot="public" virt="non-virtual"><scope>BitVector</scope><name>inspect</name></member>
+      <member refid="classBitVector_1ac53cf375dcc928204e9d0a7a21acc157" prot="public" virt="non-virtual"><scope>BitVector</scope><name>invert</name></member>
+      <member refid="classVectorBase_1ac1eb63ccdf1b4be113bae8a0c99cd0b6" prot="public" virt="non-virtual"><scope>BitVector</scope><name>isOwner</name></member>
+      <member refid="classBitVector_1a8949d60c85627ee692d697875f5774d9" prot="public" virt="non-virtual"><scope>BitVector</scope><name>iterator</name></member>
+      <member refid="classBitVector_1a09b24ccac33d4dfa075f75b79eaf5198" prot="public" virt="non-virtual"><scope>BitVector</scope><name>LSB8MSB</name></member>
+      <member refid="classVectorBase_1af11110fc08a2da045aa939b8ef819d8c" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>makeAlias</name></member>
+      <member refid="classBitVector_1a9cd66fb07a7e9d13495fce016890093d" prot="public" virt="non-virtual"><scope>BitVector</scope><name>map</name></member>
+      <member refid="classVectorBase_1a48d4c06178c5db41cf94ba76c700c160" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>mData</name></member>
+      <member refid="classVectorBase_1add8d0a21c1822e058803218d48770580" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>mEnd</name></member>
+      <member refid="classVectorBase_1aa9f050339b20a7bb9250650397565502" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>mStart</name></member>
+      <member refid="classVectorBase_1a0f878c012131a702f4464e13291c2301" prot="public" virt="non-virtual"><scope>BitVector</scope><name>operator=</name></member>
+      <member refid="classBitVector_1afd2cf0f997f61154b63fb4df7b2f4da1" prot="public" virt="non-virtual"><scope>BitVector</scope><name>operator==</name></member>
+      <member refid="classBitVector_1a625c4e943e749604588c89f81eea92a9" prot="public" virt="non-virtual"><scope>BitVector</scope><name>operator[]</name></member>
+      <member refid="classBitVector_1a9f06237d08873daa6b32c734554f550c" prot="public" virt="non-virtual"><scope>BitVector</scope><name>operator[]</name></member>
+      <member refid="classBitVector_1a2f4df1e68b7e02fece7cf40dac378631" prot="public" virt="non-virtual"><scope>BitVector</scope><name>pack</name></member>
+      <member refid="classBitVector_1a70dedd6ff98749bc314c034d54fbd8c4" prot="public" virt="non-virtual"><scope>BitVector</scope><name>pack2</name></member>
+      <member refid="classBitVector_1a32acf3d2e67ff24c1efe8b5c67b4a367" prot="public" virt="non-virtual"><scope>BitVector</scope><name>packToString</name></member>
+      <member refid="classBitVector_1ad4b1a430c053d90445eb7ab7f45fe54c" prot="public" virt="non-virtual"><scope>BitVector</scope><name>parity</name></member>
+      <member refid="classBitVector_1a543439d7598a2d8c02bde0fb5b6679e7" prot="public" virt="non-virtual"><scope>BitVector</scope><name>peekField</name></member>
+      <member refid="classBitVector_1a9ab2a6df504eb02c0aea14223c759424" prot="public" virt="non-virtual"><scope>BitVector</scope><name>peekFieldReversed</name></member>
+      <member refid="classBitVector_1acacba0f95f39d3b712e4b101501e85e8" prot="public" virt="non-virtual"><scope>BitVector</scope><name>readField</name></member>
+      <member refid="classBitVector_1aa8613716b731932d4d38b930ca3400d4" prot="public" virt="non-virtual"><scope>BitVector</scope><name>readFieldReversed</name></member>
+      <member refid="classVectorBase_1aeae2d4640f8b2f6e560e443095c931b6" prot="public" virt="non-virtual"><scope>BitVector</scope><name>resize</name></member>
+      <member refid="classBitVector_1a1722b8a444b18041c7203d358ed9a310" prot="public" virt="non-virtual"><scope>BitVector</scope><name>reverse8</name></member>
+      <member refid="classBitVector_1adffaf011b8f2c560954020ab40e43fd4" prot="public" virt="non-virtual"><scope>BitVector</scope><name>segment</name></member>
+      <member refid="classVectorBase_1a81dbffa5655a78ebfac279fc0852b2d8" prot="public" virt="non-virtual"><scope>BitVector</scope><name>segmentCopyTo</name></member>
+      <member refid="classBitVector_1aa447d928f3c87f17e81a1fdb62e3a768" prot="public" virt="non-virtual"><scope>BitVector</scope><name>settfb</name></member>
+      <member refid="classVectorBase_1aff05cfb74562e6644e7d96e528cb0171" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>shiftMem</name></member>
+      <member refid="classVectorBase_1a36a7ecb20b19da9fcfaaf41b1c1ca110" prot="public" virt="non-virtual"><scope>BitVector</scope><name>size</name></member>
+      <member refid="classBitVector_1a6de3c2a02646cf80306639b9c1781365" prot="public" virt="non-virtual"><scope>BitVector</scope><name>sum</name></member>
+      <member refid="classBitVector_1a65135b5ed8d136d98b27c091fd80c608" prot="public" virt="non-virtual"><scope>BitVector</scope><name>syndrome</name></member>
+      <member refid="classBitVector_1a5b979b8a4769e5913c7e519b00952201" prot="public" virt="non-virtual"><scope>BitVector</scope><name>tail</name></member>
+      <member refid="classBitVector_1a11c6e0cc70c507c9fc075bbb4d424f46" prot="public" virt="non-virtual"><scope>BitVector</scope><name>unhex</name></member>
+      <member refid="classBitVector_1ae89338be148c75b21c153fde0238a860" prot="public" virt="non-virtual"><scope>BitVector</scope><name>unmap</name></member>
+      <member refid="classBitVector_1ad56babdd15e0b73c21b98a6f504b013a" prot="public" virt="non-virtual"><scope>BitVector</scope><name>unpack</name></member>
+      <member refid="classVectorBase_1a72297a2b90886df4e121be05acb89dbe" prot="public" virt="non-virtual"><scope>BitVector</scope><name>vConcat</name></member>
+      <member refid="classVectorBase_1a7c6c8ed8176b411636e4fa653f98a29b" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>VectorBase</name></member>
+      <member refid="classVectorBase_1af7bdb68e08f619d29846929ea1885ea7" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>VectorBase</name></member>
+      <member refid="classVectorBase_1a38ff214bd5f24507736a6f5d391ceb09" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>VectorDataType</name></member>
+      <member refid="classVectorBase_1a531e6d9e1fcc0fd4339274206ba541d2" prot="protected" virt="non-virtual"><scope>BitVector</scope><name>vInit</name></member>
+      <member refid="classBitVector_1a1e2832bd00232634dc4d1b18f2c48efe" prot="public" virt="non-virtual"><scope>BitVector</scope><name>write0</name></member>
+      <member refid="classBitVector_1af30bac52dc2b74b2740401b5b0da5f01" prot="public" virt="non-virtual"><scope>BitVector</scope><name>write1</name></member>
+      <member refid="classBitVector_1ae69d7b4fce82d4da361f422ad90a5db4" prot="public" virt="non-virtual"><scope>BitVector</scope><name>writeField</name></member>
+      <member refid="classBitVector_1abcef1487660f3c087dbd9a55a38772af" prot="public" virt="non-virtual"><scope>BitVector</scope><name>writeFieldReversed</name></member>
+      <member refid="classBitVector_1af5b7947fe65cc76722c5fd251c318199" prot="public" virt="non-virtual"><scope>BitVector</scope><name>zero</name></member>
+      <member refid="classVectorBase_1ae71e18c840eb2e3f70c2778021684926" prot="public" virt="non-virtual"><scope>BitVector</scope><name>~VectorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

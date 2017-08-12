@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ViterbiR204_8h" kind="file" language="C++">
+    <compoundname>ViterbiR204.h</compoundname>
+    <includes refid="Viterbi_8h" local="yes">Viterbi.h</includes>
+    <includedby refid="tch__f__decoder__impl_8h" local="yes">tch_f_decoder_impl.h</includedby>
+    <incdepgraph>
+      <node id="1020">
+        <label>ViterbiR204.h</label>
+        <link refid="ViterbiR204.h"/>
+        <childnode refid="1021" relation="include">
+        </childnode>
+      </node>
+      <node id="1021">
+        <label>Viterbi.h</label>
+        <link refid="Viterbi_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1022">
+        <label>ViterbiR204.h</label>
+        <link refid="ViterbiR204.h"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>tch_f_decoder_impl.h</label>
+        <link refid="tch__f__decoder__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classViterbiR2O4" prot="public">ViterbiR2O4</innerclass>
+    <innerclass refid="structViterbiR2O4_1_1candStruct" prot="public">ViterbiR2O4::candStruct</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/ViterbiR204.h"/>
+  </compounddef>
+</doxygen>

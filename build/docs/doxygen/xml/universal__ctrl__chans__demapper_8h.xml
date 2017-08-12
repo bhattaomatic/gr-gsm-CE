@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="universal__ctrl__chans__demapper_8h" kind="file" language="C++">
+    <compoundname>universal_ctrl_chans_demapper.h</compoundname>
+    <includes refid="api_8h" local="no">grgsm/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="universal__ctrl__chans__demapper__impl_8h" local="no">universal_ctrl_chans_demapper_impl.h</includedby>
+    <incdepgraph>
+      <node id="991">
+        <label>grgsm/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="992" relation="include">
+        </childnode>
+      </node>
+      <node id="992">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="990">
+        <label>universal_ctrl_chans_demapper.h</label>
+        <link refid="universal_ctrl_chans_demapper.h"/>
+        <childnode refid="991" relation="include">
+        </childnode>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="994" relation="include">
+        </childnode>
+      </node>
+      <node id="994">
+        <label>vector</label>
+      </node>
+      <node id="993">
+        <label>gnuradio/block.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="995">
+        <label>universal_ctrl_chans_demapper.h</label>
+        <link refid="universal_ctrl_chans_demapper.h"/>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>universal_ctrl_chans_demapper_impl.h</label>
+        <link refid="universal__ctrl__chans__demapper__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper" prot="public">gr::gsm::universal_ctrl_chans_demapper</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1gsm">gr::gsm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/universal_ctrl_chans_demapper.h"/>
+  </compounddef>
+</doxygen>

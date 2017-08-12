@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classViterbiTCH__AFS7__95" kind="class" language="C++" prot="public">
+    <compoundname>ViterbiTCH_AFS7_95</compoundname>
+    <basecompoundref refid="classViterbiBase" prot="public" virt="non-virtual">ViterbiBase</basecompoundref>
+    <includes refid="AmrCoder_8h" local="no">AmrCoder.h</includes>
+    <innerclass refid="structViterbiTCH__AFS7__95_1_1candStruct" prot="public">ViterbiTCH_AFS7_95::candStruct</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Core values.</header>
+      <description><para>name Lots of precomputed elements so the compiler can optimize like hell. </para></description>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a4d9e5d06de8cb8a32e4b69c368495d24" prot="private" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned ViterbiTCH_AFS7_95::mIRate</definition>
+        <argsstring></argsstring>
+        <name>mIRate</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>reciprocal of rate </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="261" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1ab894ee1fdb425b693bb94add7b46fcd5" prot="private" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned ViterbiTCH_AFS7_95::mOrder</definition>
+        <argsstring></argsstring>
+        <name>mOrder</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+<para>memory length of generators </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="262" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Derived values.</header>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1af80173cc9b968b505ede8c0bd980f014" prot="private" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned ViterbiTCH_AFS7_95::mIStates</definition>
+        <argsstring></argsstring>
+        <name>mIStates</name>
+        <initializer>= 0x01 &lt;&lt; mOrder</initializer>
+        <briefdescription>
+<para>number of states, number of survivors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="266" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a73ee2bdf0bc686a22b160443ff052cb8" prot="private" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ViterbiTCH_AFS7_95::mSMask</definition>
+        <argsstring></argsstring>
+        <name>mSMask</name>
+        <initializer>= mIStates-1</initializer>
+        <briefdescription>
+<para>survivor mask </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="267" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1ac3fe5eab0b3d33e3eb859d9f7e276586" prot="private" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ViterbiTCH_AFS7_95::mCMask</definition>
+        <argsstring></argsstring>
+        <name>mCMask</name>
+        <initializer>= (mSMask&lt;&lt;1) | 0x01</initializer>
+        <briefdescription>
+<para>candidate mask </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="268" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a9ef7951d5c2db042dc34dccbb74b1f45" prot="private" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ViterbiTCH_AFS7_95::mOMask</definition>
+        <argsstring></argsstring>
+        <name>mOMask</name>
+        <initializer>= (0x01&lt;&lt;mIRate)-1</initializer>
+        <briefdescription>
+<para>ouput mask, all iRate low bits set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="269" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a6bbce293c4a27b8cb060ec88024606eb" prot="private" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned ViterbiTCH_AFS7_95::mNumCands</definition>
+        <argsstring></argsstring>
+        <name>mNumCands</name>
+        <initializer>= mIStates*2</initializer>
+        <briefdescription>
+<para>number of candidates to generate during branching </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="270" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a0dc07eb7c80152c549b497555a7f5df8" prot="private" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned ViterbiTCH_AFS7_95::mDeferral</definition>
+        <argsstring></argsstring>
+        <name>mDeferral</name>
+        <initializer>= 5*mOrder</initializer>
+        <briefdescription>
+<para>deferral to be used </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="271" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a4acb03aed00c5a93c095b16b8128d6ca" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS7_95::mCoeffs[mIRate]</definition>
+        <argsstring>[mIRate]</argsstring>
+        <name>mCoeffs</name>
+        <briefdescription>
+<para>output polynomial for each generator </para>        </briefdescription>
+        <detaileddescription>
+<para>Precomputed tables. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="277" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1ad4d366de8515d7a1da78213391205122" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS7_95::mCoeffsFB[mIRate]</definition>
+        <argsstring>[mIRate]</argsstring>
+        <name>mCoeffsFB</name>
+        <briefdescription>
+<para>feedback polynomial for each generator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="278" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a5e7fe831b5124189461d1089888e035c" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS7_95::mStateTable[mIRate][2 *mIStates]</definition>
+        <argsstring>[mIRate][2 *mIStates]</argsstring>
+        <name>mStateTable</name>
+        <briefdescription>
+<para>precomputed generator output tables </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="279" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1af45b7ad2391b425d8d1fff7bb9933e96" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS7_95::mGeneratorTable[2 *mIStates]</definition>
+        <argsstring>[2 *mIStates]</argsstring>
+        <name>mGeneratorTable</name>
+        <briefdescription>
+<para>precomputed coder output table </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="280" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Survivors and candidates.</header>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1a77a7f0d27a72a3ab6fa050c156ee8be4" prot="private" static="no" mutable="no">
+        <type><ref refid="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" kindref="member">vCand</ref></type>
+        <definition>vCand ViterbiTCH_AFS7_95::mSurvivors[mIStates]</definition>
+        <argsstring>[mIStates]</argsstring>
+        <name>mSurvivors</name>
+        <briefdescription>
+<para>current survivor pool </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="310" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViterbiTCH__AFS7__95_1ab939ffc22ebdbb50d060bf44297cbab7" prot="private" static="no" mutable="no">
+        <type><ref refid="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" kindref="member">vCand</ref></type>
+        <definition>vCand ViterbiTCH_AFS7_95::mCandidates[2 *mIStates]</definition>
+        <argsstring>[2 *mIStates]</argsstring>
+        <name>mCandidates</name>
+        <briefdescription>
+<para>current candidate pool </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="311" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" prot="public" static="no">
+        <type>struct <ref refid="structViterbiTCH__AFS7__95_1_1candStruct" kindref="compound">ViterbiTCH_AFS7_95::candStruct</ref></type>
+        <definition>typedef struct ViterbiTCH_AFS7_95::candStruct  ViterbiTCH_AFS7_95::vCand</definition>
+        <argsstring></argsstring>
+        <name>vCand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A candidate sequence in a Viterbi decoder. The 32-bit state register can support a deferral of 5*order with a 6th-order coder. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="294" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1ae2e55dbafe65c3a0a01a80c31e4afc05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::vitClear</definition>
+        <argsstring>(vCand &amp;v)</argsstring>
+        <name>vitClear</name>
+        <param>
+          <type><ref refid="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" kindref="member">vCand</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear a structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="297" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="297" bodyend="303"/>
+        <references refid="structViterbiTCH__AFS7__95_1_1candStruct_1a6a2df47b980eb02296032291d2080087" compoundref="AmrCoder_8h" startline="293">ViterbiTCH_AFS7_95::candStruct::cost</references>
+        <references refid="structViterbiTCH__AFS7__95_1_1candStruct_1a4cd4233af6cd9eb20a0b20917017c7c9" compoundref="AmrCoder_8h" startline="290">ViterbiTCH_AFS7_95::candStruct::iState</references>
+        <references refid="structViterbiTCH__AFS7__95_1_1candStruct_1a7df618430d066738060dc2467cf28618" compoundref="AmrCoder_8h" startline="291">ViterbiTCH_AFS7_95::candStruct::oState</references>
+        <references refid="structViterbiTCH__AFS7__95_1_1candStruct_1a5d2fa0eeec2b7b33137f586c154436a6" compoundref="AmrCoder_8h" startline="292">ViterbiTCH_AFS7_95::candStruct::rState</references>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a7d73157ce53e94601a7ac564f50fa426" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned ViterbiTCH_AFS7_95::iRate</definition>
+        <argsstring>() const </argsstring>
+        <name>iRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="316" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="316" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1af80895e95833ddc896ad92fe6125e96f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS7_95::cMask</definition>
+        <argsstring>() const </argsstring>
+        <name>cMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="317" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="317" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a42e4c90cc09029c53fd5e7ea0b2b8490" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS7_95::stateTable</definition>
+        <argsstring>(unsigned g, unsigned i) const </argsstring>
+        <name>stateTable</name>
+        <param>
+          <type>unsigned</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="318" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="318" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a1f547731b86161600712aea17333d1ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned ViterbiTCH_AFS7_95::deferral</definition>
+        <argsstring>() const </argsstring>
+        <name>deferral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="319" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="319" bodyend="319"/>
+        <references refid="classViterbiTCH__AFS12__2_1aab0ac3610868d50378f5162ae15ce231">ViterbiTCH_AFS12_2::initializeStates</references>
+        <references refid="classViterbiTCH__AFS12__2_1a95561ce47766940a39ee41e6869172b6">ViterbiTCH_AFS12_2::step</references>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1aa99e8113491296e323abc0bc371ff140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ViterbiTCH_AFS7_95::ViterbiTCH_AFS7_95</definition>
+        <argsstring>()</argsstring>
+        <name>ViterbiTCH_AFS7_95</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a754852ff66b4d3e72c923cb8268b78dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::initializeStates</definition>
+        <argsstring>()</argsstring>
+        <name>initializeStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set all cost metrics to zero. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a1bb55e8469808569d88bb8662c52f7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" kindref="member">vCand</ref> &amp;</type>
+        <definition>const vCand&amp; ViterbiTCH_AFS7_95::step</definition>
+        <argsstring>(uint32_t inSample, const float *probs, const float *iprobs)</argsstring>
+        <name>step</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>inSample</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>probs</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>iprobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Full cycle of the Viterbi algorithm: branch, metrics, prune, select. <simplesect kind="return"><para>reference to minimum-cost candidate. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="331" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a362f2a0b9b5fc7e535156b799dc4d7d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::branchCandidates</definition>
+        <argsstring>()</argsstring>
+        <name>branchCandidates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Branch survivors into new candidates. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="336" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a636935c849a562e98fe1704c801009bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::getSoftCostMetrics</definition>
+        <argsstring>(uint32_t inSample, const float *probs, const float *iprobs)</argsstring>
+        <name>getSoftCostMetrics</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>inSample</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>probs</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>iprobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute cost metrics for soft-inputs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="339" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1af1556e5af908a9e9889e6ef23a90a180" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::pruneCandidates</definition>
+        <argsstring>()</argsstring>
+        <name>pruneCandidates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select survivors from the candidate set. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a65d42ba5e62612aac5389360ccca46e0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" kindref="member">vCand</ref> &amp;</type>
+        <definition>const vCand&amp; ViterbiTCH_AFS7_95::minCost</definition>
+        <argsstring>() const </argsstring>
+        <name>minCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the minimum cost survivor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a8ab5e7d3ffe9f4ead4e264c8a579015e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::computeStateTables</definition>
+        <argsstring>(unsigned g)</argsstring>
+        <name>computeStateTables</name>
+        <param>
+          <type>unsigned</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Precompute the state tables. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classGenerator" kindref="compound">Generator</ref> index 0..((1/rate)-1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1ab2ffab041aa8e257d106bded026ae41d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::computeGeneratorTable</definition>
+        <argsstring>()</argsstring>
+        <name>computeGeneratorTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Precompute the generator outputs. mCoeffs must be defined first. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1a17030da76a1d18c8d9c8f150e58ae6a1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::encode</definition>
+        <argsstring>(const BitVector &amp;in, BitVector &amp;target) const </argsstring>
+        <name>encode</name>
+        <reimplements refid="classViterbiBase_1ada634c1d9d9761e8fd849f93c2c2bba4">encode</reimplements>
+        <param>
+          <type>const <ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classViterbiTCH__AFS7__95_1aa1bf6c2fd2cb3205918ffbdb60b58b8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ViterbiTCH_AFS7_95::decode</definition>
+        <argsstring>(const SoftVector &amp;in, BitVector &amp;target)</argsstring>
+        <name>decode</name>
+        <reimplements refid="classViterbiBase_1a6ce7d0720db188acf79bb0078bb02bea">decode</reimplements>
+        <param>
+          <type>const <ref refid="classSoftVector" kindref="compound">SoftVector</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classBitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="359" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to represent recursive systematic convolutional coders/decoders of rate 1/3, memory length 6. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="922">
+        <label>ViterbiBase</label>
+        <link refid="classViterbiBase"/>
+      </node>
+      <node id="921">
+        <label>ViterbiTCH_AFS7_95</label>
+        <link refid="classViterbiTCH__AFS7__95"/>
+        <childnode refid="922" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="924">
+        <label>ViterbiBase</label>
+        <link refid="classViterbiBase"/>
+      </node>
+      <node id="923">
+        <label>ViterbiTCH_AFS7_95</label>
+        <link refid="classViterbiTCH__AFS7__95"/>
+        <childnode refid="924" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="254" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="254" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classViterbiBase_1a33940c637e576fb7f18fba0bdcf81cf4" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>applyPoly</name></member>
+      <member refid="classViterbiBase_1a80a471965ab1231000f6693d1564d2f3" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>applyPoly</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a362f2a0b9b5fc7e535156b799dc4d7d8" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>branchCandidates</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1af80895e95833ddc896ad92fe6125e96f" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>cMask</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1ab2ffab041aa8e257d106bded026ae41d" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>computeGeneratorTable</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a8ab5e7d3ffe9f4ead4e264c8a579015e" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>computeStateTables</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1aa1bf6c2fd2cb3205918ffbdb60b58b8d" prot="private" virt="virtual"><scope>ViterbiTCH_AFS7_95</scope><name>decode</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a1f547731b86161600712aea17333d1ff" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>deferral</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a17030da76a1d18c8d9c8f150e58ae6a1" prot="private" virt="virtual"><scope>ViterbiTCH_AFS7_95</scope><name>encode</name></member>
+      <member refid="classViterbiBase_1a3a66056f1a2fff22f0fec39552fc20eb" prot="public" virt="virtual"><scope>ViterbiTCH_AFS7_95</scope><name>getBEC</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a636935c849a562e98fe1704c801009bd" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>getSoftCostMetrics</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a754852ff66b4d3e72c923cb8268b78dd" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>initializeStates</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a7d73157ce53e94601a7ac564f50fa426" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>iRate</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1ab939ffc22ebdbb50d060bf44297cbab7" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mCandidates</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1ac3fe5eab0b3d33e3eb859d9f7e276586" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mCMask</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a4acb03aed00c5a93c095b16b8128d6ca" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mCoeffs</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1ad4d366de8515d7a1da78213391205122" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mCoeffsFB</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a0dc07eb7c80152c549b497555a7f5df8" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mDeferral</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1af45b7ad2391b425d8d1fff7bb9933e96" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mGeneratorTable</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a65d42ba5e62612aac5389360ccca46e0" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>minCost</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a4d9e5d06de8cb8a32e4b69c368495d24" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mIRate</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1af80173cc9b968b505ede8c0bd980f014" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mIStates</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a6bbce293c4a27b8cb060ec88024606eb" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mNumCands</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a9ef7951d5c2db042dc34dccbb74b1f45" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mOMask</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1ab894ee1fdb425b693bb94add7b46fcd5" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mOrder</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a73ee2bdf0bc686a22b160443ff052cb8" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mSMask</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a5e7fe831b5124189461d1089888e035c" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mStateTable</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a77a7f0d27a72a3ab6fa050c156ee8be4" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>mSurvivors</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1af1556e5af908a9e9889e6ef23a90a180" prot="private" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>pruneCandidates</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a42e4c90cc09029c53fd5e7ea0b2b8490" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>stateTable</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a1bb55e8469808569d88bb8662c52f7a9" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>step</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1a995af010d226837aa0e8e9daeff7d3ee" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>vCand</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1ae2e55dbafe65c3a0a01a80c31e4afc05" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>vitClear</name></member>
+      <member refid="classViterbiTCH__AFS7__95_1aa99e8113491296e323abc0bc371ff140" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS7_95</scope><name>ViterbiTCH_AFS7_95</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

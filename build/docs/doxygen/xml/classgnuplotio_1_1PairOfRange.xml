@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1PairOfRange" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::PairOfRange</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>RT</declname>
+        <defname>RT</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>RU</declname>
+        <defname>RU</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgnuplotio_1_1PairOfRange_1a0cc8b0cc4d9c3377c43843ed9a658eeb" prot="public" static="no">
+        <type>std::pair&lt; typename RT::value_type, typename RU::value_type &gt;</type>
+        <definition>typedef std::pair&lt;typename RT::value_type, typename RU::value_type&gt; gnuplotio::PairOfRange&lt; RT, RU &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="937" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="937" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgnuplotio_1_1PairOfRange_1a6a7bf8a5dd4ca0563eb71b1156d6cd9f" prot="public" static="no">
+        <type><ref refid="classgnuplotio_1_1PairOfRange" kindref="compound">PairOfRange</ref>&lt; typename RT::subiter_type, typename RU::subiter_type &gt;</type>
+        <definition>typedef PairOfRange&lt;typename RT::subiter_type, typename RU::subiter_type&gt; gnuplotio::PairOfRange&lt; RT, RU &gt;::subiter_type</definition>
+        <argsstring></argsstring>
+        <name>subiter_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="938" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="938" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgnuplotio_1_1PairOfRange_1ab49c6567f0fa6a82fa2a6245fd964659" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::PairOfRange&lt; RT, RU &gt;::is_container</definition>
+        <argsstring></argsstring>
+        <name>is_container</name>
+        <initializer>= RT::is_container &amp;&amp; RU::is_container</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="935" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="935" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgnuplotio_1_1PairOfRange_1ac3c197aa24c55c214cbab37ecc17635e" prot="private" static="no" mutable="no">
+        <type>RT</type>
+        <definition>RT gnuplotio::PairOfRange&lt; RT, RU &gt;::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="963" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="963" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgnuplotio_1_1PairOfRange_1a7c96877f553ed746e4b8d80e5ca0965e" prot="private" static="no" mutable="no">
+        <type>RU</type>
+        <definition>RU gnuplotio::PairOfRange&lt; RT, RU &gt;::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="964" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="964" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgnuplotio_1_1PairOfRange_1aada62f803432f04aff66f3c609329520" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>friend void</type>
+        <definition>void deref_and_print</definition>
+        <argsstring>(std::ostream &amp;, const PairOfRange&lt; T, U &gt; &amp;, PrintMode)</argsstring>
+        <name>deref_and_print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classgnuplotio_1_1PairOfRange" kindref="compound">PairOfRange</ref>&lt; T, U &gt; &amp;</type>
+          <defname>arg</defname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="929" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1344" bodyend="1348"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgnuplotio_1_1PairOfRange_1a94b7cbc319a066dc9744ea1407163fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::PairOfRange&lt; RT, RU &gt;::PairOfRange</definition>
+        <argsstring>()</argsstring>
+        <name>PairOfRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="932" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="932" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1PairOfRange_1a15055ed8b1c0af8febf20f5a24d7dc05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::PairOfRange&lt; RT, RU &gt;::PairOfRange</definition>
+        <argsstring>(const RT &amp;_l, const RU &amp;_r)</argsstring>
+        <name>PairOfRange</name>
+        <param>
+          <type>const RT &amp;</type>
+          <declname>_l</declname>
+        </param>
+        <param>
+          <type>const RU &amp;</type>
+          <declname>_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="933" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="933" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1PairOfRange_1a1995b2f3b4c00fa9d0b4705aac4cb3ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gnuplotio::PairOfRange&lt; RT, RU &gt;::is_end</definition>
+        <argsstring>() const </argsstring>
+        <name>is_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="940" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="940" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1PairOfRange_1adbb8ab0fb9f7245262041dd20444b96a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gnuplotio::PairOfRange&lt; RT, RU &gt;::inc</definition>
+        <argsstring>()</argsstring>
+        <name>inc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="949" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="949" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1PairOfRange_1ab4cde941279940d87a4182706ed5d88d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgnuplotio_1_1PairOfRange_1a0cc8b0cc4d9c3377c43843ed9a658eeb" kindref="member">value_type</ref></type>
+        <definition>value_type gnuplotio::PairOfRange&lt; RT, RU &gt;::deref</definition>
+        <argsstring>() const </argsstring>
+        <name>deref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="954" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="954" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="classgnuplotio_1_1PairOfRange_1abba540b498666a006f1e31cf0cbf24c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgnuplotio_1_1PairOfRange_1a6a7bf8a5dd4ca0563eb71b1156d6cd9f" kindref="member">subiter_type</ref></type>
+        <definition>subiter_type gnuplotio::PairOfRange&lt; RT, RU &gt;::deref_subiter</definition>
+        <argsstring>() const </argsstring>
+        <name>deref_subiter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="958" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="958" bodyend="960"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="927" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="927" bodyend="965"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1PairOfRange_1ab4cde941279940d87a4182706ed5d88d" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>deref</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1aada62f803432f04aff66f3c609329520" prot="private" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>deref_and_print</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1abba540b498666a006f1e31cf0cbf24c5" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>deref_subiter</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1adbb8ab0fb9f7245262041dd20444b96a" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>inc</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1ab49c6567f0fa6a82fa2a6245fd964659" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>is_container</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1a1995b2f3b4c00fa9d0b4705aac4cb3ac" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>is_end</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1ac3c197aa24c55c214cbab37ecc17635e" prot="private" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>l</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1a94b7cbc319a066dc9744ea1407163fb0" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>PairOfRange</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1a15055ed8b1c0af8febf20f5a24d7dc05" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>PairOfRange</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1a7c96877f553ed746e4b8d80e5ca0965e" prot="private" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>r</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1a6a7bf8a5dd4ca0563eb71b1156d6cd9f" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>subiter_type</name></member>
+      <member refid="classgnuplotio_1_1PairOfRange_1a0cc8b0cc4d9c3377c43843ed9a658eeb" prot="public" virt="non-virtual"><scope>gnuplotio::PairOfRange</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

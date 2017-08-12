@@ -1,0 +1,4 @@
+var structgnuplotio_1_1ModeAutoDecoder_3_01T_00_01typename_01boost_1_1enable__if__c_3_01_07ArrayTrai95e17df20c3c581c89d95a1ec5f61224 =
+[
+    [ "mode", "structgnuplotio_1_1ModeAutoDecoder_3_01T_00_01typename_01boost_1_1enable__if__c_3_01_07ArrayTrai95e17df20c3c581c89d95a1ec5f61224.html#a17dc2e2ec9d21833a8bd6f1a67e32e48", null ]
+];

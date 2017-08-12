@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1BinfmtSender_3_01boost_1_1int16__t_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::BinfmtSender&lt; boost::int16_t &gt;</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1BinfmtSender_3_01boost_1_1int16__t_01_4_1a6d3c1b829c9196fa9d1f53bd78a90e34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::BinfmtSender&lt; boost::int16_t &gt;::send</definition>
+        <argsstring>(std::ostream &amp;stream)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="472" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="472" bodyend="472"/>
+        <references refid="structgnuplotio_1_1BinfmtSender_3_01boost_1_1int16__t_01_4_1a6d3c1b829c9196fa9d1f53bd78a90e34" compoundref="gnuplot-iostream_8h" startline="472" endline="472">send</references>
+        <referencedby refid="structgnuplotio_1_1BinfmtSender_3_01boost_1_1int16__t_01_4_1a6d3c1b829c9196fa9d1f53bd78a90e34" compoundref="gnuplot-iostream_8h" startline="472" endline="472">send</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="472" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="472" bodyend="472"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1BinfmtSender_3_01boost_1_1int16__t_01_4_1a6d3c1b829c9196fa9d1f53bd78a90e34" prot="public" virt="non-virtual"><scope>gnuplotio::BinfmtSender&lt; boost::int16_t &gt;</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

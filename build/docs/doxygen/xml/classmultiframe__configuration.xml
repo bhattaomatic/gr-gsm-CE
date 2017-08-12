@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classmultiframe__configuration" kind="class" language="C++" prot="public">
+    <compoundname>multiframe_configuration</compoundname>
+    <includes refid="receiver__config_8h" local="no">receiver_config.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmultiframe__configuration_1afc601d145f0b5b76a1a849bb073c4f1a" prot="private" static="no" mutable="no">
+        <type><ref refid="gsm__constants_8h_1aedcdc2622f95c2aa493a55a6c755e8fa" kindref="member">multiframe_type</ref></type>
+        <definition>multiframe_type multiframe_configuration::d_type</definition>
+        <argsstring></argsstring>
+        <name>d_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="34" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmultiframe__configuration_1a1170b3248bee977b9e4478d883758830" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="gsm__constants_8h_1af1f75d5f6793a9af2c21c179a8cb8fa2" kindref="member">burst_type</ref> &gt;</type>
+        <definition>std::vector&lt;burst_type&gt; multiframe_configuration::d_burst_types</definition>
+        <argsstring></argsstring>
+        <name>d_burst_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="35" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmultiframe__configuration_1a086e8ca45c43f3a11789f5edbf7dfb90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>multiframe_configuration::multiframe_configuration</definition>
+        <argsstring>()</argsstring>
+        <name>multiframe_configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="37" bodyend="40"/>
+        <references refid="gsm__constants_8h_1af1f75d5f6793a9af2c21c179a8cb8fa2ae8654263bd8adf1d0922f427d8f3fc1b" compoundref="gsm__constants_8h" startline="62">empty</references>
+        <references refid="gsm__constants_8h_1aedcdc2622f95c2aa493a55a6c755e8faa5b9f6d065e6e98483b3d3ed01f4f6cbe" compoundref="gsm__constants_8h" startline="63">unknown</references>
+      </memberdef>
+      <memberdef kind="function" id="classmultiframe__configuration_1a4c664ed97471bd370142e65386a782dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>multiframe_configuration::~multiframe_configuration</definition>
+        <argsstring>()</argsstring>
+        <name>~multiframe_configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="42" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmultiframe__configuration_1a367381099331b196b6fc905aec02bc12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void multiframe_configuration::set_type</definition>
+        <argsstring>(multiframe_type type)</argsstring>
+        <name>set_type</name>
+        <param>
+          <type><ref refid="gsm__constants_8h_1aedcdc2622f95c2aa493a55a6c755e8fa" kindref="member">multiframe_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="44" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="44" bodyend="52"/>
+        <references refid="gsm__constants_8h_1aedcdc2622f95c2aa493a55a6c755e8faa620e4299420a31fc0fe72fed1aa0c489" compoundref="gsm__constants_8h" startline="63">multiframe_26</references>
+        <references refid="gsmtap_8h_1a1d127017fb298b889f4ba24752d08b8e" compoundref="gsmtap_8h" startline="53">type</references>
+        <referencedby refid="classchannel__configuration_1a19d5fa94b4c5173100b09b90e78ad39a" compoundref="receiver__config_8h" startline="134" endline="138">channel_configuration::channel_configuration</referencedby>
+        <referencedby refid="classchannel__configuration_1ad9426ea9848ac69ab28b678dbbd7affc" compoundref="receiver__config_8h" startline="140" endline="142">channel_configuration::set_multiframe_type</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmultiframe__configuration_1acbe96f4f36cff7a629dbb2bd940fc6fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void multiframe_configuration::set_burst_type</definition>
+        <argsstring>(int nr, burst_type type)</argsstring>
+        <name>set_burst_type</name>
+        <param>
+          <type>int</type>
+          <declname>nr</declname>
+        </param>
+        <param>
+          <type><ref refid="gsm__constants_8h_1af1f75d5f6793a9af2c21c179a8cb8fa2" kindref="member">burst_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="54" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="54" bodyend="56"/>
+        <references refid="gsmtap_8h_1a1d127017fb298b889f4ba24752d08b8e" compoundref="gsmtap_8h" startline="53">type</references>
+        <referencedby refid="classchannel__configuration_1a1d2d4a20d258eaf25d98842f35ab6bd2" compoundref="receiver__config_8h" startline="144" endline="149">channel_configuration::set_burst_types</referencedby>
+        <referencedby refid="classchannel__configuration_1a447cc480b48d842f3b6c7b28631898c9" compoundref="receiver__config_8h" startline="151" endline="153">channel_configuration::set_single_burst_type</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmultiframe__configuration_1aea4a182e0de81416cef0e2b37de52567" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="gsm__constants_8h_1aedcdc2622f95c2aa493a55a6c755e8fa" kindref="member">multiframe_type</ref></type>
+        <definition>multiframe_type multiframe_configuration::get_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="58" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmultiframe__configuration_1a1009485aee009d63db5b35871b94c0fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="gsm__constants_8h_1af1f75d5f6793a9af2c21c179a8cb8fa2" kindref="member">burst_type</ref></type>
+        <definition>burst_type multiframe_configuration::get_burst_type</definition>
+        <argsstring>(int nr)</argsstring>
+        <name>get_burst_type</name>
+        <param>
+          <type>int</type>
+          <declname>nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="62" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="62" bodyend="64"/>
+        <referencedby refid="classchannel__configuration_1a447cc480b48d842f3b6c7b28631898c9" compoundref="receiver__config_8h" startline="151" endline="153">channel_configuration::set_single_burst_type</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" line="32" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/receiver/receiver_config.h" bodystart="31" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classmultiframe__configuration_1a1170b3248bee977b9e4478d883758830" prot="private" virt="non-virtual"><scope>multiframe_configuration</scope><name>d_burst_types</name></member>
+      <member refid="classmultiframe__configuration_1afc601d145f0b5b76a1a849bb073c4f1a" prot="private" virt="non-virtual"><scope>multiframe_configuration</scope><name>d_type</name></member>
+      <member refid="classmultiframe__configuration_1a1009485aee009d63db5b35871b94c0fd" prot="public" virt="non-virtual"><scope>multiframe_configuration</scope><name>get_burst_type</name></member>
+      <member refid="classmultiframe__configuration_1aea4a182e0de81416cef0e2b37de52567" prot="public" virt="non-virtual"><scope>multiframe_configuration</scope><name>get_type</name></member>
+      <member refid="classmultiframe__configuration_1a086e8ca45c43f3a11789f5edbf7dfb90" prot="public" virt="non-virtual"><scope>multiframe_configuration</scope><name>multiframe_configuration</name></member>
+      <member refid="classmultiframe__configuration_1acbe96f4f36cff7a629dbb2bd940fc6fe" prot="public" virt="non-virtual"><scope>multiframe_configuration</scope><name>set_burst_type</name></member>
+      <member refid="classmultiframe__configuration_1a367381099331b196b6fc905aec02bc12" prot="public" virt="non-virtual"><scope>multiframe_configuration</scope><name>set_type</name></member>
+      <member refid="classmultiframe__configuration_1a4c664ed97471bd370142e65386a782dc" prot="public" virt="non-virtual"><scope>multiframe_configuration</scope><name>~multiframe_configuration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerdir refid="dir_243479dbff2d7ca3e678653e0e554ed5">decoding</innerdir>
+    <innerdir refid="dir_d381e880e9c1f9d73f43b3ff54edc21a">decryption</innerdir>
+    <innerdir refid="dir_9004f03b070459fe7ebc9e3982e12010">demapping</innerdir>
+    <innerdir refid="dir_3296522f55657d4ddd368f535ce3ce99">flow_control</innerdir>
+    <innerdir refid="dir_f4edf2a7121dd155c19a463a5d3c0185">misc_utils</innerdir>
+    <innerdir refid="dir_b24eea30c8e9387e5da8cd764e1572fb">receiver</innerdir>
+    <innerfile refid="gnuplot-iostream_8h">gnuplot-iostream.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/"/>
+  </compounddef>
+</doxygen>

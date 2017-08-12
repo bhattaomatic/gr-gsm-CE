@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1tch__f__chans__demapper" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::tch_f_chans_demapper</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="tch__f__chans__demapper_8h" local="no">tch_f_chans_demapper.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1gsm_1_1tch__f__chans__demapper_1abb125adc7c01b5bcec14067353696221" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1gsm_1_1tch__f__chans__demapper" kindref="compound">tch_f_chans_demapper</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tch_f_chans_demapper&gt; gr::gsm::tch_f_chans_demapper::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/tch_f_chans_demapper.h" line="41" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/tch_f_chans_demapper.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1tch__f__chans__demapper_1a7c8a361524ecb163309b9ae67134624f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1gsm_1_1tch__f__chans__demapper_1abb125adc7c01b5bcec14067353696221" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::gsm::tch_f_chans_demapper::make</definition>
+        <argsstring>(unsigned int timeslot_nr)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeslot_nr</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1gsm_1_1tch__f__chans__demapper" kindref="compound">gsm::tch_f_chans_demapper</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1gsm_1_1tch__f__chans__demapper" kindref="compound">gsm::tch_f_chans_demapper</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1gsm_1_1tch__f__chans__demapper_1a7c8a361524ecb163309b9ae67134624f" kindref="member">gsm::tch_f_chans_demapper::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/tch_f_chans_demapper.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="102">
+        <label>gr::gsm::tch_f_chans_demapper</label>
+        <link refid="classgr_1_1gsm_1_1tch__f__chans__demapper"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>gr::gsm::tch_f_chans_demapper</label>
+        <link refid="classgr_1_1gsm_1_1tch__f__chans__demapper"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/tch_f_chans_demapper.h" line="39" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/include/grgsm/demapping/tch_f_chans_demapper.h" bodystart="38" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1tch__f__chans__demapper_1a7c8a361524ecb163309b9ae67134624f" prot="public" virt="non-virtual"><scope>gr::gsm::tch_f_chans_demapper</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1tch__f__chans__demapper_1abb125adc7c01b5bcec14067353696221" prot="public" virt="non-virtual"><scope>gr::gsm::tch_f_chans_demapper</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

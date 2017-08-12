@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structViterbiTCH__AFS4__75_1_1candStruct" kind="struct" language="C++" prot="public">
+    <compoundname>ViterbiTCH_AFS4_75::candStruct</compoundname>
+    <includes refid="AmrCoder_8h" local="no">AmrCoder.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structViterbiTCH__AFS4__75_1_1candStruct_1a3eb4577d125032ebdb81d72b638c37e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS4_75::candStruct::iState</definition>
+        <argsstring></argsstring>
+        <name>iState</name>
+        <briefdescription>
+<para>encoder input associated with this candidate </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="860" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="860" bodyend="-1"/>
+        <referencedby refid="classViterbiTCH__AFS4__75_1ae3fbd409a01c84d4faab5924b1a88b38" compoundref="AmrCoder_8h" startline="867" endline="873">ViterbiTCH_AFS4_75::vitClear</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structViterbiTCH__AFS4__75_1_1candStruct_1a12563824665433aa209f82cb7faaaea6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ViterbiTCH_AFS4_75::candStruct::oState</definition>
+        <argsstring></argsstring>
+        <name>oState</name>
+        <briefdescription>
+<para>encoder output associated with this candidate </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="861" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="861" bodyend="-1"/>
+        <referencedby refid="classViterbiTCH__AFS4__75_1ae3fbd409a01c84d4faab5924b1a88b38" compoundref="AmrCoder_8h" startline="867" endline="873">ViterbiTCH_AFS4_75::vitClear</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structViterbiTCH__AFS4__75_1_1candStruct_1ab59e725df691a1740dbff9a640ef30ae" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ViterbiTCH_AFS4_75::candStruct::rState[mIRate]</definition>
+        <argsstring>[mIRate]</argsstring>
+        <name>rState</name>
+        <briefdescription>
+<para>real states of encoders associated with this candidate </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="862" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="862" bodyend="-1"/>
+        <referencedby refid="classViterbiTCH__AFS4__75_1ae3fbd409a01c84d4faab5924b1a88b38" compoundref="AmrCoder_8h" startline="867" endline="873">ViterbiTCH_AFS4_75::vitClear</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structViterbiTCH__AFS4__75_1_1candStruct_1a62c69c8830f6c0639b66502ddf869c65" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ViterbiTCH_AFS4_75::candStruct::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+<para>cost (metric value), float to support soft inputs </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="863" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="863" bodyend="-1"/>
+        <referencedby refid="classViterbiTCH__AFS4__75_1ae3fbd409a01c84d4faab5924b1a88b38" compoundref="AmrCoder_8h" startline="867" endline="873">ViterbiTCH_AFS4_75::vitClear</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A candidate sequence in a Viterbi decoder. The 32-bit state register can support a deferral of 5*order with a 6th-order coder. </para>    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" line="859" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/AmrCoder.h" bodystart="859" bodyend="864"/>
+    <listofallmembers>
+      <member refid="structViterbiTCH__AFS4__75_1_1candStruct_1a62c69c8830f6c0639b66502ddf869c65" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS4_75::candStruct</scope><name>cost</name></member>
+      <member refid="structViterbiTCH__AFS4__75_1_1candStruct_1a3eb4577d125032ebdb81d72b638c37e0" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS4_75::candStruct</scope><name>iState</name></member>
+      <member refid="structViterbiTCH__AFS4__75_1_1candStruct_1a12563824665433aa209f82cb7faaaea6" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS4_75::candStruct</scope><name>oState</name></member>
+      <member refid="structViterbiTCH__AFS4__75_1_1candStruct_1ab59e725df691a1740dbff9a640ef30ae" prot="public" virt="non-virtual"><scope>ViterbiTCH_AFS4_75::candStruct</scope><name>rState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

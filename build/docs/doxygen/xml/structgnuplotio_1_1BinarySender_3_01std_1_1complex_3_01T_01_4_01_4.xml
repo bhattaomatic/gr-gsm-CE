@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1BinarySender_3_01std_1_1complex_3_01T_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::BinarySender&lt; std::complex&lt; T &gt; &gt;</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1BinarySender_3_01std_1_1complex_3_01T_01_4_01_4_1a759de700a1cd68000830a4b15a6fec49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::BinarySender&lt; std::complex&lt; T &gt; &gt;::send</definition>
+        <argsstring>(std::ostream &amp;stream, const std::complex&lt; T &gt; &amp;v)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const std::complex&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="566" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="566" bodyend="569"/>
+        <references refid="structgnuplotio_1_1BinarySender_1a4b5dd22b7679c4f0ce4d8e75b36c8a21">gnuplotio::BinarySender&lt; T, Enable &gt;::send</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="565" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="565" bodyend="570"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1BinarySender_3_01std_1_1complex_3_01T_01_4_01_4_1a759de700a1cd68000830a4b15a6fec49" prot="public" virt="non-virtual"><scope>gnuplotio::BinarySender&lt; std::complex&lt; T &gt; &gt;</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

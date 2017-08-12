@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_613e8c35e9263a9c4b5e2b75ff99b434" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_613e8c35e9263a9c4b5e2b75ff99b434_1a57bf894398f70f08cd4bac18ee5cbf68" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::send</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;v)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="585" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="585" bodyend="589"/>
+        <references refid="structgnuplotio_1_1TextSender_1a03b58292dc75a4137d30ad7fffd762c6" compoundref="gnuplot-iostream_8h" startline="434" endline="436">gnuplotio::TextSender&lt; T, Enable &gt;::send</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="584" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="577" bodyend="590"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1TextSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1and_613e8c35e9263a9c4b5e2b75ff99b434_1a57bf894398f70f08cd4bac18ee5cbf68" prot="public" virt="non-virtual"><scope>gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

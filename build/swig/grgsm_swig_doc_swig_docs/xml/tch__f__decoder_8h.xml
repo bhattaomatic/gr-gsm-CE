@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tch__f__decoder_8h" kind="file" language="C++">
+    <compoundname>tch_f_decoder.h</compoundname>
+    <includes refid="api_8h" local="no">grgsm/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <incdepgraph>
+      <node id="38">
+        <label>grgsm/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/home/abhishek/Git/gr-gsm-CE/include/grgsm/decoding/tch_f_decoder.h</label>
+        <link refid="tch_f_decoder.h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="40">
+        <label>gnuradio/block.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1gsm_1_1tch__f__decoder" prot="public">gr::gsm::tch_f_decoder</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1gsm">gr::gsm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>@file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>@author<sp/>Roman<sp/>Khassraf<sp/>&lt;rkhassraf@gmail.com&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>@section<sp/>LICENSE</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Gr-gsm<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Gr-gsm<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>gr-gsm;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_GSM_TCH_F_DECODER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_GSM_TCH_F_DECODER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="api_8h" kindref="compound">grgsm/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gnuradio/block.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr" kindref="compound">gr</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gsm<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7" kindref="member">tch_mode</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7aee5d6f148acf8be9a2a3feb222685a09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7aee5d6f148acf8be9a2a3feb222685a09" kindref="member">TCH_AFS12_2</ref>,</highlight></codeline>
+<codeline lineno="36" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a5d480ffacf8cd4a2c8008ed663482bc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a5d480ffacf8cd4a2c8008ed663482bc5" kindref="member">TCH_AFS10_2</ref>,</highlight></codeline>
+<codeline lineno="37" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a430cacd8a1af949e41151d70f18b63ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a430cacd8a1af949e41151d70f18b63ed" kindref="member">TCH_AFS7_95</ref>,</highlight></codeline>
+<codeline lineno="38" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a5f8888f1b4cedd7f5e7c5b394f125bc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a5f8888f1b4cedd7f5e7c5b394f125bc3" kindref="member">TCH_AFS7_4</ref>,</highlight></codeline>
+<codeline lineno="39" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7ae3c46d6bc82975174219762c5e9c5eba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7ae3c46d6bc82975174219762c5e9c5eba" kindref="member">TCH_AFS6_7</ref>,</highlight></codeline>
+<codeline lineno="40" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a1ef30eb19982f909ca5b35835790db76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a1ef30eb19982f909ca5b35835790db76" kindref="member">TCH_AFS5_9</ref>,</highlight></codeline>
+<codeline lineno="41" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7ac7ee2ceee0706a819fb4cdb3f1ef363f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7ac7ee2ceee0706a819fb4cdb3f1ef363f" kindref="member">TCH_AFS5_15</ref>,</highlight></codeline>
+<codeline lineno="42" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a3b980584ff01f313c498c8c27fccf53d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a3b980584ff01f313c498c8c27fccf53d" kindref="member">TCH_AFS4_75</ref>,</highlight></codeline>
+<codeline lineno="43" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a5ca6854db297f21c18a1e53ee9d72a84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7a5ca6854db297f21c18a1e53ee9d72a84" kindref="member">TCH_FS</ref>,</highlight></codeline>
+<codeline lineno="44" refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7ab44f3a5765d1e3b0d85e5de6308042ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7ab44f3a5765d1e3b0d85e5de6308042ca" kindref="member">TCH_EFR</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classgr_1_1gsm_1_1tch__f__decoder" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="api_8h_1ae91403950b7b24e39de1e96260a9c2d9" kindref="member">GSM_API</ref><sp/><ref refid="classgr_1_1gsm_1_1tch__f__decoder" kindref="compound">tch_f_decoder</ref><sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr::block</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55" refid="classgr_1_1gsm_1_1tch__f__decoder_1ac4405464f90c5cce86973fe0aabab5fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;tch_f_decoder&gt;<sp/><ref refid="classgr_1_1gsm_1_1tch__f__decoder_1ac4405464f90c5cce86973fe0aabab5fb" kindref="member">sptr</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>sptr<sp/>make(<ref refid="namespacegr_1_1gsm_1aa6c9a26236aa896aa281e21cd91820e7" kindref="member">tch_mode</ref><sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;file,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>boundary_check=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gsm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GSM_TCH_F_DECODER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/grgsm/decoding/tch_f_decoder.h"/>
+  </compounddef>
+</doxygen>

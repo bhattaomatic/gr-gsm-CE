@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1Mode1D" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::Mode1D</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1Mode1D_1a508d170d84da4dfb7cd07eebad894b8f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gnuplotio::Mode1D::class_name</definition>
+        <argsstring>()</argsstring>
+        <name>class_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1207" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1207" bodyend="1207"/>
+        <references refid="structgnuplotio_1_1Mode1D_1a508d170d84da4dfb7cd07eebad894b8f" compoundref="gnuplot-iostream_8h" startline="1207" endline="1207">class_name</references>
+        <referencedby refid="structgnuplotio_1_1Mode1D_1a508d170d84da4dfb7cd07eebad894b8f" compoundref="gnuplot-iostream_8h" startline="1207" endline="1207">class_name</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1207" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1207" bodyend="1207"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1Mode1D_1a508d170d84da4dfb7cd07eebad894b8f" prot="public" virt="non-virtual"><scope>gnuplotio::Mode1D</scope><name>class_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

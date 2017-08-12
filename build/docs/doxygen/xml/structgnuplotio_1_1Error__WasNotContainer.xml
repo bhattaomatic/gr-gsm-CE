@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1Error__WasNotContainer" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::Error_WasNotContainer</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structgnuplotio_1_1Error__WasNotContainer_1aeac5de90c903be765130fc14f85dfb00" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void gnuplotio::Error_WasNotContainer::subiter_type</definition>
+        <argsstring></argsstring>
+        <name>subiter_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="798" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="795" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="795" bodyend="799"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1Error__WasNotContainer_1aeac5de90c903be765130fc14f85dfb00" prot="public" virt="non-virtual"><scope>gnuplotio::Error_WasNotContainer</scope><name>subiter_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

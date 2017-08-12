@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::gsm::universal_ctrl_chans_demapper_impl</compoundname>
+    <basecompoundref refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper" prot="public" virt="non-virtual">gr::gsm::universal_ctrl_chans_demapper</basecompoundref>
+    <includes refid="universal__ctrl__chans__demapper__impl_8h" local="no">universal_ctrl_chans_demapper_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a6d171455823f220ff438eafe9f329cd8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::universal_ctrl_chans_demapper_impl::d_starts_fn_mod51[51]</definition>
+        <argsstring>[51]</argsstring>
+        <name>d_starts_fn_mod51</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="35" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a4e745fb3f504da4be962701bd6d0e6a6" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::universal_ctrl_chans_demapper_impl::d_channel_types[51]</definition>
+        <argsstring>[51]</argsstring>
+        <name>d_channel_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="36" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1ad3d15444a2a8a18278b92cfb0fecd51d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::universal_ctrl_chans_demapper_impl::d_subslots[102]</definition>
+        <argsstring>[102]</argsstring>
+        <name>d_subslots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="37" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a5f87060072fdd2a6510aef774b1368bc" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::gsm::universal_ctrl_chans_demapper_impl::d_timeslot</definition>
+        <argsstring></argsstring>
+        <name>d_timeslot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="38" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1aa1619c72949990c3a379a0a369f35472" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::gsm::universal_ctrl_chans_demapper_impl::d_frame_numbers[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>d_frame_numbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="39" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a99ccf04773d5f4e1e08f884097210715" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::gsm::universal_ctrl_chans_demapper_impl::d_bursts[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>d_bursts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="40" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a1681e6d2cf55862716415e0398a36948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::universal_ctrl_chans_demapper_impl::universal_ctrl_chans_demapper_impl</definition>
+        <argsstring>(unsigned int timeslot_nr, const std::vector&lt; int &gt; &amp;starts_fn_mod51, const std::vector&lt; int &gt; &amp;channel_types)</argsstring>
+        <name>universal_ctrl_chans_demapper_impl</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeslot_nr</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>starts_fn_mod51</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>channel_types</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a4fb9610877cef731ccd4e3325a63b6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::gsm::universal_ctrl_chans_demapper_impl::~universal_ctrl_chans_demapper_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~universal_ctrl_chans_demapper_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a1064577a2a823e07b235c3c6b42852b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::gsm::universal_ctrl_chans_demapper_impl::filter_ctrl_chans</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>filter_ctrl_chans</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="862">
+        <label>gr::gsm::universal_ctrl_chans_demapper</label>
+        <link refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper"/>
+        <childnode refid="863" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="863">
+        <label>block</label>
+      </node>
+      <node id="861">
+        <label>gr::gsm::universal_ctrl_chans_demapper_impl</label>
+        <link refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl"/>
+        <childnode refid="862" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="865">
+        <label>gr::gsm::universal_ctrl_chans_demapper</label>
+        <link refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper"/>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="866">
+        <label>block</label>
+      </node>
+      <node id="864">
+        <label>gr::gsm::universal_ctrl_chans_demapper_impl</label>
+        <link refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl"/>
+        <childnode refid="865" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" line="33" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/demapping/universal_ctrl_chans_demapper_impl.h" bodystart="32" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a99ccf04773d5f4e1e08f884097210715" prot="private" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>d_bursts</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a4e745fb3f504da4be962701bd6d0e6a6" prot="private" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>d_channel_types</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1aa1619c72949990c3a379a0a369f35472" prot="private" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>d_frame_numbers</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a6d171455823f220ff438eafe9f329cd8" prot="private" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>d_starts_fn_mod51</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1ad3d15444a2a8a18278b92cfb0fecd51d" prot="private" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>d_subslots</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a5f87060072fdd2a6510aef774b1368bc" prot="private" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>d_timeslot</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a1064577a2a823e07b235c3c6b42852b7" prot="public" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>filter_ctrl_chans</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper_1a4a5332426d54f50e32f9d1922811a849" prot="public" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper_1a8fc8aa8798466e9e46cde92d6761fb5d" prot="public" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a1681e6d2cf55862716415e0398a36948" prot="public" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>universal_ctrl_chans_demapper_impl</name></member>
+      <member refid="classgr_1_1gsm_1_1universal__ctrl__chans__demapper__impl_1a4fb9610877cef731ccd4e3325a63b6ab" prot="public" virt="non-virtual"><scope>gr::gsm::universal_ctrl_chans_demapper_impl</scope><name>~universal_ctrl_chans_demapper_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

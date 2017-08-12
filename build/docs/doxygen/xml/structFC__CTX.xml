@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structFC__CTX" kind="struct" language="C++" prot="public">
+    <compoundname>FC_CTX</compoundname>
+    <includes refid="fire__crc_8h" local="no">fire_crc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFC__CTX_1ac213e1bb1efea018b85db3391f3dd5c4" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FC_CTX::crc_size</definition>
+        <argsstring></argsstring>
+        <name>crc_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" line="17" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFC__CTX_1ab340d87cf8ab6d87a4e8e8a43e9170bc" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FC_CTX::data_size</definition>
+        <argsstring></argsstring>
+        <name>data_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" line="18" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFC__CTX_1adaf6f6bef90ccbbd443d8242c957ce50" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FC_CTX::syn_start</definition>
+        <argsstring></argsstring>
+        <name>syn_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" line="19" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFC__CTX_1a7a42159cbaf3a7015a9d978c92c6f195" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FC_CTX::syndrome_reg[40]</definition>
+        <argsstring>[40]</argsstring>
+        <name>syndrome_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" line="20" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" line="16" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/fire_crc.h" bodystart="15" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structFC__CTX_1ac213e1bb1efea018b85db3391f3dd5c4" prot="public" virt="non-virtual"><scope>FC_CTX</scope><name>crc_size</name></member>
+      <member refid="structFC__CTX_1ab340d87cf8ab6d87a4e8e8a43e9170bc" prot="public" virt="non-virtual"><scope>FC_CTX</scope><name>data_size</name></member>
+      <member refid="structFC__CTX_1adaf6f6bef90ccbbd443d8242c957ce50" prot="public" virt="non-virtual"><scope>FC_CTX</scope><name>syn_start</name></member>
+      <member refid="structFC__CTX_1a7a42159cbaf3a7015a9d978c92c6f195" prot="public" virt="non-virtual"><scope>FC_CTX</scope><name>syndrome_reg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

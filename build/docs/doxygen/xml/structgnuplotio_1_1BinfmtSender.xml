@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1BinfmtSender" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::BinfmtSender</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Enable</declname>
+        <defname>Enable</defname>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgnuplotio_1_1BinfmtSender_1ab0b554a2e81309917b2fa6f480e2a8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::BinfmtSender&lt; T, Enable &gt;::GNUPLOT_STATIC_ASSERT_MSG</definition>
+        <argsstring>((sizeof(T)==0),&quot;BinfmtSender class not specialized for this type&quot;)</argsstring>
+        <name>GNUPLOT_STATIC_ASSERT_MSG</name>
+        <param>
+          <type>(sizeof(T)==0)</type>
+        </param>
+        <param>
+          <type>&quot;BinfmtSender class not specialized for this <ref refid="gsmtap_8h_1a1d127017fb298b889f4ba24752d08b8e" kindref="member">type</ref>&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="460" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1BinfmtSender_1a762010e3172c02e981252f93185b29c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::BinfmtSender&lt; T, Enable &gt;::send</definition>
+        <argsstring>(std::ostream &amp;)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="463" column="1"/>
+        <referencedby refid="structgnuplotio_1_1BinfmtSender_3_01std_1_1pair_3_01T_00_01U_01_4_01_4_1a08b2bedbc54824cd202c664116e37243" compoundref="gnuplot-iostream_8h" startline="529" endline="532">gnuplotio::BinfmtSender&lt; std::pair&lt; T, U &gt; &gt;::send</referencedby>
+        <referencedby refid="structgnuplotio_1_1BinfmtSender_3_01std_1_1complex_3_01T_01_4_01_4_1a64633d068c93ef2822ee3aa6ef39d623" compoundref="gnuplot-iostream_8h" startline="558" endline="561">gnuplotio::BinfmtSender&lt; std::complex&lt; T &gt; &gt;::send</referencedby>
+        <referencedby refid="structgnuplotio_1_1BinfmtSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1an42b95f03faee3ff44b47c946e1ea6e52_1a12e1b40a6ae29940661b7609df3c40ba" compoundref="gnuplot-iostream_8h" startline="615" endline="619">gnuplotio::BinfmtSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::send</referencedby>
+        <referencedby refid="structgnuplotio_1_1BinfmtSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1an36b5089f0cb57748545b30004479b7ea_1aa1850ae529cdb36fedc67c5ebfa3f871" compoundref="gnuplot-iostream_8h" startline="631" endline="633">gnuplotio::BinfmtSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;::send</referencedby>
+        <referencedby refid="namespacegnuplotio_1a926e0935a02d83735da2c34cfbad133f" compoundref="gnuplot-iostream_8h" startline="1302" endline="1304">gnuplotio::send_scalar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="459" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="459" bodyend="464"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1BinfmtSender_1ab0b554a2e81309917b2fa6f480e2a8e2" prot="public" virt="non-virtual"><scope>gnuplotio::BinfmtSender</scope><name>GNUPLOT_STATIC_ASSERT_MSG</name></member>
+      <member refid="structgnuplotio_1_1BinfmtSender_1a762010e3172c02e981252f93185b29c8" prot="public" virt="non-virtual"><scope>gnuplotio::BinfmtSender</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

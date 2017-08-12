@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGenerator" kind="class" language="C++" prot="public">
+    <compoundname>Generator</compoundname>
+    <derivedcompoundref refid="classParity" prot="public" virt="non-virtual">Parity</derivedcompoundref>
+    <includes refid="BitVector_8h" local="no">BitVector.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Accessors</header>
+      <memberdef kind="function" id="classGenerator_1a4d567ef8e13e05ccef9a4a29999cb2d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t Generator::state</definition>
+        <argsstring>() const </argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="64" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenerator_1a2a3045f4457fa40af19c027a9bd41dbc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Generator::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="65" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="65" bodyend="65"/>
+        <referencedby refid="classBitVector_1a630f2cbd89230c21c1a084d72281bda3" compoundref="BitVector_8h" startline="184" endline="186">BitVector::alias</referencedby>
+        <referencedby refid="classSoftVector_1a726fec2b5b445ab139649e57a69e7dc3" compoundref="BitVector_8h" startline="377" endline="378">SoftVector::alias</referencedby>
+        <referencedby refid="classBitVector_1a5b979b8a4769e5913c7e519b00952201" compoundref="BitVector_8h" startline="189" endline="189">BitVector::tail</referencedby>
+        <referencedby refid="classSoftVector_1af849e69cd4ad38cc4083cdcfecfd079e" compoundref="BitVector_8h" startline="385" endline="385">SoftVector::tail</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGenerator_1acce0f577de34127d192990548d80ce84" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t Generator::mCoeff</definition>
+        <argsstring></argsstring>
+        <name>mCoeff</name>
+        <briefdescription>
+<para>polynomial coefficients. LSB is zero exponent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="46" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenerator_1a2ea7514503770ad3bcaa3179f3fc9945" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t Generator::mState</definition>
+        <argsstring></argsstring>
+        <name>mState</name>
+        <briefdescription>
+<para>shift register state. LSB is most recent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="47" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenerator_1a446e51ab13d0a4b245577c163f9a35cc" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t Generator::mMask</definition>
+        <argsstring></argsstring>
+        <name>mMask</name>
+        <briefdescription>
+<para>mask for reading state </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="48" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenerator_1a6c43e1710b7e1bcf9b8e2329d9e0c435" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Generator::mLen</definition>
+        <argsstring></argsstring>
+        <name>mLen</name>
+        <briefdescription>
+<para>number of bits used in shift register </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="49" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenerator_1a75f3bf4412975939b2053116b8849bf2" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Generator::mLen_1</definition>
+        <argsstring></argsstring>
+        <name>mLen_1</name>
+        <briefdescription>
+<para>mLen - 1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="50" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGenerator_1afb6553ab338466e309e146a7a6c2da81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Generator::Generator</definition>
+        <argsstring>(uint64_t wCoeff, unsigned wLen)</argsstring>
+        <name>Generator</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>wCoeff</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>wLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="54" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenerator_1a785520f8fdfb2f7394ed414d21ae847a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Generator::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="60" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenerator_1a37a68fd0bfe9b5f89a6351a5ac6de637" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Generator::syndromeShift</definition>
+        <argsstring>(unsigned inBit)</argsstring>
+        <name>syndromeShift</name>
+        <param>
+          <type>unsigned</type>
+          <declname>inBit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate one bit of a syndrome. This is in the .h for inlining. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="72" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenerator_1a927df3986f8d2868201623ee471e5861" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Generator::encoderShift</definition>
+        <argsstring>(unsigned inBit)</argsstring>
+        <name>encoderShift</name>
+        <param>
+          <type>unsigned</type>
+          <declname>inBit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the generator state by one cycle. This is in the .h for inlining. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="83" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="83" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Shift-register (LFSR) generator. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="667">
+        <label>Generator</label>
+        <link refid="classGenerator"/>
+      </node>
+      <node id="668">
+        <label>Parity</label>
+        <link refid="classParity"/>
+        <childnode refid="667" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" line="42" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/decoding/BitVector.h" bodystart="42" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classGenerator_1a785520f8fdfb2f7394ed414d21ae847a" prot="public" virt="non-virtual"><scope>Generator</scope><name>clear</name></member>
+      <member refid="classGenerator_1a927df3986f8d2868201623ee471e5861" prot="public" virt="non-virtual"><scope>Generator</scope><name>encoderShift</name></member>
+      <member refid="classGenerator_1afb6553ab338466e309e146a7a6c2da81" prot="public" virt="non-virtual"><scope>Generator</scope><name>Generator</name></member>
+      <member refid="classGenerator_1acce0f577de34127d192990548d80ce84" prot="private" virt="non-virtual"><scope>Generator</scope><name>mCoeff</name></member>
+      <member refid="classGenerator_1a6c43e1710b7e1bcf9b8e2329d9e0c435" prot="private" virt="non-virtual"><scope>Generator</scope><name>mLen</name></member>
+      <member refid="classGenerator_1a75f3bf4412975939b2053116b8849bf2" prot="private" virt="non-virtual"><scope>Generator</scope><name>mLen_1</name></member>
+      <member refid="classGenerator_1a446e51ab13d0a4b245577c163f9a35cc" prot="private" virt="non-virtual"><scope>Generator</scope><name>mMask</name></member>
+      <member refid="classGenerator_1a2ea7514503770ad3bcaa3179f3fc9945" prot="private" virt="non-virtual"><scope>Generator</scope><name>mState</name></member>
+      <member refid="classGenerator_1a2a3045f4457fa40af19c027a9bd41dbc" prot="public" virt="non-virtual"><scope>Generator</scope><name>size</name></member>
+      <member refid="classGenerator_1a4d567ef8e13e05ccef9a4a29999cb2d4" prot="public" virt="non-virtual"><scope>Generator</scope><name>state</name></member>
+      <member refid="classGenerator_1a37a68fd0bfe9b5f89a6351a5ac6de637" prot="public" virt="non-virtual"><scope>Generator</scope><name>syndromeShift</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

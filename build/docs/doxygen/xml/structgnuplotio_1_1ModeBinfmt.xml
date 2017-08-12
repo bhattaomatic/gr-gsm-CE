@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1ModeBinfmt" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::ModeBinfmt</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structgnuplotio_1_1ModeBinfmt_1a7ab187fe922cac23b0d39ade81e5eb56" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ModeBinfmt::is_text</definition>
+        <argsstring></argsstring>
+        <name>is_text</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1197" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgnuplotio_1_1ModeBinfmt_1ab0d5d3718364cdea0347f93ec121d841" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ModeBinfmt::is_binfmt</definition>
+        <argsstring></argsstring>
+        <name>is_binfmt</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1197" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgnuplotio_1_1ModeBinfmt_1a40a5a8ee815d6a5e9a3c30c8290a6967" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gnuplotio::ModeBinfmt::is_size</definition>
+        <argsstring></argsstring>
+        <name>is_size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1197" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" line="1197" column="1" bodyfile="/home/abhishek/Git/gr-gsm-CE/lib/gnuplot-iostream.h" bodystart="1197" bodyend="1197"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1ModeBinfmt_1ab0d5d3718364cdea0347f93ec121d841" prot="public" virt="non-virtual"><scope>gnuplotio::ModeBinfmt</scope><name>is_binfmt</name></member>
+      <member refid="structgnuplotio_1_1ModeBinfmt_1a40a5a8ee815d6a5e9a3c30c8290a6967" prot="public" virt="non-virtual"><scope>gnuplotio::ModeBinfmt</scope><name>is_size</name></member>
+      <member refid="structgnuplotio_1_1ModeBinfmt_1a7ab187fe922cac23b0d39ade81e5eb56" prot="public" virt="non-virtual"><scope>gnuplotio::ModeBinfmt</scope><name>is_text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

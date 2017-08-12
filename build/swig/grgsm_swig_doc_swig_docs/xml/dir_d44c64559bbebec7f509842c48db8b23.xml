@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/abhishek/Git/gr-gsm-CE/include</compoundname>
+    <innerdir refid="dir_fc4d851d3af3ec5e54d61c1a968f4b6e">/home/abhishek/Git/gr-gsm-CE/include/grgsm</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/abhishek/Git/gr-gsm-CE/include/"/>
+  </compounddef>
+</doxygen>
