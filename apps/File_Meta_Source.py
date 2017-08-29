@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: File Meta Source
-# Generated: Tue Aug 15 14:24:10 2017
+# Generated: Tue Aug 29 14:58:43 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -20,11 +20,12 @@ from PyQt4 import Qt
 from gnuradio import blocks
 from gnuradio import eng_notation
 from gnuradio import gr
-from gnuradio import gr, blocks
 from gnuradio import qtgui
+from gnuradio import zeromq
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
 from optparse import OptionParser
+import SVM
 import sip
 import sys
 
@@ -62,6 +63,7 @@ class File_Meta_Source(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
+        self.zeromq_sub_msg_source_0 = zeromq.sub_msg_source("tcp://192.168.42.2:4729", 100000)
         self.qtgui_time_sink_x_0_0 = qtgui.time_sink_f(
         	48*2, #size
         	1e6, #samp_rate
@@ -108,16 +110,23 @@ class File_Meta_Source(gr.top_block, Qt.QWidget):
         
         self._qtgui_time_sink_x_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_0_win)
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
-        self.blocks_file_meta_source_0 = blocks.file_meta_source("/home/abhishek/tmp/tcptest", False, False, "")
+        self.blocks_tagged_stream_to_pdu_0 = blocks.tagged_stream_to_pdu(blocks.float_t, "packet_len")
+        self.blocks_pdu_to_tagged_stream_0_0 = blocks.pdu_to_tagged_stream(blocks.complex_t, "packet_len")
         self.blocks_complex_to_mag_0_0 = blocks.complex_to_mag(1)
+        self.SVM_print_msg_0_0 = SVM.print_msg("meta")
+        self.SVM_print_msg_0 = SVM.print_msg("data")
+        self.SVM_Test_0 = SVM.Test()
 
         ##################################################
         # Connections
         ##################################################
+        self.msg_connect((self.SVM_Test_0, 'out'), (self.SVM_print_msg_0, 'in'))    
+        self.msg_connect((self.SVM_Test_0, 'timestamp'), (self.SVM_print_msg_0_0, 'in'))    
+        self.msg_connect((self.blocks_tagged_stream_to_pdu_0, 'pdus'), (self.SVM_Test_0, 'data'))    
+        self.msg_connect((self.zeromq_sub_msg_source_0, 'out'), (self.blocks_pdu_to_tagged_stream_0_0, 'pdus'))    
+        self.connect((self.blocks_complex_to_mag_0_0, 0), (self.blocks_tagged_stream_to_pdu_0, 0))    
         self.connect((self.blocks_complex_to_mag_0_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
-        self.connect((self.blocks_file_meta_source_0, 0), (self.blocks_throttle_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.blocks_complex_to_mag_0_0, 0))    
+        self.connect((self.blocks_pdu_to_tagged_stream_0_0, 0), (self.blocks_complex_to_mag_0_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "File_Meta_Source")
@@ -130,7 +139,6 @@ class File_Meta_Source(gr.top_block, Qt.QWidget):
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
 
 
 def main(top_block_cls=File_Meta_Source, options=None):

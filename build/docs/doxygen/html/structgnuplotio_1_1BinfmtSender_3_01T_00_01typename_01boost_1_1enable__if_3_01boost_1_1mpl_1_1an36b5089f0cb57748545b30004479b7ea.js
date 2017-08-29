@@ -1,4 +1,0 @@
-var structgnuplotio_1_1BinfmtSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1an36b5089f0cb57748545b30004479b7ea =
-[
-    [ "send", "structgnuplotio_1_1BinfmtSender_3_01T_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1an36b5089f0cb57748545b30004479b7ea.html#aa1850ae529cdb36fedc67c5ebfa3f871", null ]
-];

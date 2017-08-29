@@ -1,5 +1,0 @@
-var classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01is__like__stl__conta99f8c9e80e271bc1ed047cdd05794af4 =
-[
-    [ "range_type", "classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01is__like__stl__conta99f8c9e80e271bc1ed047cdd05794af4.html#ab702072abbe018bbc90b9967ca8c4b42", null ],
-    [ "get_range", "classgnuplotio_1_1ArrayTraits_3_01T_00_01typename_01boost_1_1enable__if_3_01is__like__stl__conta99f8c9e80e271bc1ed047cdd05794af4.html#a89d4150ab3c479cde972071a10acd27b", null ]
-];

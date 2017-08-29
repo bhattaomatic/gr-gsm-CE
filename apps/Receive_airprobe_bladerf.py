@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Receive_airprobe_bladerf
-# Generated: Tue Aug 15 14:25:05 2017
+# Generated: Sat Aug 26 23:07:40 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -63,7 +63,7 @@ class Receive_airprobe_bladerf(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.zeromq_sub_msg_source_0 = zeromq.sub_msg_source("tcp://127.0.0.1:4729", 1000)
+        self.zeromq_sub_msg_source_0 = zeromq.sub_msg_source("tcp://127.0.0.1:4729", 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
         	48*2, #size
         	samp_rate, #samp_rate
@@ -111,7 +111,7 @@ class Receive_airprobe_bladerf(gr.top_block, Qt.QWidget):
         self._qtgui_time_sink_x_0_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_0_0_win)
         self.blocks_pdu_to_tagged_stream_0_0 = blocks.pdu_to_tagged_stream(blocks.complex_t, "packet_len")
-        self.blocks_file_meta_sink_0 = blocks.file_meta_sink(gr.sizeof_gr_complex*1, "/home/abhishek/tmp/tcptest", samp_rate, 1, blocks.GR_FILE_FLOAT, True, 10000, "", False)
+        self.blocks_file_meta_sink_0 = blocks.file_meta_sink(gr.sizeof_gr_complex*1, "/home/abhishek/tmp/Untitled Folder/test", samp_rate, 1, blocks.GR_FILE_FLOAT, True, 10000, "", True)
         self.blocks_file_meta_sink_0.set_unbuffered(False)
         self.blocks_complex_to_mag_0_0_0 = blocks.complex_to_mag(1)
 

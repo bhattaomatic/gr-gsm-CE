@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Airprobe Bladerf
-# Generated: Tue Aug 15 14:24:54 2017
+# Generated: Sun Aug 27 02:13:15 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -87,7 +87,7 @@ class airprobe_bladerf(gr.top_block, Qt.QWidget):
         self._fc_slider_range = Range(925e6, 1990e6, 2e5, fc, 100)
         self._fc_slider_win = RangeWidget(self._fc_slider_range, self.set_fc_slider, "Frequency", "counter_slider", float)
         self.top_layout.addWidget(self._fc_slider_win)
-        self.zeromq_pub_msg_sink_0 = zeromq.pub_msg_sink("tcp://127.0.0.1:4729", 1000)
+        self.zeromq_pub_msg_sink_0 = zeromq.pub_msg_sink("tcp://127.0.0.1:4729", 1)
         self.rtlsdr_source_0 = osmosdr.source( args="numchan=" + str(1) + " " + "" )
         self.rtlsdr_source_0.set_sample_rate(samp_rate)
         self.rtlsdr_source_0.set_center_freq(fc_slider-shiftoff, 0)
@@ -155,6 +155,7 @@ class airprobe_bladerf(gr.top_block, Qt.QWidget):
             samp_rate_in=samp_rate,
         )
         self.gsm_clock_offset_control_0 = grgsm.clock_offset_control(fc-shiftoff)
+        self.blocks_socket_pdu_0_0 = blocks.socket_pdu("UDP_SERVER", "127.0.0.1", "4729", 10000000, False)
         self.blocks_rotator_cc_0 = blocks.rotator_cc(-2*pi*shiftoff/samp_rate)
         self.blocks_pdu_to_tagged_stream_0 = blocks.pdu_to_tagged_stream(blocks.complex_t, "packet_len")
         self.blocks_complex_to_mag_0 = blocks.complex_to_mag(1)
