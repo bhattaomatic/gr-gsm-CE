@@ -38,7 +38,7 @@
     </param>
     <param>
       <key>generate_options</key>
-      <value>qt_gui</value>
+      <value>no_gui</value>
     </param>
     <param>
       <key>hier_block_src_path</key>
@@ -66,7 +66,7 @@
     </param>
     <param>
       <key>run_options</key>
-      <value>prompt</value>
+      <value>run</value>
     </param>
     <param>
       <key>run</key>
@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>32000</value>
+      <value>1e6</value>
     </param>
   </block>
   <block>
@@ -124,7 +124,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -179,7 +179,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/abhishek/tmp/Untitled Folder/test</value>
+      <value>/home/abhishek/tmp/Untitled Folder/data_bladeRF1/test</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -199,7 +199,7 @@
     </param>
     <param>
       <key>max_seg_size</key>
-      <value>10000</value>
+      <value>48000</value>
     </param>
     <param>
       <key>rel_rate</key>
@@ -293,7 +293,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -628,7 +628,7 @@
     <key>zeromq_sub_msg_source</key>
     <param>
       <key>address</key>
-      <value>tcp://127.0.0.1:4729</value>
+      <value>tcp://192.168.42.2:4729</value>
     </param>
     <param>
       <key>alias</key>

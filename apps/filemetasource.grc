@@ -38,7 +38,7 @@
     </param>
     <param>
       <key>generate_options</key>
-      <value>qt_gui</value>
+      <value>no_gui</value>
     </param>
     <param>
       <key>hier_block_src_path</key>
@@ -163,7 +163,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -179,11 +179,11 @@
     </param>
     <param>
       <key>label1</key>
-      <value>"Stationary"</value>
+      <value>"No Person"</value>
     </param>
     <param>
       <key>label2</key>
-      <value>"Moving"</value>
+      <value>"Person Walking"</value>
     </param>
     <param>
       <key>max_samples</key>
@@ -210,7 +210,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -245,7 +245,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -280,7 +280,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -331,7 +331,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/abhishek/tmp/Untitled Folder/test</value>
+      <value>/home/abhishek/tmp/Untitled Folder/data_bladeRF1/test</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -343,7 +343,7 @@
     </param>
     <param>
       <key>hdr_file</key>
-      <value>/home/abhishek/tmp/Untitled Folder/test.hdr</value>
+      <value>/home/abhishek/tmp/Untitled Folder/data_bladeRF1/test.hdr</value>
     </param>
     <param>
       <key>id</key>
@@ -386,7 +386,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -433,7 +433,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -594,7 +594,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -906,7 +906,7 @@
     </param>
     <param>
       <key>update_time</key>
-      <value>1</value>
+      <value>3</value>
     </param>
     <param>
       <key>ylabel</key>
@@ -1037,6 +1037,12 @@
     <sink_block_id>blocks_complex_to_mag_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>zeromq_sub_msg_source_0</source_block_id>
+    <sink_block_id>SVM_Test_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>data</sink_key>
   </connection>
   <connection>
     <source_block_id>zeromq_sub_msg_source_0</source_block_id>
